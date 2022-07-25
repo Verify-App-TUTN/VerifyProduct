@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa'
 import styled from 'styled-components';
 import Logo from '../assets/logo.png';
 
 const Header = () => {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+    const html = document.querySelector("html");
+    html.addEventListener("click", (e) => setIsNavOpen(false));
     return (
-        <Nav>
+        <Nav state={isNavOpen ? 1 : 0}>
             <div className="brand">
                 <img src={Logo} alt="logo" />
             </div>
-            <ul className="headerLinks">
+            <div className="toggle">
+                {isNavOpen ? (
+                    <FaTimes className='cancel' onClick={() => setIsNavOpen(false)} />
+                ) : (
+                    <FaBars onClick={(e) => {
+                        e.stopPropagation();
+                        setIsNavOpen(true)
+                    }} />
+                )}
+            </div>
+            <ul className={`headerLinks ${isNavOpen ? "show" : ""}`}>
                 <li>Integrate Product</li>
                 <li>About Us</li>
                 <li>Contact Us</li>
+                <li className='none'>Sign Up</li>
             </ul>
             <button className='btn'>Sign Up</button>
         </Nav>
@@ -31,7 +46,7 @@ const Nav = styled.nav`
                 width: 80%;
             }
         }
-        .headerLinks{
+        .headerLinks {
             display: flex;
             align-items: center;
             gap: 1.5rem;
@@ -40,6 +55,76 @@ const Nav = styled.nav`
                 font-size: 18px;
                 font-weight: 700;
                 cursor: pointer;
+            }
+            .none {
+                display: none !important;
+            }
+        }
+        .toggle {
+            display: none;
+        }
+        button {
+            background-color: #009F78;
+            border-color: #009F78;
+        }
+        @media screen and (max-width: 930px) {
+           position: relative;
+           z-index: 999;
+           button{
+            display: none;
+           }
+           .toggle{
+            padding-right: 1rem;
+            display: block;
+            z-index: 51;
+            svg{
+                color: #009F78;
+                font-size: 1.5rem;
+            }
+            .cancel{
+                color: #ffffff !important;
+            }
+           }
+           .show{
+            opacity: 1 !important;
+            visibility: visible !important;
+           }
+           .headerLinks{
+               position: absolute;
+               overflow-x: hidden;
+               top: 0;
+               right: 0;
+               width: ${({ state }) => (state ? "40%" : "0%")};
+               background-color:#ffffff;
+               opacity: 0;
+               visibility: hidden;
+               z-index: 50;
+               transition: all .7s ease-in-out;
+               flex-direction: column;
+               text-align: center;
+               height: 90vh !important;
+               background-color: #009F78;
+               .none{
+                display: flex !important;
+               }
+               li{
+                padding-top: 9vh;
+                color: #ffffff;
+               }
+           }
+        }  
+        @media screen and (max-width: 395px){
+            .brand {
+                width: 80%;
+               img {
+                width: 60%;
+              }
+            }
+            .headerLinks{
+                width: ${({ state }) => (state ? "50%" : "0%")};
+                li{
+                    font-size: 16px;
+                }
             }
         }
 `;
