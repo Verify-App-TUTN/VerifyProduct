@@ -96,6 +96,9 @@ const Section = styled.section`
             top: -330px;
             z-index: -1;
             height: 0%;
+            img{
+                line-height: 0%;
+            }
         }
      }
 `;
