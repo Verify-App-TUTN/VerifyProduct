@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import styled from 'styled-components';
-import Logo from '../assets/logo.png';
 
-const Header = () => {
+
+const Header = ({ img, link1, link2, link3, link4, buttonText, button }) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const html = document.querySelector("html");
     html.addEventListener("click", (e) => setIsNavOpen(false));
     return (
         <Nav state={isNavOpen ? 1 : 0}>
             <div className="brand">
-                <img src={Logo} alt="logo" />
+                <img src={img} alt="logo" />
             </div>
             <div className="toggle">
                 {isNavOpen ? (
@@ -23,12 +23,12 @@ const Header = () => {
                 )}
             </div>
             <ul className={`headerLinks ${isNavOpen ? "show" : ""}`}>
-                <li>Integrate Product</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-                <li className='none'>Sign Up</li>
+                <li>{link1}</li>
+                <li>{link2}</li>
+                <li>{link3}</li>
+                <li className='none'>{link4}</li>
             </ul>
-            <button className='btn'>Sign Up</button>
+            {button && <button className='btn'>{buttonText}</button>}
         </Nav>
     )
 }
