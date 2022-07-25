@@ -41,6 +41,7 @@ export default ProductN;
 const Section = styled.section`
       margin: 1rem 0;
       padding: 1rem;
+      margin-bottom: 7rem !important;
      .goBack{
         display: flex;
         align-items: baseline;
@@ -97,7 +98,7 @@ const Section = styled.section`
             z-index: -1;
             height: 0%;
             img{
-                line-height: 0%;
+                height: 60rem;
             }
         }
      }
