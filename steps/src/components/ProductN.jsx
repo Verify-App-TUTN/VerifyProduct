@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaChevronLeft } from 'react-icons/fa';
+import Coke from '../assets/coke.png';
+import Arrow from '../assets/arrows.png';
 
 const ProductN = () => {
     return (
@@ -8,6 +10,27 @@ const ProductN = () => {
             <div className='goBack'>
                 <FaChevronLeft />
                 <span>Back</span>
+            </div>
+            <div className="productContainer">
+                <div className="productText">
+                    <h2>Product Name</h2>
+                    <p>
+                        <span>
+                            Get accesss to select your choice product from our list of Product Categories
+                            Get accesss to
+                        </span>
+                        <span>
+                            select your choice product from our list of Product Categories
+                            Get accesss to select your choice
+                        </span>
+                        <span>product from our list of Product Categories</span>
+                    </p>
+                    <button className="btn">Verify Product</button>
+                </div>
+                <div className="productImages">
+                    <img src={Coke} alt="productImg" />
+                    <img src={Arrow} alt="productImg" />
+                </div>
             </div>
         </Section>
     )
@@ -23,7 +46,7 @@ const Section = styled.section`
         align-items: baseline;
         gap: 10px;
         cursor: pointer;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         svg{
             color: #292D32 !important;
         }
@@ -31,6 +54,46 @@ const Section = styled.section`
             font-weight: 700;
             font-size: 20px;
             color: #000000;
+        }
+     }
+     .productContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 3rem;
+        .productText{
+            display: flex;
+            flex-direction: column;
+            align-items: center !important;
+            gap: 2rem;
+            h2{
+                font-size: 60px;
+                font-weight: 900;
+                color: #000D09;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                span{
+                    display: block !important;
+                }
+            }
+            button {
+                background-color: #009F78;
+            }
+        }
+     }
+     .productImages{
+        position: relative;
+
+        img:nth-child(2){
+            position: absolute;
+            left: -170px;
+            top: -320px;
+            z-index: -1;
         }
      }
 `;
