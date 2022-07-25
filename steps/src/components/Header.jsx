@@ -37,6 +37,9 @@ const Nav = styled.nav`
             gap: 1.5rem;
             li {
                 color: #001A13;
+                font-size: 18px;
+                font-weight: 700;
+                cursor: pointer;
             }
         }
 `;
