@@ -23,8 +23,10 @@ const Section = styled.section`
         align-items: baseline;
         gap: 10px;
         cursor: pointer;
-        color: #292D32 !important;
         margin-bottom: 1rem;
+        svg{
+            color: #292D32 !important;
+        }
         span{
             font-weight: 700;
             font-size: 20px;
