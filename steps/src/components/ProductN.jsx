@@ -28,8 +28,8 @@ const ProductN = () => {
                     <button className="btn">Verify Product</button>
                 </div>
                 <div className="productImages">
-                    <img src={Coke} alt="productImg" />
-                    <img src={Arrow} alt="productImg" />
+                    <div><img src={Coke} alt="productImg" /></div>
+                    <div className='img'><img src={Arrow} alt="productImg" /></div>
                 </div>
             </div>
         </Section>
@@ -88,12 +88,14 @@ const Section = styled.section`
      }
      .productImages{
         position: relative;
-
-        img:nth-child(2){
+        width: 100%;
+        height: max-content;
+        .img{
             position: absolute;
-            left: -170px;
-            top: -320px;
+            left: 180px;
+            top: -330px;
             z-index: -1;
+            height: 0%;
         }
      }
 `;
