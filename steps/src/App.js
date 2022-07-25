@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Logo from './assets/logo.png';
+import ProductN from './components/ProductN';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         buttonText="Sign Up"
         button={true}
       />
+      <ProductN />
     </div>
   );
 }
