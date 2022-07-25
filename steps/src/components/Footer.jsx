@@ -96,15 +96,74 @@ const Section = styled.footer`
             flex-direction: column;
             gap: 1rem;
             align-items: flex-start;  
-            p{
+            p {
                 font-weight: 700 !important;
                 font-size: 20px;
                 line-height: 24px;
                 color: #FEFEFF;  
             }
+            .subcribe{
+                display: flex;
+                align-items: center;
+                width: 90%;
+                input{
+                    width: 90%;
+                    padding: 11px 45px;
+                    padding-left: 15px !important;
+                    border-radius: 4px;
+                    outline: none;
+                    border: none;
+                    color: #333333;
+                    font-weight: 700;
+                    font-size: 14px;
+                    &::placeholder{
+                        color: #333333;
+                    font-weight: 700;
+                    font-size: 14px;
+                    }
+                    &:focus{
+                        border: 2px solid #009F78;
+                        border-radius: 4px;
+                    }
+                }
+                button {
+                 background-color: #009F78;
+                 border-color: #009F78;
+                }
+            }
         }
      }
      .rightSide{
         flex: 1;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content:  center;
+        align-items: flex-start;
+        .row{
+            color: #FEFEFF;
+            h3{
+                margin-bottom: 20px;
+                font-weight: 900;
+                font-size: 16px;
+            }
+            ul{
+                li{
+                    font-size: 16px;
+                    font-weight: 400 !important;
+                    line-height: 35px;
+                }
+            }
+            .socialIcon{
+                background-color: #fff;
+                display: flex;
+                gap: 1rem;
+                padding: 2px 8px;
+                border-radius: 8px;
+                .icon{
+                    font-size: 1.5rem;
+                    color: #202428;
+                }
+            }
+        }
      }
 `;

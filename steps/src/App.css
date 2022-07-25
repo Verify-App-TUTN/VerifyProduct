@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Quincy CF";
-  src: url("./Demo_Fonts/Fontspring-DEMO-quincycf-bold.otf");
+  src: url("./Demo_Fonts/Fontspring-DEMO-quincycf-regular.otf");
 }
 * {
   margin: 0;
@@ -9,6 +9,7 @@
   font-family: "Quincy CF";
   list-style: none;
   text-decoration: none;
+  /* color: #202428; */
 }
 .container {
   width: 80%;
