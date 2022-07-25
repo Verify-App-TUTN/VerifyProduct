@@ -78,7 +78,7 @@ const Nav = styled.nav`
             display: block;
             z-index: 51;
             svg{
-                color: #009F78;
+                color: #292D32;
                 font-size: 1.5rem;
             }
             .cancel{
