@@ -1,11 +1,34 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import { FaChevronLeft } from 'react-icons/fa';
 
 const ProductN = () => {
     return (
-        <div>
-            Product
-        </div>
+        <Section>
+            <div className='goBack'>
+                <FaChevronLeft />
+                <span>Back</span>
+            </div>
+        </Section>
     )
 }
 
-export default ProductN
+export default ProductN;
+
+const Section = styled.section`
+      margin: 1rem 0;
+      padding: 1rem;
+     .goBack{
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        cursor: pointer;
+        color: #292D32 !important;
+        margin-bottom: 1rem;
+        span{
+            font-weight: 700;
+            font-size: 20px;
+            color: #000000;
+        }
+     }
+`;
