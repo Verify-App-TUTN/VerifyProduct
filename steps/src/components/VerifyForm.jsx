@@ -29,6 +29,10 @@ const VerifyForm = () => {
                     </div>
                 </div>
             </div>
+            <div className="formsArea">
+                <Form />
+                
+            </div>
         </Section>
     )
 }
@@ -65,6 +69,7 @@ const Section = styled.section`
         }
      }
      .stepsProgress{
+        margin-bottom: 4rem;
         .stepArea{
             display: flex;
             gap: 14.5rem;
