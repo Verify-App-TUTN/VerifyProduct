@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Quincy CF";
+  src: url("./Demo_Fonts/Fontspring-DEMO-quincycf-bold.otf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Quincy CF";
 }
