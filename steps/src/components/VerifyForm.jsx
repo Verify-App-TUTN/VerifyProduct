@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FaChevronLeft } from 'react-icons/fa';
 import Detail from './Detail';
 import CodeP from './CodeP';
+import Product from '../assets/Pp.png';
 
 
 const VerifyForm = () => {
@@ -31,7 +32,7 @@ const VerifyForm = () => {
             </div>
             <div className="formsArea">
                 <Form />
-                
+                <img src={Product} alt="" />
             </div>
         </Section>
     )
