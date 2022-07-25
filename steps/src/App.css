@@ -9,11 +9,10 @@
   font-family: "Quincy CF";
   list-style: none;
   text-decoration: none;
-  /* color: #202428; */
 }
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 80%; 
+  margin: 0 auto !important;
 }
 .btn {
   border: 1px solid;
