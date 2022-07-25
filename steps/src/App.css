@@ -8,3 +8,7 @@
   box-sizing: border-box;
   font-family: "Quincy CF";
 }
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
