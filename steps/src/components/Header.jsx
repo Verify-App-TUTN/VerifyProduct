@@ -8,7 +8,7 @@ const Header = ({ img, link1, link2, link3, link4, buttonText, button }) => {
     const html = document.querySelector("html");
     html.addEventListener("click", (e) => setIsNavOpen(false));
     return (
-        <Nav state={isNavOpen ? 1 : 0}>
+        <Nav state={isNavOpen ? 1 : 0} className="container">
             <div className="brand">
                 <img src={img} alt="logo" />
             </div>
