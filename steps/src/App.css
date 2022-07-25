@@ -7,8 +7,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quincy CF";
+  list-style: none;
+  text-decoration: none;
 }
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
