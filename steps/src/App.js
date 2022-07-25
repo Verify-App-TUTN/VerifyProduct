@@ -1,8 +1,9 @@
 import './App.css';
 import Header from './components/Header';
 import Logo from './assets/logo.png';
-import ProductN from './components/ProductN';
+// import ProductN from './components/ProductN';
 import Footer from './components/Footer';
+import VerifyForm from './components/VerifyForm';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         buttonText="Sign Up"
         button={true}
       />
-      <ProductN />
+      <VerifyForm />
+      {/* <ProductN /> */}
       <Footer />
     </div>
   );
