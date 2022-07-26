@@ -33,7 +33,9 @@ const VerifyForm = () => {
             </div>
             <div className="formsArea">
                 <Form />
-                <img src={Product} alt="" />
+                <div className="productImg">
+                    <img src={Product} alt="" />
+                </div>
             </div>
         </Section>
     )
