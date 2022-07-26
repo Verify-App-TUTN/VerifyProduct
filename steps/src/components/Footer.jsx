@@ -166,4 +166,41 @@ const Section = styled.footer`
             }
         }
      }
+     @media screen and (max-width: 1200px){
+        padding: 1rem;
+        gap: 2rem;
+        .leftSide{
+            flex: 0;
+        }
+     }
+     @media screen and (max-width: 929px){
+        flex-direction: column;
+     }
+     @media screen and (max-width: 500px){
+        .leftSide{
+            margin-top: 20px;
+            gap: 2rem;
+            .brand{
+                img{
+                    width: 80%;
+                }
+            }
+            .news{
+                p{
+                    font-size: 18px !important;
+                }
+             .subcribe{
+                width: 100%;
+                input{
+                    padding: 12px;
+                }
+                button{
+                    padding: 10px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+              }
+           }
+        }
+     }
 `;

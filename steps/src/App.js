@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Logo from './assets/logo.png';
 import ProductN from './components/ProductN';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 // import VerifyForm from './components/VerifyForm';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       />
       {/* <VerifyForm /> */}
       <ProductN />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
