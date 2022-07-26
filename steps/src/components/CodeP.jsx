@@ -59,9 +59,10 @@ const Div = styled.div`
             }
             .error{
                 margin-bottom: 2rem;
+                color: #D92408;
             }
             input {
-                width: 60%;
+                width: 70%;
                 background: #FFFFFF;
                 border: 1px solid rgba(36, 24, 24, 0.25);
                 border-radius: 8px;
