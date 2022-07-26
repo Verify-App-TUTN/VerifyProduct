@@ -12,7 +12,7 @@ import './../App.css';
 const VerifyForm = () => {
     const [activeState, setActiveState] = useState(0);
 
-    const Form = () => activeState === 0 ? <Detail /> : <CodeP />
+    const Form = () => activeState === 1 ? <Detail /> : <CodeP />
 
     return (
         <Section className='container'>
