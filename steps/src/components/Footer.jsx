@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../assets/footerlg.png';
 import { FaFacebookSquare, FaLinkedin, FaInstagram, FaTwitterSquare } from 'react-icons/fa';
-
+import '../App.css';
 
 const Footer = () => {
     return (
-        <div style={{ background: "#001A13" }}>
+        <div className='ddd' style={{ background: "#001A13" }}>
             <div className="container">
                 <Section>
                     <div className="leftSide">
@@ -60,8 +60,11 @@ const Footer = () => {
                         </div>
                     </div>
                 </Section>
+                <div style={{ textAlign: "center", color: "#FEFEFF", padding: "30px 0", fontWeight: 400, fontSize: "16px" }}>
+                    <p>Verifyme 2022 All rights reserved</p>
+                </div>
             </div>
-        </div>
+        </div >
     )
 }
 
@@ -201,6 +204,11 @@ const Section = styled.footer`
                 }
               }
            }
+        }
+        .rightSide{
+            grid-template-columns: repeat(2,1fr);
+            gap:1rem;
+            overflow: hidden;
         }
      }
 `;
