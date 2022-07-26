@@ -30,6 +30,10 @@ const Detail = () => {
                         <option value="Pnts">Preferred not to say</option>
                     </select>
                 </div>
+                <div className="form-control-check">
+                    <input type="checkbox" name="check" id="check" />
+                    <label htmlFor="check">Remember me</label>
+                </div>
                 <button className='btn'>Next</button>
             </form>
         </Div>
@@ -65,13 +69,30 @@ const Div = styled.div`
                 letter-spacing: 0.02em;
                 font-family: 'Lato', sans-serif !important;
             }
-            input{
+            input,select{
                 width: 60%;
                 background: #FFFFFF;
                 border: 1px solid rgba(36, 24, 24, 0.25);
                 border-radius: 8px;
                 padding: 16px 0px 16px 24px;
+                color: #333333;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: 'Lato', sans-serif !important;
+                outline: none;
+                &:focus{
+                    border: 1px solid #009F78;
+                }
             }
+        }
+        .form-control-check{
+            display: flex;
+            align-items: initial;
+            gap: 10px;
+        }
+        button{
+            width: 183px;
+            background: #009F78;
         }
      }
 
