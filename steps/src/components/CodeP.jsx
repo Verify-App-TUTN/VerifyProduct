@@ -12,9 +12,9 @@ const CodeP = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="Form">
                 <div className="form-control">
                     <label htmlFor="PID">Product Identification Number</label>
-                    <input type="number" placeholder="Input product ID" id="PID" {...register("PID", { required: { value: true, Message: "Hint: Kindly check the top of the cover for product code" }, maxLength: 80 })} />
+                    <input type="number" placeholder="Input product ID" id="PID" {...register("PID", { required: true, maxLength: 80 })} />
                     <div className="error">
-                        {errors.PID && <span>{errors.PID.Message}</span>}
+                        {errors.PID && <span>Hint: Kindly check the top of the cover for product code</span>}
                     </div>
                     <button type='submit' className='btn'>Verify Product Now</button>
                 </div>

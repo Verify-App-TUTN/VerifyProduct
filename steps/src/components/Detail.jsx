@@ -20,7 +20,7 @@ const Detail = ({ next }) => {
                 </div>
                 <div className="form-control">
                     <label htmlFor="email">Email Address</label>
-                    <input type="text" id='email' placeholder="helenmorshood@gmail.com" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
+                    <input type="email" id='email' placeholder="helenmorshood@gmail.com" {...register("email", { required: true, pattern: /\S+@\S+\.\S+/ })} />
                 </div>
                 <div className="form-control">
                     <label htmlFor="tel">Phone Number</label>

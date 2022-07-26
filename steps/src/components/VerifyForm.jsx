@@ -14,18 +14,26 @@ const VerifyForm = () => {
 
     const nextStep = () => setActiveState((prev) => prev + 1);
 
+    const backStep = () => setActiveState((prev) => prev - 1);
+
     const next = () => {
         nextStep();
     }
 
-    const Form = () => activeState === 0 ? <Detail next={next}/> : <CodeP />
+    const prev = () => {
+        backStep();
+    }
+
+    const Form = () => activeState === 0 ? <Detail next={next} /> : <CodeP prev={prev} />
 
     return (
         <Section className='container'>
-            <div className='goBack'>
-                <FaChevronLeft />
-                <span>Back</span>
-            </div>
+            {activeState === 0 ? (
+                <div className='goBack'>
+                    <FaChevronLeft />
+                    <span>Back</span>
+                </div>
+            ) : <div className='goBack2'></div>}
             <h2 className="stepTitle">
                 <span>The Platform for</span>
                 <span> Verifying Products</span>
@@ -70,6 +78,9 @@ const Section = styled.section`
             font-size: 20px;
             color: #000000;
         }
+     }
+     .goBack2{
+        margin-top: 30px;
      }
      .stepTitle{
         font-weight: 900;
