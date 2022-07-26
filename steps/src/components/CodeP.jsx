@@ -12,11 +12,11 @@ const CodeP = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="Form">
                 <div className="form-control">
                     <label htmlFor="PID">Product Identification Number</label>
-                    <input type="number" placeholder="Input product ID" id="PID" {...register("PID", { required: true, maxLength: 80 })} />
+                    <input type="number" placeholder="Input product ID" id="PID" {...register("PID", { required: true, minLength: 6, maxLength: 80 })} />
                     <div className="error">
                         {errors.PID && <span>Hint: Kindly check the top of the cover for product code</span>}
                     </div>
-                    <button type='submit' className='btn' disabled={!onSubmit}>Verify Product Now</button>
+                    <button type='submit' className={`btn ${!errors.PID ? ".button" : ""}`} disabled={!handleSubmit}>Verify Product Now</button>
                 </div>
                 <div className="arrowImg">
                     <img src={Arrows} alt="pI" />
@@ -77,8 +77,8 @@ const Div = styled.div`
                 }
             }
             .button{
-               width: max-content;
-               background: #009F78;
+               width: max-content !important;
+               background: #009F78 !important;
             }
         }
     }
