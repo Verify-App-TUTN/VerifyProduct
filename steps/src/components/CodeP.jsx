@@ -1,11 +1,16 @@
 import React from 'react';
+import Verifyproduct from './Verifyproduct';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import Arrows from '../assets/arrows.png';
 
 const CodeP = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        <Verifyproduct data={data} />
+    };
+
+    console.log(errors)
     return (
         <Div>
             <h4>Kindly Fill in Your Details</h4>
@@ -16,7 +21,7 @@ const CodeP = () => {
                     <div className="error">
                         {errors.PID && <span>Hint: Kindly check the top of the cover for product code</span>}
                     </div>
-                    <button type='submit' className={`btn ${!errors.PID ? ".button" : ""}`} disabled={!handleSubmit}>Verify Product Now</button>
+                    <button type='submit' className={`btn ${!errors.PID ? "button" : "disebutton"}`} disabled={!errors}>Verify Product Now</button>
                 </div>
                 <div className="arrowImg">
                     <img src={Arrows} alt="pI" />
@@ -79,6 +84,10 @@ const Div = styled.div`
             .button{
                width: max-content !important;
                background: #009F78 !important;
+            }
+            .disebutton{
+               width: max-content !important;
+               background: #B5E6DD !important;
             }
         }
     }
