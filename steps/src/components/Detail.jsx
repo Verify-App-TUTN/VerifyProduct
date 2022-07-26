@@ -24,7 +24,7 @@ const Detail = ({ next }) => {
                 </div>
                 <div className="form-control">
                     <label htmlFor="tel">Phone Number</label>
-                    <input type="tel" id='tel' placeholder="+234" {...register("tel", { required: true, minLength: 6, maxLength: 12 })} />
+                   
                 </div>
                 <div className="form-control">
                     <label htmlFor="sex">Sex</label>

@@ -16,7 +16,7 @@ const CodeP = () => {
                     <div className="error">
                         {errors.PID && <span>Hint: Kindly check the top of the cover for product code</span>}
                     </div>
-                    <button type='submit' className='btn'>Verify Product Now</button>
+                    <button type='submit' className='btn' disabled={!onSubmit}>Verify Product Now</button>
                 </div>
                 <div className="arrowImg">
                     <img src={Arrows} alt="pI" />
