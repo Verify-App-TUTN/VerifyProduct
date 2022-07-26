@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
+import Arrows from '../assets/arrows.png';
 
 const Detail = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -35,6 +36,9 @@ const Detail = () => {
                     <label htmlFor="check">Remember me</label>
                 </div>
                 <button className='btn'>Next</button>
+                <div className="arrowImg">
+                    <img src={Arrows} alt="" />
+                </div>
             </form>
         </Div>
     )
@@ -55,6 +59,7 @@ const Div = styled.div`
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        position: relative;
         .form-control{
             display: flex;
             flex-direction: column;
@@ -93,6 +98,15 @@ const Div = styled.div`
         button{
             width: 183px;
             background: #009F78;
+        }
+        .arrowImg{
+            position: absolute;
+            top: -180px;
+            left: 30px;
+            z-index: -1;
+            img{
+                height: 55rem;
+            }
         }
      }
 
