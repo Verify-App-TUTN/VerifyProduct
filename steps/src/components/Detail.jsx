@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import Arrows from '../assets/arrows.png';
 
 const Detail = ({ next }) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const [value, setValue] = useState();
     const onSubmit = data => {
         next();
         console.log(data)
@@ -24,7 +27,12 @@ const Detail = ({ next }) => {
                 </div>
                 <div className="form-control">
                     <label htmlFor="tel">Phone Number</label>
-                   
+                    <PhoneInput
+                        placeholder="Enter phone number"
+                        value={value}
+                        onChange={setValue}
+                        className="phone"
+                    />
                 </div>
                 <div className="form-control">
                     <label htmlFor="sex">Sex</label>
@@ -90,6 +98,22 @@ const Div = styled.div`
                 outline: none;
                 &:focus{
                     border: 1px solid #009F78;
+                }
+            }
+            .phone{
+                width: 60%;
+                background: #FFFFFF;
+                border: 1px solid rgba(36, 24, 24, 0.25);
+                border-radius: 8px;
+                padding-left: 25px;
+                .PhoneInputCountrySelect{
+                    width: 100% !important;
+                }
+                input{
+                    border: none;
+                    border-left: 1px solid rgba(36, 24, 24, 0.25);
+                    border-top-left-radius: 0%;
+                    border-bottom-left-radius: 0%;
                 }
             }
         }
