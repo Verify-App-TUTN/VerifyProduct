@@ -101,8 +101,8 @@ const Div = styled.div`
         }
         .arrowImg{
             position: absolute;
-            top: -180px;
-            left: 30px;
+            top: -170px;
+            left: 40px;
             z-index: -1;
             img{
                 height: 55rem;

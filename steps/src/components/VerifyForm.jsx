@@ -4,6 +4,8 @@ import { FaChevronLeft } from 'react-icons/fa';
 import Detail from './Detail';
 import CodeP from './CodeP';
 import Product from '../assets/Pp.png';
+import Complete from '../assets/complete.png'
+import notComplete from '../assets/pp1.png'
 import './../App.css';
 
 
@@ -25,10 +27,11 @@ const VerifyForm = () => {
             <div className="stepsProgress">
                 <div className="stepArea">
                     <p>Just 2 Steps Away</p>
-                    <div className="divProgess">
-                        <div className="active"></div>
-                        <div></div>
-                    </div>
+                    {activeState === 0 ? (
+                        <img src={notComplete} alt="" />
+                    ) : (
+                        <img src={Complete} alt="" />
+                    )}
                 </div>
             </div>
             <div className="formsArea">
@@ -82,32 +85,8 @@ const Section = styled.section`
                 font-weight: 400;
                 color: #009F78;
             }
-            .divProgess{
-                display: flex;
-                align-items: center;
-                position: relative;
+            img{
                 width: 297.06px;
-                height: 3px;
-                background: linear-gradient(to right,#009F78,#5ae0bf3b 80% );
-                margin-top: 10px;
-                div:nth-child(1){
-                    position: absolute;
-                    top: -14px;
-                    left: -8px;
-                    background-color:#009F78 ;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 100%;
-                }
-                div:nth-child(2){
-                    position: absolute;
-                    top: -14px;
-                    right: -8px;
-                    background-color: #B5E6DD;
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 100%;
-                }
             }
         }
      }
