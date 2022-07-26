@@ -29,7 +29,7 @@ const ProductN = () => {
                         <button className="btn">Verify Product</button>
                     </div>
                     <div className="productImages">
-                        <div><img src={Coke} alt="productImg" /></div>
+                        <div className='coke'><img src={Coke} alt="productImg" /></div>
                         <div className='img'><img src={Arrow} alt="productImg" /></div>
                     </div>
                 </div>
@@ -101,6 +101,108 @@ const Section = styled.section`
             height: 0%;
             img{
                 height: 60rem;
+            }
+        }
+     }
+     @media screen and (max-width: 1200px){
+        .productImages{
+            max-width: 100%;
+            .img{
+                top: -200px;
+                left: 180px;
+                img{
+                    height: 50rem;
+                }
+            }
+        }
+     }
+     @media screen and (max-width: 998px){
+        .productImages{
+            .img{
+                left: 130px;
+            }
+        }
+     }
+     @media screen and (max-width: 890px){
+        .productImages{
+            .img{
+                top: -120px;
+                left: 60px;
+                img{
+                    height: 45rem;
+                }
+            }
+        }
+     }
+     @media screen and (max-width: 742px){
+        .productImages{
+            .img{
+                top: -120px;
+                left: 0px;
+                img{
+                    height: 45rem;
+                }
+            }
+        }
+     }
+     @media screen and (max-width: 690px){
+        .productImages{
+            .coke{
+                img{
+                    width: 80%;
+                }
+            }
+            .img{
+                top: -60px;
+                left: 0;
+                img{
+                    height: 35rem;
+                }
+            }
+        }
+     }
+     @media screen and (max-width: 490px){
+         margin: 10px 0;
+         .goBack{
+            display: none;
+         }
+         .productContainer{
+            gap: 2rem;
+            .productText{
+                gap: 1rem;
+                h2{
+                    font-size: 40px;
+                }
+            }
+         }
+        .productImages{
+            .img{
+                top: -80px;
+                img{
+                    height: 35rem;
+                }
+            }
+        }
+     }
+     @media screen and (max-width: 410px){
+        .productImages{
+            .img{
+                left: 0;
+                img{
+                    height: 28rem;
+                }
+            }
+        }
+     }
+     @media screen and (max-width: 395px){
+        .productImages{
+            .img{
+                left: -22px;
+                height: 100%;
+                img{
+                    width: 325px;
+                    height: 24em;
+                }
             }
         }
      }
