@@ -4,6 +4,7 @@ import { FaChevronLeft } from 'react-icons/fa';
 import Detail from './Detail';
 import CodeP from './CodeP';
 import Product from '../assets/Pp.png';
+import './../App.css';
 
 
 const VerifyForm = () => {
@@ -107,5 +108,9 @@ const Section = styled.section`
                 }
             }
         }
+     }
+     .formsArea{
+        display: flex;
+        gap: 1rem;
      }
 `;

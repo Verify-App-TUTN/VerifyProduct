@@ -10,7 +10,7 @@ const Detail = () => {
         <Div>
             <h4>Kindly Fill in Your Details</h4>
             <form onSubmit={handleSubmit(onSubmit)} className="Form">
-                <div className="form-Control">
+                <div className="form-control">
                     <label htmlFor="fullname">Full Name</label>
                     <input type="text" placeholder="Full name" id="fullname" {...register("Full name", { required: true, maxLength: 80 })} />
                 </div>
@@ -38,4 +38,41 @@ const Detail = () => {
 
 export default Detail;
 
-const Div = styled.div``;
+const Div = styled.div`
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     flex: 1;
+     h4{
+         font-size: 20px;
+        font-weight: 400;
+     }
+     .Form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .form-control{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 9px;
+            label{
+                color: #333333;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 132.1%; 
+                letter-spacing: 0.02em;
+                font-family: 'Lato', sans-serif !important;
+            }
+            input{
+                width: 60%;
+                background: #FFFFFF;
+                border: 1px solid rgba(36, 24, 24, 0.25);
+                border-radius: 8px;
+                padding: 16px 0px 16px 24px;
+            }
+        }
+     }
+
+`;
