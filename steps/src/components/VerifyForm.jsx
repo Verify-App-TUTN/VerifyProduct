@@ -12,7 +12,13 @@ import './../App.css';
 const VerifyForm = () => {
     const [activeState, setActiveState] = useState(0);
 
-    const Form = () => activeState === 1 ? <Detail /> : <CodeP />
+    const nextStep = () => setActiveState((prev) => prev + 1);
+
+    const next = () => {
+        nextStep();
+    }
+
+    const Form = () => activeState === 0 ? <Detail next={next}/> : <CodeP />
 
     return (
         <Section className='container'>

@@ -3,9 +3,12 @@ import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import Arrows from '../assets/arrows.png';
 
-const Detail = () => {
+const Detail = ({ next }) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        next();
+        console.log(data)
+    };
 
     return (
         <Div>
