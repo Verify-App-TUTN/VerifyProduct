@@ -13,19 +13,19 @@ const Detail = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="Form">
                 <div className="form-control">
                     <label htmlFor="fullname">Full Name</label>
-                    <input type="text" placeholder="Full name" id="fullname" {...register("Full name", { required: true, maxLength: 80 })} />
+                    <input type="text" placeholder="Full name" id="fullname" {...register("fullname", { required: true, maxLength: 80 })} />
                 </div>
                 <div className="form-control">
                     <label htmlFor="email">Email Address</label>
-                    <input type="text" id='email' placeholder="helenmorshood@gmail.com" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} />
+                    <input type="text" id='email' placeholder="helenmorshood@gmail.com" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
                 </div>
                 <div className="form-control">
                     <label htmlFor="tel">Phone Number</label>
-                    <input type="tel" id='tel' placeholder="+234" {...register("Mobile number", { required: true, minLength: 6, maxLength: 12 })} />
+                    <input type="tel" id='tel' placeholder="+234" {...register("tel", { required: true, minLength: 6, maxLength: 12 })} />
                 </div>
                 <div className="form-control">
                     <label htmlFor="sex">Sex</label>
-                    <select id='sex' {...register("Title", { required: true })}>
+                    <select id='sex' {...register("sex", { required: true })}>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="Pnts">Preferred not to say</option>

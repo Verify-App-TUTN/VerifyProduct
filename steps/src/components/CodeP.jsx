@@ -12,11 +12,11 @@ const CodeP = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="Form">
                 <div className="form-control">
                     <label htmlFor="PID">Product Identification Number</label>
-                    <input type="number" placeholder="Input product ID" id="PID" {...register("PID", { required: true, maxLength: 80 })} />
+                    <input type="number" placeholder="Input product ID" id="PID" {...register("PID", { required: { value: true, Message: "Hint: Kindly check the top of the cover for product code" }, maxLength: 80 })} />
                     <div className="error">
-                        Hint: Kindly check the top of the cover for product code
+                        {errors.PID && <span>{errors.PID.Message}</span>}
                     </div>
-                    <button type='submit' className='btn' disabled>Verify Product Now</button>
+                    <button type='submit' className='btn'>Verify Product Now</button>
                 </div>
                 <div className="arrowImg">
                     <img src={Arrows} alt="pI" />
@@ -33,7 +33,7 @@ const Div = styled.div`
      flex-direction: column;
      gap: 1rem;
      flex: 1;
-     margin-bottom: 55vh;
+     margin-bottom: 60vh;
      h4{
          font-size: 20px;
         font-weight: 400;
@@ -83,10 +83,10 @@ const Div = styled.div`
     }
         .arrowImg{
             position: absolute;
-            right: -438px;
+            right: -458px;
             z-index: -1;
             img{
-                height: 45rem;
+                height: 50rem;
             }
         }
 `;
