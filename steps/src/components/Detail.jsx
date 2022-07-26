@@ -135,5 +135,28 @@ const Div = styled.div`
             }
         }
      }
-
+     @media screen and (max-width: 1300px){
+        .Form{
+            .form-control {
+                input,select{
+                    width: 80%;
+                }
+                .phone{
+                    width: 80%;
+                }
+            }
+        }
+     }
+     @media screen and (max-width: 1120px){
+        .Form{
+            .form-control {
+                input,select{
+                    width: 100%;
+                }
+                .phone{
+                    width: 100%;
+                }
+            }
+        }
+     }
 `;

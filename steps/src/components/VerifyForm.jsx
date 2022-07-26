@@ -49,7 +49,7 @@ const VerifyForm = () => {
                 </div>
             </div>
             <div className="formsArea">
-                <Form />
+                {/* <Form /> */}
                 <div className="productImg">
                     <img src={Product} alt="" />
                 </div>
@@ -110,5 +110,25 @@ const Section = styled.section`
      .formsArea{
         display: flex;
         gap: 1rem;
+     }
+     @media screen and (max-width: 1120px){
+        .formsArea{
+            gap: 2rem;
+        }
+        .stepTitle{
+            font-size: 36px;
+            line-height: 48px;
+        }
+     }
+     @media screen and (max-width: 950px){
+        .stepArea{
+            flex-direction: column;
+            gap: 16px !important;
+        }
+        .productImg{
+            img{
+                display: none;
+            }
+        }
      }
 `;
