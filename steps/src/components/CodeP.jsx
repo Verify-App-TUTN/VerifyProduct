@@ -76,7 +76,7 @@ const Div = styled.div`
                     border: 1px solid #009F78;
                 }
             }
-            button{
+            .button{
                width: max-content;
                background: #009F78;
             }

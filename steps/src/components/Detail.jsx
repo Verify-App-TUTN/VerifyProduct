@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'react-phone-number-input/style.css';
-import PhoneInput from 'react-phone-number-input';
+import PhoneInputWithCountry from "react-phone-number-input/react-hook-form"
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import Arrows from '../assets/arrows.png';
 
 const Detail = ({ next }) => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const [value, setValue] = useState();
+    const { register, control, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         next();
         console.log(data)
@@ -27,10 +26,10 @@ const Detail = ({ next }) => {
                 </div>
                 <div className="form-control">
                     <label htmlFor="tel">Phone Number</label>
-                    <PhoneInput
-                        placeholder="Enter phone number"
-                        value={value}
-                        onChange={setValue}
+                    <PhoneInputWithCountry
+                        name="phoneInputWithCountrySelect"
+                        control={control}
+                        rules={{ required: true, minLength: 6, maxLength: 12 }}
                         className="phone"
                     />
                 </div>
@@ -43,7 +42,7 @@ const Detail = ({ next }) => {
                     </select>
                 </div>
                 <div className="form-control-check">
-                    <input type="checkbox" name="check" id="check" />
+                    <input type="checkbox" name="check" id="check"  {...register('check', { required: true })} />
                     <label htmlFor="check">Remember me</label>
                 </div>
                 <button className='btn'>Next</button>
