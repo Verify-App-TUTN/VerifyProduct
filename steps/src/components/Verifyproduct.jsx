@@ -109,7 +109,7 @@ const Section = styled.section`
               .leftSide {
                 flex: 1;
                 padding: 1.5rem;
-                padding-left: 4rem !important;
+                padding-left: 4rem;
                 margin-bottom: 30px;
               .reviewP {
                 display: flex;
@@ -209,4 +209,88 @@ const Section = styled.section`
               }
             }
         }
-              `;
+@media screen and (max-width: 1437px){
+          .leftSide {
+            padding: 0 !important;
+            padding-left: 0 !important;
+          }
+          .rightSide {
+            img{
+              height: 48rem !important;
+              left: 500px;
+            }
+          }
+        }
+@media screen and (max-width: 1200px) {
+    .title h2,
+    .moreP h4 {
+        font-size: 40px !important;
+    }
+     .title h5,
+    .reviewP h3 {
+        font-size: 25px;
+    }
+    .productDetails h6 {
+        font-size: 20px;
+    }
+    .productImages {
+        gap: 2rem;
+    }
+    .productImages img {
+        width: 50% !important;
+    }
+    .rightSide img {
+        height: 40rem !important;
+        left: 430px;
+        top: -200px;
+    }
+    .reviewP p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 998px) {
+  .title h2,
+  .moreP h4 {
+    font-size: 30px !important;
+  }
+  .title h5 {
+    font-size: 18px !important;
+  }
+  .productDetails h6 {
+    font-size: 15px !important;
+  }
+  .productImages {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productImages img {
+    width: 90% !important;
+  }
+  .reviewProduct {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightSide img {
+    position: relative;
+    left: 0 !important;
+  }
+  .comments{
+    #comments{
+      width: 100% !important;
+    }
+  }
+}
+@media screen and (max-width: 645px) {
+    padding: 1rem !important;    
+  .productImages img {
+    width: 100% !important;
+    height: 306px !important;
+  }
+  .rightSide img {
+    height: 100% !important;
+    width: 100% !important;
+    top: -462px !important;
+  }
+}
+
+ `;
