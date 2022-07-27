@@ -49,7 +49,7 @@ const VerifyForm = () => {
                 </div>
             </div>
             <div className="formsArea">
-                {/* <Form /> */}
+                <Form />
                 <div className="productImg">
                     <img src={Product} alt="" />
                 </div>
@@ -130,5 +130,8 @@ const Section = styled.section`
                 display: none;
             }
         }
+     }
+     @media screen and (max-width: 870px){
+        overflow: hidden;
      }
 `;

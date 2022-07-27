@@ -159,4 +159,16 @@ const Div = styled.div`
             }
         }
      }
+     @media screen and (max-width: 710px){
+        .Form{
+            .form-control {
+                input,select{
+                    width: 100%;
+                }
+                .phone{
+                    width: 100%;
+                }
+            }
+        }
+     }
 `;
