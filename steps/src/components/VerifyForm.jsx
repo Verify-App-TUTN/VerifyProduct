@@ -114,6 +114,7 @@ const Section = styled.section`
      @media screen and (max-width: 1120px){
         .formsArea{
             gap: 2rem;
+            width: 100%;
         }
         .stepTitle{
             font-size: 36px;
@@ -133,5 +134,13 @@ const Section = styled.section`
      }
      @media screen and (max-width: 870px){
         overflow: hidden;
+        .formsArea{
+            gap:0;
+        }
+        .stepArea{
+            img{
+                width: 90% !important;
+            }
+        }
      }
 `;

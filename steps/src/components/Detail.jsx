@@ -161,13 +161,28 @@ const Div = styled.div`
      }
      @media screen and (max-width: 710px){
         .Form{
-            .form-control {
-                input,select{
-                    width: 100%;
+            width: 100%;
+        }
+        .arrowImg{
+            left: 0 !important;
+            img{
+                height: 45rem !important;
+            }
+        }
+     }
+     @media screen and (max-width: 410px){
+        .Form{
+            .form-control{
+                input,select,.phone{
+                    background: transparent;
                 }
-                .phone{
-                    width: 100%;
-                }
+            }
+        }
+        .arrowImg{
+            top: -78px !important;
+            left: -52px !important;
+            img{
+                height: 35rem !important;
             }
         }
      }
