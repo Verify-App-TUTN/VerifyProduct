@@ -221,6 +221,13 @@ const Section = styled.section`
             }
           }
         }
+        @media screen and (max-width:1350px){
+          .rightSide {
+            img{
+              left: 440px !important;
+            }
+          }
+        }
 @media screen and (max-width: 1200px) {
     .title h2,
     .moreP h4 {
@@ -241,12 +248,19 @@ const Section = styled.section`
     }
     .rightSide img {
         height: 40rem !important;
-        left: 430px;
-        top: -200px;
+        left: 430px !important;
+        top: -200px !important;
     }
     .reviewP p {
         font-size: 18px;
     }
+}
+@media screen and (max-width: 1098px){
+  .rightSide{
+    img{
+      left:391px !important;
+    }
+  }
 }
 @media screen and (max-width: 998px) {
   .title h2,
