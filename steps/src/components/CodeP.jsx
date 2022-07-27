@@ -133,5 +133,8 @@ const Div = styled.div`
                     height: 28rem;
                 }
             }
+            .error{
+                font-size: 13px;
+            }
         }
 `;
