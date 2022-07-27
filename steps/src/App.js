@@ -1,9 +1,11 @@
+import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Logo from './assets/logo.png';
 import ProductN from './components/ProductN';
 import Footer from './components/Footer';
 import VerifyForm from './components/VerifyForm';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -17,8 +19,12 @@ function App() {
         buttonText="Sign Up"
         button={true}
       />
-      <VerifyForm />
-      {/* <ProductN /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route index path='/' element={<ProductN />} />
+          <Route path='Verify' element={<VerifyForm />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );
