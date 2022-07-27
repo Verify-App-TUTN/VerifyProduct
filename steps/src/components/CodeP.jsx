@@ -1,16 +1,16 @@
 import React from 'react';
-import Verifyproduct from './Verifyproduct';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
 import Arrows from '../assets/arrows.png';
+import { useNavigate } from 'react-router-dom';
 
 const CodeP = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    let navigate = useNavigate();
     const onSubmit = data => {
-        <Verifyproduct data={data} />
-    };
-
-    console.log(errors)
+        console.log(data);
+        navigate("/VerifyP", { replace: true })
+    }
     return (
         <Div>
             <h4>Kindly Fill in Your Details</h4>

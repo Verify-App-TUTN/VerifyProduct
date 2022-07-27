@@ -15,6 +15,9 @@
   width: 80%;
   margin: 0 auto !important;
 }
+a {
+  color: #fff;
+}
 .btn {
   border: 1px solid;
   padding: 10px 45px;

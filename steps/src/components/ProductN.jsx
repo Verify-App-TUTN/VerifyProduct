@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FaChevronLeft } from 'react-icons/fa';
 import Coke from '../assets/coke.png';
 import Arrow from '../assets/arrows.png';
+import { Link } from 'react-router-dom';
 
 const ProductN = () => {
     return (
@@ -26,7 +27,7 @@ const ProductN = () => {
                             </span>
                             <span>product from our list of Product Categories</span>
                         </p>
-                        <button className="btn">Verify Product</button>
+                        <button className="btn"><Link to="Verify">Verify Product</Link></button>
                     </div>
                     <div className="productImages">
                         <div className='coke'><img src={Coke} alt="productImg" /></div>

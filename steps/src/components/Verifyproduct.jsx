@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import Coke from '../assets/coke.png';
+import Rating from '../assets/rating.png';
 
 const Verifyproduct = () => {
   return (
-    <div>
-      Verify
+    <div className='container'>
+      <img src={Coke} alt="" />
     </div>
   )
 }
