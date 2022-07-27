@@ -9,7 +9,7 @@ const CodeP = () => {
     let navigate = useNavigate();
     const onSubmit = data => {
         console.log(data);
-        navigate("/VerifyP", { replace: true })
+        navigate("/verifyproduct", { replace: true })
     }
     return (
         <Div>

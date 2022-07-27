@@ -13,8 +13,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path='/' element={<ProductN />} />
-          <Route path='Verify' element={<VerifyForm />} />
-          <Route path='VerifyP' element={<Verifyproduct />} />
+          <Route path='verifyform' element={<VerifyForm />} />
+          <Route path='verifyproduct' element={<Verifyproduct />} />
         </Routes>
       </BrowserRouter>
       <Footer />

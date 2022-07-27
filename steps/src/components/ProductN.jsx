@@ -40,7 +40,7 @@ const ProductN = () => {
                                 </span>
                                 <span>product from our list of Product Categories</span>
                             </p>
-                            <button className="btn"><Link to="Verify">Verify Product</Link></button>
+                            <button className="btn"><Link to="verifyform">Verify Product</Link></button>
                         </div>
                         <div className="productImages">
                             <div className='coke'><img src={Coke} alt="productImg" /></div>
