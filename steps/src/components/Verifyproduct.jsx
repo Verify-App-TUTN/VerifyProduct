@@ -110,6 +110,7 @@ const Section = styled.section`
                 flex: 1;
                 padding: 1.5rem;
                 padding-left: 4rem !important;
+                margin-bottom: 30px;
               .reviewP {
                 display: flex;
                 flex-direction: column;
@@ -197,15 +198,15 @@ const Section = styled.section`
             }
               .rightSide {
                 flex: 1;
-              overflow: hidden;
+                overflow: hidden;
               img {
                 position: absolute;
-              left: 600px;
-              top: -290px;
-              height: 52rem;
-              z-index: -1;
-              max-width: 100%;
-             }
+                top: -277px;
+                left: 541px;
+                height: 52rem;
+                max-width: 100%;
+                z-index: -1;
+              }
             }
         }
               `;
