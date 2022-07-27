@@ -4,38 +4,52 @@ import { FaChevronLeft } from 'react-icons/fa';
 import Coke from '../assets/coke.png';
 import Arrow from '../assets/arrows.png';
 import { Link } from 'react-router-dom';
+import Header from './Header';
+import Logo from '../assets/logo.png';
 
 const ProductN = () => {
     return (
-        <div className="container">
-            <Section>
-                <div className='goBack'>
-                    <FaChevronLeft />
-                    <span>Back</span>
-                </div>
-                <div className="productContainer">
-                    <div className="productText">
-                        <h2>Product Name</h2>
-                        <p>
-                            <span>
-                                Get accesss to select your choice product from our list of Product Categories
-                                Get accesss to
-                            </span>
-                            <span>
-                                select your choice product from our list of Product Categories
-                                Get accesss to select your choice
-                            </span>
-                            <span>product from our list of Product Categories</span>
-                        </p>
-                        <button className="btn"><Link to="Verify">Verify Product</Link></button>
+        <>
+            <Header
+                img={Logo}
+                link1="Integrate Product"
+                link2="About Us"
+                link3="Contact Us"
+                link4="Sign Up"
+                buttonText="Sign Up"
+                button={true}
+                div={false}
+            />
+            <div className="container">
+                <Section>
+                    <div className='goBack'>
+                        <FaChevronLeft />
+                        <span>Back</span>
                     </div>
-                    <div className="productImages">
-                        <div className='coke'><img src={Coke} alt="productImg" /></div>
-                        <div className='img'><img src={Arrow} alt="productImg" /></div>
+                    <div className="productContainer">
+                        <div className="productText">
+                            <h2>Product Name</h2>
+                            <p>
+                                <span>
+                                    Get accesss to select your choice product from our list of Product Categories
+                                    Get accesss to
+                                </span>
+                                <span>
+                                    select your choice product from our list of Product Categories
+                                    Get accesss to select your choice
+                                </span>
+                                <span>product from our list of Product Categories</span>
+                            </p>
+                            <button className="btn"><Link to="Verify">Verify Product</Link></button>
+                        </div>
+                        <div className="productImages">
+                            <div className='coke'><img src={Coke} alt="productImg" /></div>
+                            <div className='img'><img src={Arrow} alt="productImg" /></div>
+                        </div>
                     </div>
-                </div>
-            </Section>
-        </div>
+                </Section>
+            </div>
+        </>
     )
 }
 

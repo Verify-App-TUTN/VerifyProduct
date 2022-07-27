@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import Logo from '../assets/logo.png'
 import styled from 'styled-components';
 import Coke from '../assets/coke.png';
 import Rating from '../assets/rating.png';
@@ -7,47 +9,59 @@ import Arrow from '../assets/arrows.png';
 
 const Verifyproduct = () => {
   return (
-    <Section className='container'>
-      <div className="title">
-        <h2>Thank You for Verifying this Product.</h2>
-        <h5>This is an Original product of Company name</h5>
-      </div>
-      <div className="productDetails">
-        <h6>Product Details</h6>
-        <div className="productImages">
-          <img src={Coke} alt="Coke" />
-          <img src={Rating} alt="Details" />
+    <>
+      <Header
+        img={Logo}
+        link1="Integrate Product"
+        link2="About Us"
+        link3="Contact Us"
+        link4="Sign Up"
+        buttonText="Sign Up"
+        button={false}
+        div={true}
+      />
+      <Section className='container'>
+        <div className="title">
+          <h2>Thank You for Verifying this Product.</h2>
+          <h5>This is an Original product of Company name</h5>
         </div>
-      </div>
-      <div className="reviewProduct">
-        <div className="leftSide">
-          <div className="reviewP">
-            <h3>Kindly Review this Product</h3>
-            <p>Give a star rating</p>
-            <div className="starsArea">
-              <img src={Star} alt="star" />
-              <img src={Star} alt="star" />
-              <img src={Star} alt="star" />
-              <img src={Star} alt="star" />
-              <img src={Star} alt="star" />
+        <div className="productDetails">
+          <h6>Product Details</h6>
+          <div className="productImages">
+            <img src={Coke} alt="Coke" />
+            <img src={Rating} alt="Details" />
+          </div>
+        </div>
+        <div className="reviewProduct">
+          <div className="leftSide">
+            <div className="reviewP">
+              <h3>Kindly Review this Product</h3>
+              <p>Give a star rating</p>
+              <div className="starsArea">
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
+                <img src={Star} alt="star" />
+              </div>
+            </div>
+            <form className="comments">
+              <label htmlFor="comments" className="commentsLabel">Comments</label>
+              <textarea name="comments" id="comments" cols="30" rows="10"
+                placeholder="Type your reviews here,............"></textarea>
+              <button className="btn">Submit</button>
+            </form>
+            <div className="moreP">
+              <h4>Verify Another Product?</h4>
+              <button className="btn">Verify Now</button>
             </div>
           </div>
-          <form className="comments">
-            <label htmlFor="comments" className="commentsLabel">Comments</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"
-              placeholder="Type your reviews here,............"></textarea>
-            <button className="btn">Submit</button>
-          </form>
-          <div className="moreP">
-            <h4>Verify Another Product?</h4>
-            <button className="btn">Verify Now</button>
+          <div className="rightSide">
+            <img src={Arrow} alt="" />
           </div>
         </div>
-        <div className="rightSide">
-          <img src={Arrow} alt="" />
-        </div>
-      </div>
-    </Section>
+      </Section>
+    </>
   )
 }
 

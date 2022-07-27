@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Header from './Header';
+import Logo from '../assets/logo.png'
 import styled from 'styled-components';
 import { FaChevronLeft } from 'react-icons/fa';
 import Detail from './Detail';
@@ -27,34 +29,46 @@ const VerifyForm = () => {
     const Form = () => activeState === 0 ? <Detail next={next} /> : <CodeP prev={prev} />
 
     return (
-        <Section className='container'>
-            {activeState === 0 ? (
-                <div className='goBack'>
-                    <FaChevronLeft />
-                    <span>Back</span>
+        <>
+            <Header
+                img={Logo}
+                link1="Integrate Product"
+                link2="About Us"
+                link3="Contact Us"
+                link4="Sign Up"
+                buttonText="Sign Up"
+                button={false}
+                div={true}
+            />
+            <Section className='container'>
+                {activeState === 0 ? (
+                    <div className='goBack'>
+                        <FaChevronLeft />
+                        <span>Back</span>
+                    </div>
+                ) : <div className='goBack2'></div>}
+                <h2 className="stepTitle">
+                    <span>The Platform for</span>
+                    <span> Verifying Products</span>
+                </h2>
+                <div className="stepsProgress">
+                    <div className="stepArea">
+                        <p>Just 2 Steps Away</p>
+                        {activeState === 0 ? (
+                            <img src={notComplete} alt="" />
+                        ) : (
+                            <img src={Complete} alt="" />
+                        )}
+                    </div>
                 </div>
-            ) : <div className='goBack2'></div>}
-            <h2 className="stepTitle">
-                <span>The Platform for</span>
-                <span> Verifying Products</span>
-            </h2>
-            <div className="stepsProgress">
-                <div className="stepArea">
-                    <p>Just 2 Steps Away</p>
-                    {activeState === 0 ? (
-                        <img src={notComplete} alt="" />
-                    ) : (
-                        <img src={Complete} alt="" />
-                    )}
+                <div className="formsArea">
+                    <Form />
+                    <div className="productImg">
+                        <img src={Product} alt="" />
+                    </div>
                 </div>
-            </div>
-            <div className="formsArea">
-                <Form />
-                <div className="productImg">
-                    <img src={Product} alt="" />
-                </div>
-            </div>
-        </Section>
+            </Section>
+        </>
     )
 }
 
