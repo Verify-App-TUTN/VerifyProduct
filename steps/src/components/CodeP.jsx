@@ -99,4 +99,39 @@ const Div = styled.div`
                 height: 50rem;
             }
         }
+        @media screen and (max-width: 1200px){
+            .Form{
+               .form-control {
+                  input,select{
+                     width: 100%;
+                 }
+                  .phone{
+                      width: 100%;
+                   }
+                }
+            }
+        }
+        @media screen and (max-width: 950px){
+            margin-bottom: 10vh;
+            .arrowImg{
+                right: 0 !important;
+                top: -214px;
+            }
+        }
+        @media screen and (max-width: 710px){
+            .arrowImg{
+                img{
+                    height: 35rem;
+                }
+            }
+        }
+        @media screen and (max-width: 410px){
+            .arrowImg{
+                top: -150px;
+                right: -30px !important;
+                img{
+                    height: 28rem;
+                }
+            }
+        }
 `;
