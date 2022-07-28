@@ -199,7 +199,7 @@ const Section = styled.section`
             }
         }
      }
-     @media screen and (max-width: 410px){
+     @media screen and (max-width: 500px){
         .productImages{
             .img{
                 left: 0;
@@ -209,7 +209,7 @@ const Section = styled.section`
             }
         }
      }
-     @media screen and (max-width: 395px){
+     @media screen and (max-width: 405px){
         .productImages{
             .img{
                 left: -22px;
@@ -218,6 +218,13 @@ const Section = styled.section`
                     width: 325px;
                     height: 24em;
                 }
+            }
+        }
+     }
+     @media screen and (max-width: 310px){
+        .productImages{
+            .img{
+               display: none;
             }
         }
      }
