@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaStar } from 'react-icons/fa';
+import { IoStar } from 'react-icons/io5';
 import Header from './Header';
 import Logo from '../assets/logo.png'
 import styled from 'styled-components';
@@ -9,7 +9,7 @@ import Arrow from '../assets/arrows.png';
 
 const Verifyproduct = () => {
   const [starImg, setStar] = useState(0);
-  const [hover, setHover] = useState(0);
+  const [hover, setHover] = useState(0)
 
   return (
     <>
@@ -51,7 +51,7 @@ const Verifyproduct = () => {
                       onMouseLeave={() => setStar(index)}
                       key={index}
                     >
-                      <FaStar className='star' />
+                      <IoStar className='star' />
                     </span>
                   )
                 })}
@@ -69,7 +69,7 @@ const Verifyproduct = () => {
             </div>
           </div>
           <div className="rightSide">
-            <img src={Arrow} alt="" />
+            <img src={Arrow} alt="arrow" />
           </div>
         </div>
       </Section>
