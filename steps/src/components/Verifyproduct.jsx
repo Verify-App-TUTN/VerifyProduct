@@ -372,6 +372,9 @@ const Section = styled.section`
   .title h5 {
     font-size: 18px !important;
   }
+  .productDetails{
+    margin-bottom: 3rem;
+  }
   .productDetails h6 {
     font-size: 15px !important;
   }
@@ -385,6 +388,9 @@ const Section = styled.section`
   .reviewProduct {
     flex-direction: column;
     align-items: center;
+  }
+  .leftSide{
+    width: 90%;
   }
   .rightSide img {
     position: relative;
@@ -406,6 +412,9 @@ const Section = styled.section`
     height: 100% !important;
     width: 100% !important;
     top: -462px !important;
+  }
+  .leftSide{
+    width: 100%;
   }
 }
  `;
