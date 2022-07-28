@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Coke from '../assets/coke.png';
 import Rating from '../assets/rating.png';
 import Arrow from '../assets/arrows.png';
+import CheckImg from '../assets/mdcheck.png';
 
 const Verifyproduct = () => {
   const [starImg, setStar] = useState(0);
@@ -73,11 +74,59 @@ const Verifyproduct = () => {
           </div>
         </div>
       </Section>
+      <Modal>
+        <Card>
+          <img src={CheckImg} alt="" />
+          <Recommendaions>
+            <span>Thank you for the review.
+              <span>we will pass it accross the</span>
+              <span> required company</span>
+            </span>
+          </Recommendaions>
+          <button className="btn">Verify Another Product</button>
+        </Card>
+      </Modal>
     </>
   )
 }
 
 export default Verifyproduct;
+
+const Modal = styled.div`
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     text-align: center;
+     background-color: #21202060;
+     place-items: center;
+     width: 100vw;
+     height: 100%;
+`
+const Card = styled.div`
+      background-color: #fff;
+      width: 571px;
+      height: 527px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      border-radius: 7.49738px;
+`
+
+const Recommendaions = styled.h2`
+     display: flex;
+     color: #000D09;
+     font-weight: 400;
+     font-size: 29.9895px;
+     line-height: 34px;
+     span{
+       display: block;
+      }
+`
 
 const Section = styled.section`
    .on {
