@@ -253,14 +253,14 @@ const Section = styled.section`
               left: 500px;
             }
           }
-        }
-        @media screen and (max-width:1350px){
+        }  
+@media screen and (max-width:1350px){
           .rightSide {
             img{
               left: 440px !important;
             }
           }
-        }
+}
 @media screen and (max-width: 1200px) {
     .title h2,
     .moreP h4 {
@@ -339,5 +339,4 @@ const Section = styled.section`
     top: -462px !important;
   }
 }
-
  `;
