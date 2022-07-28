@@ -125,6 +125,12 @@ const Card = styled.div`
       button{
         background: #009F78;
       }
+      @media screen  and (max-width:580px){
+        width: 97% !important;
+        img{
+          width: 123px;
+        }
+      }
 `
 
 const Recommendaions = styled.h2`
@@ -135,6 +141,10 @@ const Recommendaions = styled.h2`
      line-height: 34px;
      span{
        display: block;
+      }
+      @media screen  and (max-width:580px){
+        font-size: 25px;
+        line-height: 28px;
       }
 `
 
@@ -381,7 +391,7 @@ const Section = styled.section`
     left: 0 !important;
   }
   .comments{
-    #comments{
+    .commentsm{
       width: 100% !important;
     }
   }

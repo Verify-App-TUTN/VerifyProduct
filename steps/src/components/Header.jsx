@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import styled from 'styled-components';
 
 
-const Header = ({ img, link1, link2, link3, link4, buttonText, button,div }) => {
+const Header = ({ img, link1, link2, link3, link4, buttonText, button, div }) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const html = document.querySelector("html");
     html.addEventListener("click", (e) => setIsNavOpen(false));
@@ -29,7 +29,7 @@ const Header = ({ img, link1, link2, link3, link4, buttonText, button,div }) => 
                 <li className='none'>{link4}</li>
             </ul>
             {button && <button className='btn'>{buttonText}</button>}
-            {div && <div></div>}
+            {div && <div className='lastDiv'></div>}
         </Nav>
     )
 }
@@ -71,7 +71,7 @@ const Nav = styled.nav`
         @media screen and (max-width: 930px) {
            position: relative;
            z-index: 999;
-           button{
+           button,.lastDiv{
             display: none;
            }
            .toggle{
