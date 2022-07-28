@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaStar } from 'react-icons/fa';
 import Header from './Header';
 import Logo from '../assets/logo.png'
 import styled from 'styled-components';
 import Coke from '../assets/coke.png';
 import Rating from '../assets/rating.png';
-import Star from '../assets/Star1.png';
 import Arrow from '../assets/arrows.png';
 
 const Verifyproduct = () => {
+  const [starImg, setStar] = useState(0);
+  const [hover, setHover] = useState(0);
+
   return (
     <>
       <Header
@@ -38,16 +41,25 @@ const Verifyproduct = () => {
               <h3>Kindly Review this Product</h3>
               <p>Give a star rating</p>
               <div className="starsArea">
-                <img src={Star} alt="star" />
-                <img src={Star} alt="star" />
-                <img src={Star} alt="star" />
-                <img src={Star} alt="star" />
-                <img src={Star} alt="star" />
+                {[...Array(5)].map((star, index) => {
+                  index += 1
+                  return (
+                    <span
+                      className={index <= (hover || starImg) ? "on" : "off"}
+                      onClick={() => setStar(index)}
+                      onMouseEnter={() => setHover(index)}
+                      onMouseLeave={() => setStar(index)}
+                      key={index}
+                    >
+                      <FaStar className='star' />
+                    </span>
+                  )
+                })}
               </div>
             </div>
             <form className="comments">
               <label htmlFor="comments" className="commentsLabel">Comments</label>
-              <textarea name="comments" id="comments" cols="30" rows="10"
+              <textarea name="comments" className="commentsm" cols="30" rows="10"
                 placeholder="Type your reviews here,............"></textarea>
               <button className="btn">Submit</button>
             </form>
@@ -68,6 +80,16 @@ const Verifyproduct = () => {
 export default Verifyproduct;
 
 const Section = styled.section`
+   .on {
+   .star{
+     color: #F5BD25 !important;
+    }
+   }
+  .off {
+    .star{
+      color: #D9D9D9  !important;
+    }
+  }
           .title {
               display: flex;
               flex-direction: column;
@@ -145,14 +167,11 @@ const Section = styled.section`
               .starsArea {
                 display: flex;
                 gap: 8px;
-               img {
-                 width: 40px;
+               .star {
+                 font-size: 40px;
                  height: 40px;
                  cursor: pointer;
                  transition: all 300ms ease;
-                 &:hover {
-                  transform: scale(1.5);
-                 }
                 }
               }
             }
@@ -168,7 +187,7 @@ const Section = styled.section`
                 font-weight: 700;
                 color: #000D09;
               }
-              #comments {
+              .commentsm {
                 width: 85%;
                 height: 136px;
                 padding: 16px;
@@ -177,12 +196,12 @@ const Section = styled.section`
                 border: 1px solid #b5e6dd;
                 border-radius: 8px;
                 opacity: 0.5;
-                font-size: 14px;
-                font-weight: 400;
+                font-size: 16px !important;
+                font-weight: 400 !important;
                 color: #000D09 !important;
                &::placeholder {
-                 color: #000d09;
-                 font-size: 14px;
+                 color: #000d09 !important;
+                 font-size: 16px !important;
                  font-weight: 400;
                 }
                &:focus {
