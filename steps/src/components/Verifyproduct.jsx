@@ -2,16 +2,23 @@ import React, { useState } from 'react';
 import { IoStar } from 'react-icons/io5';
 import Header from './Header';
 import Logo from '../assets/logo.png'
-import styled from 'styled-components';
 import Coke from '../assets/coke.png';
 import Rating from '../assets/rating.png';
 import Arrow from '../assets/arrows.png';
 import CheckImg from '../assets/mdcheck.png';
+import styled from 'styled-components';
+import { useForm } from 'react-hook-form';
 
 const Verifyproduct = () => {
   const [starImg, setStar] = useState(0);
-  const [hover, setHover] = useState(0)
+  const [hover, setHover] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = data => { console.log(data); setShowModal(true) }
+  const html = document.querySelector("html");
+  html.addEventListener("click", (e) => setShowModal(false));
   return (
     <>
       <Header
@@ -58,9 +65,9 @@ const Verifyproduct = () => {
                 })}
               </div>
             </div>
-            <form className="comments">
+            <form className="comments" onSubmit={handleSubmit(onSubmit)}>
               <label htmlFor="comments" className="commentsLabel">Comments</label>
-              <textarea name="comments" className="commentsm" cols="30" rows="10"
+              <textarea name="comments" className="commentsm" cols="30" rows="10" {...register("comments", { required: true, minLength: 6 })}
                 placeholder="Type your reviews here,............"></textarea>
               <button className="btn">Submit</button>
             </form>
@@ -74,7 +81,7 @@ const Verifyproduct = () => {
           </div>
         </div>
       </Section>
-      <Modal>
+      <Modal showModal={!showModal}>
         <Card>
           <img src={CheckImg} alt="" />
           <Recommendaions>
@@ -93,7 +100,7 @@ const Verifyproduct = () => {
 export default Verifyproduct;
 
 const Modal = styled.div`
-     display: flex;
+     display: ${({ showModal }) => (!showModal ? 'flex' : 'none')};
      justify-content: center;
      align-items: center;
      position: fixed;
@@ -115,6 +122,9 @@ const Card = styled.div`
       align-items: center;
       gap: 4rem;
       border-radius: 7.49738px;
+      button{
+        background: #009F78;
+      }
 `
 
 const Recommendaions = styled.h2`
