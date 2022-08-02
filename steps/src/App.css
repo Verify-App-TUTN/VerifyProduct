@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@font-face {
+  font-family: "Quincy CF";
+  src: url("./Demo_Fonts/Fontspring-DEMO-quincycf-regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quincy CF";
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto !important;
+}
+a {
+  color: #fff;
+}
+.btn {
+  border: 1px solid;
+  padding: 10px 45px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+@media screen and (max-width: 1058px) {
+  .container {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container {
+    width: 100% !important;
+    margin: 0;
+  }
+  .ddd {
+    padding-bottom: 35vh;
+  }
+}
