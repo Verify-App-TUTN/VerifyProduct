@@ -21,8 +21,8 @@ const Landing = () => {
                 link3="Contact Us"
                 link4="Sign Up"
                 buttonText="Sign Up"
-                button={false}
-                div={true}
+                button={true}
+                div={false}
             />
             <Section  className='container '>
                 <section id="top-info">
