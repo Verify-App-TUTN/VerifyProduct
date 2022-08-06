@@ -91,49 +91,57 @@ const Landing = () => {
           </div>
         </div>
       </Section>
-      <Section>
-        <div className="colored-bg">
-          <div id="offers">
+      <Div>
+        <Section>
+          <div className="container">
             <div>
-              <img src={Image2} alt="" className="image-2" />
+              <div id="offers">
+                <div>
+                  <img src={Image2} alt="" className="image-2" />
+                </div>
+                <div>
+                  <h1 className="heading">
+                    We offer a close range monitoring system.
+                  </h1>
+                  <p className="text">
+                    Report Fake Products You’ve Come Acrossed With Report Fake
+                    Products You’ve Come Acrossed With Report Fake Products
+                    You’ve Come Acrossed With
+                  </p>
+                  <button className="btn">Get Started</button>
+                </div>
+              </div>
             </div>
             <div>
-              <h1 className="heading">
-                We offer a close range monitoring system.
-              </h1>
-              <p className="text">
-                Report Fake Products You’ve Come Acrossed With Report Fake
-                Products You’ve Come Acrossed With Report Fake Products You’ve
-                Come Acrossed With
-              </p>
-              <button className="btn">Get Started</button>
+              <div id="category">
+                <div className="left">
+                  <p className="heading">
+                    We Categorize your products for slaying Assessibility
+                  </p>
+                  <p className="text">
+                    Get accesss to select your choice product from our list of
+                    Product Categories Get accesss to select your choice product
+                  </p>
+                  <button className="btn">Get Started</button>
+                </div>
+                <div>
+                  <img src={Image3} alt="" className="image-3" />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="colored-bg">
-          <div id="category">
-            <div className="left">
-              <p className="heading">
-                We Categorize your products for slaying Assessibility
-              </p>
-              <p className="text">
-                Get accesss to select your choice product from our list of
-                Product Categories Get accesss to select your choice product
-              </p>
-              <button className="btn">Get Started</button>
-            </div>
-            <div>
-              <img src={Image3} alt="" className="image-3" />
-            </div>
-          </div>
-        </div>
-      </Section>
+        </Section>
+      </Div>
     </>
   );
 };
 
 export default Landing;
-
+const Div = styled.main`
+  background: rgba(156, 191, 182, 0.2);
+  opacity: 1;
+  padding: 2rem 1rem;
+`;
 const Section = styled.main`
   .section {
     margin: 1rem 0;
@@ -279,12 +287,6 @@ const Section = styled.main`
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .colored-bg {
-    background: rgba(156, 191, 182, 0.2);
-    opacity: 1;
-    padding: 2rem 1rem;
   }
   .wLg {
     width: 100%;
