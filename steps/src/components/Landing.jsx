@@ -25,13 +25,21 @@ const Landing = () => {
       />
       <Section className="container">
         <section id="top-info">
-          <div className="text">
-            <h1>Integrate Your Products Into Our Database</h1>
-            <span>
-              Get accesss to select your choice product from our list of Product
-              Categories Get accesss to select your choice product from our list
-              of Product Categories Get accesss to
-            </span>
+          <div className="textedh1">
+            <h1>
+              <span>Integrate Your</span>
+              <span> Products Into</span> <span>Our Database</span>
+            </h1>
+            <p>
+              <span>
+                Get accesss to select your choice product from our list of
+                Product Categories Get
+              </span>
+              <span>
+                accesss to select your choice product from our list of Product
+                Categories Get accesss to
+              </span>
+            </p>
             <div className="button">
               <button className="btn">Get Started</button>
             </div>
@@ -124,7 +132,7 @@ const Landing = () => {
 
 export default Landing;
 
-const Section = styled.section`
+const Section = styled.main`
   .section {
     margin: 1rem 0;
     padding: 1rem;
@@ -159,23 +167,29 @@ const Section = styled.section`
     padding: 1rem;
     margin-bottom: 7rem !important;
   }
-  #top-info .text {
+  #top-info .textedh1 {
     padding: 10px;
     text-align: left;
   }
 
-  #top-info .text h1 {
+  #top-info .textedh1 h1 {
     color: #000d09;
     font-weight: 900;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 72px;
+    line-height: 80px;
+    span {
+      display: block;
+    }
   }
 
-  #top-info .text span {
+  #top-info .textedh1 p {
     color: #000d09;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    span {
+      display: block;
+    }
   }
   /* #top-info .text span{
     color: #000D09;
