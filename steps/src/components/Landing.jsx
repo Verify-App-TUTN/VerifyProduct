@@ -52,7 +52,7 @@ const Landing = () => {
           <div class="head">
             <p class="heading">Why</p>
             <span>
-              <img src={Whylogo} alt="" />
+              <img src={Whylogo} alt="" className="wLg" />
             </span>
             <p class="heading">?</p>
           </div>
@@ -170,13 +170,16 @@ const Section = styled.main`
   #top-info .textedh1 {
     padding: 10px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 20px;
   }
 
   #top-info .textedh1 h1 {
     color: #000d09;
     font-weight: 900;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 40px;
     span {
       display: block;
     }
@@ -255,6 +258,7 @@ const Section = styled.main`
 
   #why-verify .head {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
   }
 
@@ -279,6 +283,9 @@ const Section = styled.main`
     background: rgba(156, 191, 182, 0.2);
     opacity: 1;
     height: 750px;
+  }
+  .wLg {
+    width: 100%;
   }
   #offers {
     padding: 0px 60px;
@@ -315,7 +322,7 @@ const Section = styled.main`
   }
 
   #category {
-    padding: 0px 40px;
+    padding: 0px 15px;
     margin-top: 10px;
   }
 
