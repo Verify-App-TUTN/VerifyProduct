@@ -24,7 +24,7 @@ const Landing = () => {
         div={false}
       />
       <Section className="container">
-        <section id="top-info">
+        <div id="top-info">
           <div className="textedh1">
             <h1>
               <span>Integrate Your</span>
@@ -47,8 +47,8 @@ const Landing = () => {
           <div className="top-image">
             <img src={Image1} alt="" className="image-1" />
           </div>
-        </section>
-        <section id="why-verify">
+        </div>
+        <div id="why-verify">
           <div class="head">
             <p class="heading">Why</p>
             <span>
@@ -89,7 +89,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </Section>
       <Section>
         <div className="colored-bg">
@@ -109,6 +109,8 @@ const Landing = () => {
               <button className="btn">Get Started</button>
             </div>
           </div>
+        </div>
+        <div className="colored-bg">
           <div id="category">
             <div className="left">
               <p className="heading">
@@ -282,13 +284,12 @@ const Section = styled.main`
   .colored-bg {
     background: rgba(156, 191, 182, 0.2);
     opacity: 1;
-    height: 750px;
+    padding: 2rem 1rem;
   }
   .wLg {
     width: 100%;
   }
   #offers {
-    padding: 0px 60px;
     padding-top: 20px;
   }
   .image-1 {
@@ -322,7 +323,6 @@ const Section = styled.main`
   }
 
   #category {
-    padding: 0px 15px;
     margin-top: 10px;
   }
 
@@ -455,7 +455,6 @@ const Section = styled.main`
     }
 
     #offers {
-      margin: 70px 70px;
       display: flex;
       justify-content: space-between;
     }
@@ -493,8 +492,10 @@ const Section = styled.main`
     }
 
     #category {
-      margin: 100px;
+      padding: 1rem;
       display: flex;
+      align-items: center;
+      margin: 0;
       /* justify-content: space-between; */
     }
 
