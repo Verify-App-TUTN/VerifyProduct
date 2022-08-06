@@ -277,12 +277,6 @@ const Section = styled.main`
     font-size: 28px;
     line-height: 24px;
   }
-  /* #why-verify .card-body .heading {
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 24px;
-} */
-
   #why-verify .card-body .text {
     font-weight: 400;
     font-size: 16px;
