@@ -350,19 +350,70 @@ const Section = styled.main`
     background: #241818;
   }
 
-  @media screen and (min-width: 1201px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     #top-info {
       display: flex;
       flex-direction: row;
     }
 
-    #top-info .text h1 {
-      color: #000d09;
-      font-weight: 900;
-      font-size: 70px;
+    #why-verify {
+      // margin: 10px;
+    }
+
+    #why-verify .head {
+      display: flex;
+      justify-content: center;
+    }
+    #why-verify .card-block {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 25px;
+      /* border: 1px solid green; */
+    }
+
+    .image-1 {
+      width: 620px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+      width: 300px;
+      height: 250px;
+    }
+
+    #category {
+      margin: 70px;
+      display: flex;
+      justify-content: space-between;
+    }
+    #offers {
+      margin: 70px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 452px) and (max-width: 1023px) {
+    #why-verify .head {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media screen and (min-width: 1201px) {
+    #top-info {
+      display: flex;
+      flex-direction: row;
+    }
+    .textedh1 {
+      transform: translateY(120px);
+    }
+    #top-info .textedh1 h1 {
+      font-size: 72px;
       line-height: 80px;
+      color: #000d09;
       text-align: left;
-      /* max-width: 50%; */
       margin-bottom: 10px;
     }
 
@@ -409,7 +460,7 @@ const Section = styled.main`
       justify-content: space-between;
     }
     .image-1 {
-      width: 70%;
+      width: 67%;
       position: absolute;
       right: 0;
       top: 0;
@@ -465,57 +516,5 @@ const Section = styled.main`
     /* #category .left{
         width: 60%;
     } */
-  }
-
-  @media (min-width: 1024px) and (max-width: 1200px) {
-    #top-info {
-      display: flex;
-      flex-direction: row;
-    }
-
-    #why-verify {
-      // margin: 10px;
-    }
-
-    #why-verify .head {
-      display: flex;
-      justify-content: center;
-    }
-    #why-verify .card-block {
-      display: grid;
-      grid-gap: 1em;
-      grid-template-columns: repeat(3, 1fr);
-      margin-bottom: 25px;
-      /* border: 1px solid green; */
-    }
-
-    .image-1 {
-      width: 620px;
-    }
-
-    .card-1,
-    .card-2,
-    .card-3 {
-      width: 300px;
-      height: 250px;
-    }
-
-    #category {
-      margin: 70px;
-      display: flex;
-      justify-content: space-between;
-    }
-    #offers {
-      margin: 70px 40px;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  @media (min-width: 452px) and (max-width: 1023px) {
-    #why-verify .head {
-      display: flex;
-      justify-content: center;
-    }
   }
 `;
