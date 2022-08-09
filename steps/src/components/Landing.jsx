@@ -137,7 +137,7 @@ const Landing = () => {
 };
 
 export default Landing;
-const Div = styled.main`
+const Div = styled.section`
   background: rgba(156, 191, 182, 0.2);
   opacity: 1;
   padding: 2rem 1rem;
@@ -383,11 +383,13 @@ const Section = styled.main`
       margin: 70px;
       display: flex;
       justify-content: space-between;
+      gap: 2rem;
     }
     #offers {
       margin: 70px 40px;
       display: flex;
       justify-content: space-between;
+      gap: 2rem;
     }
   }
 
@@ -467,7 +469,7 @@ const Section = styled.main`
     .image-2,
     .image-3 {
       width: 100%;
-      height: auto;
+      height: 25rem;
     }
 
     .image-3 {
