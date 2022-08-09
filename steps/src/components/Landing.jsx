@@ -118,7 +118,8 @@ const Landing = () => {
                 <div className="left">
                   <p className="heading">
                     <span>We Categorize your</span>
-                    <span> products for slaying</span> <span>Assessibility</span>
+                    <span> products for slaying</span>{" "}
+                    <span>Assessibility</span>
                   </p>
                   <p className="text">
                     Get accesss to select your choice product from our list of
@@ -499,7 +500,7 @@ const Section = styled.main`
     #category {
       padding: 1rem;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       margin: 0;
       /* justify-content: space-between; */
     }
