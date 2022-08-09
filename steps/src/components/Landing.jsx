@@ -101,7 +101,8 @@ const Landing = () => {
                 </div>
                 <div>
                   <h1 className="heading">
-                    We offer a close range monitoring system.
+                    <span>We offer a close</span>
+                    <span> range monitoring</span> <span>system.</span>
                   </h1>
                   <p className="text">
                     Report Fake Products You’ve Come Acrossed With Report Fake
@@ -116,7 +117,8 @@ const Landing = () => {
               <div id="category">
                 <div className="left">
                   <p className="heading">
-                    We Categorize your products for slaying Assessibility
+                    <span>We Categorize your</span>
+                    <span> products for slaying</span> <span>Assessibility</span>
                   </p>
                   <p className="text">
                     Get accesss to select your choice product from our list of
@@ -331,8 +333,9 @@ const Section = styled.main`
   #category .heading {
     color: #000d09;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
+    margin-top: 30px;
   }
 
   #category .text {
@@ -482,6 +485,9 @@ const Section = styled.main`
       line-height: 60px;
       width: 60%;
       color: #000d09;
+      span {
+        display: block;
+      }
     }
     #offers .text {
       font-weight: 400;
@@ -504,6 +510,9 @@ const Section = styled.main`
       line-height: 60px;
       margin-top: 70px;
       color: #000d09;
+      span {
+        display: block;
+      }
       /* width: 70%; */
     }
     #category .text {
