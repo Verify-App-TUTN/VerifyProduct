@@ -502,7 +502,6 @@ const Section = styled.main`
       display: flex;
       align-items: flex-start;
       margin: 0;
-      /* justify-content: space-between; */
     }
 
     #category .heading {
