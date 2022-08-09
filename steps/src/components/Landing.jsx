@@ -453,6 +453,8 @@ const Section = styled.main`
     #offers {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      gap: 3rem;
     }
     .image-1 {
       width: 67%;
@@ -464,7 +466,7 @@ const Section = styled.main`
 
     .image-2,
     .image-3 {
-      width: 80%;
+      width: 100%;
       height: auto;
     }
 
@@ -474,9 +476,8 @@ const Section = styled.main`
 
     #offers .heading {
       font-weight: 700;
-      font-size: 56px;
+      font-size: 50px;
       line-height: 60px;
-      margin-top: 65px;
       width: 60%;
       color: #000d09;
     }
