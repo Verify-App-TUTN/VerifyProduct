@@ -141,7 +141,7 @@ const Landing = () => {
 
 export default Landing;
 const Div = styled.section`
-  background: rgba(156, 191, 182, 0.2);
+  background: rgba(90, 224, 191, 0.2);;
   opacity: 1;
   padding: 2rem 1rem;
 `;
