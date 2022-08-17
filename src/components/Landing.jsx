@@ -19,7 +19,7 @@ const Landing = () => {
         link2="About Us"
         link3="Contact Us"
         link4="Sign Up"
-        buttonText="Sign Up"
+        buttonText="Get Started"
         button={true}
         div={false}
       />
@@ -49,40 +49,40 @@ const Landing = () => {
           </div>
         </div>
         <div id="why-verify">
-          <div class="head">
-            <p class="heading">Why</p>
+          <div className="head">
+            <p className="heading">Why</p>
             <span>
               <img src={Whylogo} alt="" className="wLg" />
             </span>
-            <p class="heading">?</p>
+            <p className="heading">?</p>
           </div>
 
-          <div class="card-block">
-            <div class="card-1">
-              <div class="card-body">
+          <div className="card-block">
+            <div className="card-1">
+              <div className="card-body">
                 <img src={Icon1} alt="" />
-                <p class="heading">Authenticity</p>
-                <p class="text">
+                <p className="heading">Authenticity</p>
+                <p className="text">
                   Get accesss to select your choice product from our list of
                   Product Categories Get accesss to select your{" "}
                 </p>
               </div>
             </div>
-            <div class="card-2">
-              <div class="card-body">
+            <div className="card-2">
+              <div className="card-body">
                 <img src={Icon2} alt="" />
-                <p class="heading">Product Growth</p>
-                <p class="text">
+                <p className="heading">Product Growth</p>
+                <p className="text">
                   Get accesss to select your choice product from our list of
                   Product Categories Get accesss to select your{" "}
                 </p>
               </div>
             </div>
-            <div class="card-3">
-              <div class="card-body">
+            <div className="card-3">
+              <div className="card-body">
                 <img src={Icon3} alt="" />
-                <p class="heading">Reliability</p>
-                <p class="text">
+                <p className="heading">Reliability</p>
+                <p className="text">
                   Get accesss to select your choice product from our list of
                   Product Categories Get accesss to select your{" "}
                 </p>

@@ -11,9 +11,9 @@ const PageRoutes = () => {
     <>
       <Routes>
         <Route index path="/" element={<Landing />} />
-        <Route path="verifyform" element={<VerifyForm />} />
-        <Route path="verifyproduct" element={<Verifyproduct />} />
-        <Route path="product" element={<ProductN />} />
+        <Route path="/verifyform" element={<VerifyForm />} />
+        <Route path="/verifyproduct" element={<Verifyproduct />} />
+        <Route path="/product" element={<ProductN />} />
       </Routes>
       <Footer />
     </>
