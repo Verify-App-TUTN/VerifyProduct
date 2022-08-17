@@ -43,7 +43,7 @@ const Header = ({
         <li className="none">{link4}</li>
       </ul>
       {button && (
-        <Link to="/verifyform">
+        <Link to="/verifyform" className="button">
           <button className="btn">{buttonText}</button>
         </Link>
       )}
@@ -85,15 +85,15 @@ const Nav = styled.nav`
     background-color: #009f78;
     border-color: #009f78;
   }
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 1299px) {
     position: relative;
     z-index: 999;
     button,
-    .lastDiv {
-      display: none;
+    .lastDiv,
+    .button {
+      display: none !important;
     }
     .toggle {
-      padding-right: 1rem;
       display: block;
       z-index: 51;
       svg {

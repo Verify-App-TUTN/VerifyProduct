@@ -63,8 +63,9 @@ const Landing = () => {
                 <img src={Icon1} alt="" />
                 <p className="heading">Authenticity</p>
                 <p className="text">
-                  Get accesss to select your choice product from our list of
-                  Product Categories Get accesss to select your{" "}
+                  <span>Get accesss to select your choice product</span>
+                  <span>from our list of Product Categories Get</span>
+                  <span>accesss to select your</span>
                 </p>
               </div>
             </div>
@@ -73,8 +74,9 @@ const Landing = () => {
                 <img src={Icon2} alt="" />
                 <p className="heading">Product Growth</p>
                 <p className="text">
-                  Get accesss to select your choice product from our list of
-                  Product Categories Get accesss to select your{" "}
+                  <span>Get accesss to select your choice product</span>
+                  <span>from our list of Product Categories Get</span>
+                  <span>accesss to select your</span>
                 </p>
               </div>
             </div>
@@ -83,8 +85,9 @@ const Landing = () => {
                 <img src={Icon3} alt="" />
                 <p className="heading">Reliability</p>
                 <p className="text">
-                  Get accesss to select your choice product from our list of
-                  Product Categories Get accesss to select your{" "}
+                  <span>Get accesss to select your choice product</span>
+                  <span>from our list of Product Categories Get</span>
+                  <span>accesss to select your</span>
                 </p>
               </div>
             </div>
@@ -257,6 +260,7 @@ const Section = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   #why-verify .head {
@@ -272,8 +276,11 @@ const Section = styled.main`
   }
   #why-verify .card-body .text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
+    span {
+      display: block;
+    }
   }
   .wLg {
     width: 100%;
@@ -284,7 +291,6 @@ const Section = styled.main`
   .image-1 {
     width: 100%;
     height: auto;
-    padding-right: 70px;
   }
   .image-2 {
     width: 100%;
