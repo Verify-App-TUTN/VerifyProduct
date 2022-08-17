@@ -153,7 +153,6 @@ const Section = styled.main`
   }
 
   button {
-    /* background: #009F78; */
     border-radius: 4px;
     outline: none;
     border: none;
@@ -178,7 +177,6 @@ const Section = styled.main`
     flex-direction: column;
     margin: 1rem 0;
     padding: 1rem;
-    margin-bottom: 7rem !important;
   }
   #top-info .textedh1 {
     padding: 10px;
@@ -207,13 +205,6 @@ const Section = styled.main`
       display: block;
     }
   }
-  /* #top-info .text span{
-    color: #000D09;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    
-} */
 
   #top-info .btn {
     background: #009f78;
@@ -223,7 +214,6 @@ const Section = styled.main`
     padding: 2px;
     margin: 1rem 0;
     padding: 1rem;
-    margin-bottom: 7rem !important;
   }
 
   #why-verify .heading {
@@ -350,14 +340,10 @@ const Section = styled.main`
     background: #241818;
   }
 
-  @media (min-width: 1024px) and (max-width: 1200px) {
+  @media (min-width: 1144px) and (max-width: 1299px) {
     #top-info {
       display: flex;
       flex-direction: row;
-    }
-
-    #why-verify {
-      // margin: 10px;
     }
 
     #why-verify .head {
@@ -369,7 +355,6 @@ const Section = styled.main`
       grid-gap: 1em;
       grid-template-columns: repeat(3, 1fr);
       margin-bottom: 25px;
-      /* border: 1px solid green; */
     }
 
     .image-1 {
@@ -403,7 +388,7 @@ const Section = styled.main`
       justify-content: center;
     }
   }
-  @media screen and (min-width: 1201px) {
+  @media screen and (min-width: 1300px) {
     #top-info {
       display: flex;
       flex-direction: row;
@@ -417,10 +402,6 @@ const Section = styled.main`
       color: #000d09;
       text-align: left;
       margin-bottom: 10px;
-    }
-
-    .top-image {
-      // margin-top: 900px;
     }
 
     #top-info .text {
@@ -467,7 +448,6 @@ const Section = styled.main`
       position: absolute;
       right: 0;
       top: 0;
-      // border: 1px solid blue;
     }
 
     .image-2,
@@ -513,7 +493,6 @@ const Section = styled.main`
       span {
         display: block;
       }
-      /* width: 70%; */
     }
     #category .text {
       font-weight: 400;
@@ -521,9 +500,5 @@ const Section = styled.main`
       line-height: 24px;
       width: 50%;
     }
-
-    /* #category .left{
-        width: 60%;
-    } */
   }
 `;
