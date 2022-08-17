@@ -141,7 +141,7 @@ const Landing = () => {
 
 export default Landing;
 const Div = styled.section`
-  background: rgba(90, 224, 191, 0.2);;
+  background: rgba(90, 224, 191, 0.2);
   opacity: 1;
   padding: 2rem 1rem;
 `;
@@ -448,6 +448,7 @@ const Section = styled.main`
       position: absolute;
       right: 0;
       top: 0;
+      z-index: -1;
     }
 
     .image-2,

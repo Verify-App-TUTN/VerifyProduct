@@ -59,7 +59,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
-  background-color: #fff;
   .brand {
     img {
       width: 80%;
