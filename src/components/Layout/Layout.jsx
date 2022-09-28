@@ -1,8 +1,14 @@
 import React from "react";
-import style from "./index.module.css";
+import { Footer, Navbar  } from "../";
 
-const Layout = () => {
-  return <div className={style.Layout}>Layout</div>;
+const Layout = ({children, ...props}) => {
+  return (
+    <section {...props}>
+      <Navbar />
+      {children}
+      <Footer />
+    </section>
+  );
 }
 
 export default Layout;
