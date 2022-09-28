@@ -1,0 +1,42 @@
+.Hero{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    padding-inline: 60px;
+    width: calc(100% - 120px);
+    justify-content: center;
+    .Hero__content{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 72px;
+            font-weight: 900;
+        }
+    }
+    .Hero__illustration_container{
+        position: relative;
+        width: 100%;
+        display: flex;
+    .Hero__illustration_blur{
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 30%;
+        top: 10%;
+        left: 0;
+        background: #009F78;
+            opacity: 0.5;
+            /* Primary Black */
+        
+            border: 1px solid #001A13;
+            filter: blur(150px);
+            border-radius: 400px 0px 0px 400px;
+        }
+    .Hero__illustration{
+        position: relative;
+        width: calc(100% - 30px);
+        transform: scale(2);
+        right: 10px;
+    }
+}
+}
