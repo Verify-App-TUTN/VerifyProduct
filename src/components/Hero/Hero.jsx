@@ -9,7 +9,11 @@ const Hero = () => {
       <p className={style.Hero__subtitle}>Get accesss to select your choice product from our list of Product Categories Get accesss to select your choice product from our list of Product Categories Get accesss to</p>
       <button className={style.Hero__button}>Get Started</button>
     </div>
-    <HeroIllustration />
+    <div className={style.Hero__illustration_container}>
+    <span className={style.Hero__illustration_blur}>
+    </span>
+      <HeroIllustration className={style.Hero__illustration} />
+    </div>
   </div>;
 }
 
