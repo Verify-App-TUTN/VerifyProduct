@@ -44,6 +44,24 @@
       }
     },
     {
+      "type": "illustrations",
+      "path": "src/assets/illustrations",
+      "isFile": true,
+      "file": {
+        "name": "<name>.jsx",
+        "template": "templates/component.jsx"
+      }
+    },{
+      "type": "icon",
+      "path": "src/assets/icon",
+      "isFile": true,
+      "file": {
+        "name": "<name>.jsx",
+        "template": "templates/component.jsx"
+      }
+    },
+    
+    {
       "type": "function",
       "path": "src/utils/functions",
       "isFile": true,
