@@ -53,7 +53,7 @@
       }
     },{
       "type": "icon",
-      "path": "src/assets/icon",
+      "path": "src/assets/icons",
       "isFile": true,
       "file": {
         "name": "<name>.jsx",
