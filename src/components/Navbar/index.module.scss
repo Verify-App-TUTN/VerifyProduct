@@ -1,0 +1,21 @@
+.Navbar{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Navbar__logo{
+        width: 200px;
+    }
+    .Navbar__links{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        flex-basis: 40%;
+    }
+    .Navbar__button a{
+        padding: 15px 30px;
+        border-radius: 5px;
+        background-color: #009F78;
+        color: #fff;
+    }
+}
