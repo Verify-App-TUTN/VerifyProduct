@@ -1,5 +1,5 @@
 import React from "react";
-const Facebook = (props) => {
+const FaceBook = (props) => {
   return (
     <svg
       {...props}
@@ -16,4 +16,4 @@ const Facebook = (props) => {
   );
 }
 
-export default Facebook;
+export default FaceBook;
