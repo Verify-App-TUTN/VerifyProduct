@@ -20,12 +20,9 @@ const Footer = () => {
         </div>
         <div className={style.Footer__content__right}>
           <div className={style.Footer__content__right__links}>
-            <div className={style.Footer__content__right__links__heading}>
-              <h3>Links</h3>
-            </div>
-            <div className={style.Footer__content__right__links__list}>
               <FooterLink />
-            </div>
+              <FooterLink />
+              <FooterLink />
           </div>
           <div className={style.Footer__content__right__social}>
             <div className={style.Footer__content__right__social__heading}>
