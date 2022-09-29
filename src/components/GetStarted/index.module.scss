@@ -12,4 +12,7 @@
   transition-property: background-color;
   transition-duration: 500ms;
   transition-timing-function: ease-in;
+  &:hover {
+    --background: #575454;
+  }
 }

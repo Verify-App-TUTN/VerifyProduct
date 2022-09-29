@@ -13,5 +13,8 @@
   transition-duration: 500ms;
   transition-timing-function: ease-in;
 }
+.GetStarted:hover {
+  --background: #575454;
+}
 
 /*# sourceMappingURL=index.module.css.map */
