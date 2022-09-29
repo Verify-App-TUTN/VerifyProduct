@@ -29,10 +29,6 @@
     }
     .Navbar__button{
         --background: #009f78;
-        transition-property: background-color;
-        transition-duration: 500ms;
-        transition-timing-function: ease-in;
-        
         margin-top: 30px;
         &:hover {
                 --background: #19765e;

@@ -33,9 +33,6 @@
 }
 .Hero .Hero__content .Navbar__button {
   --background: #009f78;
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: ease-in;
   margin-top: 30px;
 }
 .Hero .Hero__content .Navbar__button:hover {
