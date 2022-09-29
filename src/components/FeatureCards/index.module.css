@@ -1,3 +1,6 @@
-
+.FeatureCards {
+  display: flex;
+  justify-content: space-around;
+}
 
 /*# sourceMappingURL=index.module.css.map */
