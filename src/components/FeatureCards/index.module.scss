@@ -1,19 +1,21 @@
 .FeatureCards {
     display: grid;
     width: 100%;
-    padding-left: 80px;
+    padding-inline: 80px;
     grid-template-columns: repeat(3, 0.8fr);
     justify-content: center;
     justify-items: center;
   align-items: center;
   align-content: center;
-  row-gap: 10%;
+  row-gap: 50px;
     @media screen and (max-width: 1024px) and (min-width: 720px) {
+        padding-left: 40px;
         grid-template-columns: repeat(2, 0.8fr);
-  }
-  @media screen and (max-width: 720px) {
+    }
+    @media screen and (max-width: 720px) {
+      padding-left: 20px;
     grid-template-columns: repeat(1, 0.8fr);
   }
-  
+  z-index: 10;
 
 }

@@ -4,13 +4,22 @@
   background: #ffffff;
   border: 0.5px solid rgba(0, 26, 19, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 159, 120, 0.25);
+  transition: box-shadow 1s ease-in-out;
   border-radius: 10px;
   padding: 30px 50px;
   align-items: center;
   text-align: center;
-  width: 75%;
+  width: 80%;
   margin-inline: auto;
   align-self: center;
+}
+.FeatureCard:hover {
+  box-shadow: 0px 20px 20px rgba(12, 234, 178, 0.25);
+}
+.FeatureCard .FeatureCard__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block: 0.5rem;
 }
 
 /*# sourceMappingURL=index.module.css.map */
