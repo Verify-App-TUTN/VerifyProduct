@@ -1,6 +1,5 @@
 import React from "react";
 import { CTA, Features, Hero, Layout } from "../../components";
-import Details from "../../components/Details/Details";
 import style from "./index.module.css";
 
 function Home() {
@@ -8,7 +7,7 @@ function Home() {
     <Layout className={style.Home}>
       <Hero />
       <Features />
-      <Details />
+      <CTA />
     </Layout>
   );
 }
