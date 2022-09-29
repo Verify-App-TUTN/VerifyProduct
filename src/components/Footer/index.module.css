@@ -18,5 +18,10 @@
   flex-basis: 50%;
   display: flex;
 }
+.Footer .Footer__content .Footer__content__right .Footer__content__right__links {
+  display: flex;
+  flex-basis: 60%;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=index.module.css.map */

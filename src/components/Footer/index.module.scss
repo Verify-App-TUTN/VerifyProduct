@@ -15,6 +15,11 @@
         .Footer__content__right{
             flex-basis: 50%;
             display: flex;
+            .Footer__content__right__links{
+                display: flex;
+                flex-basis: 60%;
+                justify-content: space-between;
+            }
         }
     }
 }
