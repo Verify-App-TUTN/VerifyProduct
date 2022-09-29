@@ -40,10 +40,10 @@ const Footer = () => {
               <h3>Social Media</h3>
             </div>
             <div className={style.Footer__content__right__social__links}>
-              <FaceBook />
-              <Twitter />
-              <Instagram />
-              <LinkedIn />
+              <LinkedIn className={style.Footer__content__right__social__links__icon} />
+              <Twitter className={style.Footer__content__right__social__links__icon} />
+              <Instagram className={style.Footer__content__right__social__links__icon} />
+              <FaceBook  className={style.Footer__content__right__social__links__icon}/>
             </div>
           </div>
         </div>
