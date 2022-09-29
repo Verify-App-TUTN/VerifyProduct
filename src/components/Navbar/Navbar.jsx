@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./index.module.css";
 import { NavLink as Link } from "react-router-dom";
-import { NavLink } from "../";
+import { GetStarted, NavLink } from "../";
 import { Logo } from "../../assets";
 const navLinks = [
   {
@@ -18,6 +18,21 @@ const navLinks = [
   },
 ]
 const Navbar = () => {
+  useEffect(() => {
+    const handleScroll = (e) => {
+      const nav = document.querySelector("nav");
+      console.log(e.currentTarget.scrollY)
+      if (e.currentTarget.scrollY > 50) {
+        nav.classList.add(style.nav__scrolled);
+      } else {
+        nav.classList.remove(style.nav__scrolled);
+      }
+    }
+    window.addEventListener("scroll",handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
   return (
     <nav className={style.Navbar}>
       <div className={style.Navbar__logo}>
@@ -34,11 +49,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className={style.Navbar__button}>
-        <NavLink to="/signup" >
-          Get Started
-        </NavLink>
-      </div>
+      <GetStarted className={style.Navbar__button} color="#009F78" />
     </nav>
   );
 }
