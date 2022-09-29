@@ -1,5 +1,5 @@
 import React from "react";
-import { GreenLogo } from "../../assets";
+import { FaceBook, GreenLogo, Instagram, LinkedIn, Twitter } from "../../assets";
 import FooterLink from "../FooterLink/FooterLink";
 import style from "./index.module.css";
 const footDetails = [
@@ -40,8 +40,10 @@ const Footer = () => {
               <h3>Social Media</h3>
             </div>
             <div className={style.Footer__content__right__social__links}>
-                
-
+              <FaceBook />
+              <Twitter />
+              <Instagram />
+              <LinkedIn />
             </div>
           </div>
         </div>
