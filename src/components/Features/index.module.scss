@@ -1,4 +1,8 @@
 .Features {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
   .Features__heading {
     display: flex;
     font-size: 2rem;
