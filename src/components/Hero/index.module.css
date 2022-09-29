@@ -14,6 +14,11 @@
   font-size: 72px;
   font-weight: 900;
 }
+.Hero .Hero__content p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
 .Hero .Hero__illustration_container {
   position: relative;
   width: 100%;
@@ -26,12 +31,29 @@
   bottom: 30%;
   top: 10%;
   left: 0;
-  background: #009F78;
+  background: #009f78;
   opacity: 0.5;
-  /* Primary Black */
-  border: 1px solid #001A13;
+  border: 1px solid #001a13;
   filter: blur(150px);
   border-radius: 400px 0px 0px 400px;
+  animation-name: blurry;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-transition: 1s -webkit-filter linear;
+  -moz-transition: 1s -moz-filter linear;
+  -moz-transition: 1s filter linear;
+  -ms-transition: 1s -ms-filter linear;
+  -o-transition: 1s -o-filter linear;
+  transition: 1s filter linear, 1s -webkit-filter linear;
+  animation-direction: alternate;
+}
+@keyframes blurry {
+  0% {
+    filter: blur(150px);
+  }
+  100% {
+    filter: blur(300px);
+  }
 }
 .Hero .Hero__illustration_container .Hero__illustration {
   position: relative;

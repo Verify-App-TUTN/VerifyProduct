@@ -1,0 +1,12 @@
+.GetStarted {
+  --background: #241818;
+  background: var(--background);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.module.css.map */

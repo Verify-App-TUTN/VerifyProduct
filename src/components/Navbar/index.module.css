@@ -1,10 +1,19 @@
+.nav__scrolled {
+  --background: #fff;
+}
+
 .Navbar {
   padding: 30px 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  z-index: 50;
   width: 100%;
+  transition-property: background-color;
+  transition-duration: 750ms;
+  transition-timing-function: ease-in;
+  background-color: var(--background);
 }
 .Navbar .Navbar__logo {
   width: 200px;
@@ -15,11 +24,8 @@
   width: 300px;
   flex-basis: 40%;
 }
-.Navbar .Navbar__button a {
-  padding: 15px 30px;
-  border-radius: 5px;
-  background-color: #009F78;
-  color: #fff;
+.Navbar .Navbar__button {
+  --background: #009f78;
 }
 
 /*# sourceMappingURL=index.module.css.map */

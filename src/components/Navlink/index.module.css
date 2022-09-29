@@ -1,5 +1,13 @@
 .link {
   color: black;
+  font-weight: 600;
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+
+.active {
+  color: #009f78;
 }
 
 /*# sourceMappingURL=index.module.css.map */
