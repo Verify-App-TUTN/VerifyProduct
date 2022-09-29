@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFBlackRegular.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFBlackRegular.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFBlackRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFBlackRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFBlackRegular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFBold.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFBold.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFBold.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFBold.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFBlackItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFBlackItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFBlackItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF Extra';
+    src: url('FONTSPRINGDEMO-QuincyCFExtraBoldItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFExtraBoldItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFExtraBoldItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFBoldItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFBoldItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFBoldItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF Extra';
+    src: url('FONTSPRINGDEMO-QuincyCFExtraBoldRegular.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFExtraBoldRegular.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFExtraBoldRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFExtraBoldRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFExtraBoldRegular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFLightItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFLightItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFLightItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFLightRegular.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFLightRegular.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFLightRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFLightRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFLightRegular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFMediumItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFMediumItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFMediumItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFRegular.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFRegular.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFMediumRegular.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFMediumRegular.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFMediumRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFMediumRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFMediumRegular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFThinRegular.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFThinRegular.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFThinRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFThinRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFThinRegular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF';
+    src: url('FONTSPRINGDEMO-QuincyCFThinItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFThinItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFThinItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF Text';
+    src: url('FONTSPRINGDEMO-QuincyCFTextItalic.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFTextItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFTextItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFTextItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFTextItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Quincy CF Text';
+    src: url('FONTSPRINGDEMO-QuincyCFTextRegular.eot');
+    src: url('FONTSPRINGDEMO-QuincyCFTextRegular.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-QuincyCFTextRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-QuincyCFTextRegular.woff') format('woff'),
+        url('FONTSPRINGDEMO-QuincyCFTextRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
