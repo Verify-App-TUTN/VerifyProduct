@@ -6,7 +6,7 @@ function App() {
   document.title = "Verify Product";
   return (
     <Routes>
-      <Route index path="/:ff" element={<Home />} />
+      <Route index path="/" element={<Home />} />
       {/* <Route path="/verifyform" element={<VerifyForm />} />
       <Route path="/verifyproduct" element={<Verifyproduct />} />
       <Route path="/product" element={<ProductN />} /> */}
