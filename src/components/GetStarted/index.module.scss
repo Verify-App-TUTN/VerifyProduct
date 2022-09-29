@@ -1,6 +1,5 @@
-
 .GetStarted {
-    --background: #241818;
+  --background: #241818;
   background: var(--background);
   color: #fff;
   padding: 1rem 2rem;
@@ -10,5 +9,7 @@
   cursor: pointer;
   display: block;
   width: fit-content;
-  
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
 }

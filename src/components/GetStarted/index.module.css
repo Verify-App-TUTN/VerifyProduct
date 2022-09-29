@@ -9,6 +9,9 @@
   cursor: pointer;
   display: block;
   width: fit-content;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
 }
 
 /*# sourceMappingURL=index.module.css.map */
