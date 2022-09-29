@@ -1,9 +1,10 @@
 .Footer {
-  background-color: #001A13;
+  background-color: #001a13;
   color: #fff;
   padding: 80px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 50vh;
 }
 @media screen and (max-width: 768px) {
@@ -68,6 +69,84 @@
 .Footer .Footer__content .Footer__content__right .Footer__content__right__social .Footer__content__right__social__links .Footer__content__right__social__links__icon {
   width: 35px;
   height: 35px;
+}
+.Footer .Footer__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.Footer .Footer__bottom .Footer__bottom__heading {
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+.Footer .Footer__bottom .Footer__bottom__input__container {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .Footer .Footer__bottom .Footer__bottom__input__container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.Footer .Footer__bottom .Footer__bottom__input__container .Footer__bottom__input {
+  width: 40%;
+  padding: 1rem 2rem;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .Footer .Footer__bottom .Footer__bottom__input__container .Footer__bottom__input {
+    width: 100%;
+  }
+}
+.Footer .Footer__bottom .Footer__bottom__input__container .Footer__bottom__input__button {
+  display: block;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+  --background: #009f78;
+  background-color: var(--background);
+}
+@media screen and (max-width: 768px) {
+  .Footer .Footer__bottom .Footer__bottom__input__container .Footer__bottom__input__button {
+    width: 100%;
+  }
+}
+.Footer .Footer__bottom .Footer__bottom__input__container .Footer__bottom__input__button:hover {
+  --background: #19765e;
+}
+.Footer .Footer__bottom .Footer__bottom__error__hidden {
+  color: transparent;
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+.Footer .Footer__bottom .Footer__bottom__error {
+  color: #fff;
+}
+.Footer .Footer__bottom__copy {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.module.css.map */
