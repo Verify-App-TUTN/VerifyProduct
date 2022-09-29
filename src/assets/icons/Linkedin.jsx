@@ -3,17 +3,25 @@ const Linkedin = (props) => {
   return (
     <svg
       {...props}
-      width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <rect width="32" height="32" fill="url(#pattern0)" />
-      <defs>
-        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlinkHref="#image0_1997_6037" transform="scale(0.0104167)" />
-        </pattern>
-        <image id="image0_1997_6037" width="96" height="96" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAADRUlEQVR4nO3dO2sVQRjG8X805iheOkkhiASskoiVYLBUBKM2XioLQYV8A0Hs7OM1WvoBRIyg4L2wsLBR0FIEBVGMjSYiamIsJoEj5uTMzF7e3dnnB1PtzuzsPDmbnT27e0BERERERERERMTfMHAReA3MAPOJl5mFfb0ADOUwftFawFVgDvtBsSpzwATQl3Esg7WAJxk6nlp5TMkhXCtgJ+permQa0QDDNPuw06nMAoOhg7kitAJwMrJe6lYCJ0IrxQzk7og6TbEntEJPxEamgXUR9ZpgGtgQUiEmgPmIOk0SNKY6lhtTAMYUgDEFYKzXYJvPgFvAG9yEbgA4CowY9KWWYmeKP3AD3clx3GzSekabtRQutmM+s8SzGdqvSglS1jzgA7AZ+NNlvbXAFLAmYhtVUcl5wHO6Dz7Ad9yXHY1RVgA+g79orrBeVFBZAWzzXK9FxCXdOisrgK3APo/1TgHrC+5L7cWeHXwGti/T7gHcqar1WUySZ0GLfgLXgdvAO9whZwg3P9gf2Z+qCdoHXY7OXyVPQ6UDBWBMARhTAMbKCuAT7p+TT+nmiGc77TdK/QYmgTFgB9APrMZdcxoAjgH3MuxfqWLOjT/m2P5hz3YuL6x/E3ch0Mco7o+ltHlA6oegc8Ah4L3n+ndx9z19KaxHOajLJyD4Jqk2ox79yOUTEKMuAWQ16dEXHYIKdL6MjSiAzp4Cb4veSBMC6MUd00/jrrj67vM88KCoTi2yuC2lTJuAO/x7Gfw+cBD45VH/RRGdapfyJ6AHuMH/30HsBc54tvEy1x4tIeUARoCdHZaN4TfrnsqvO0tLOYBdyyzrB7Z4tPE1p750lHIA/V2Wb/Ro41seHVlOygGsyrgc3K2ShUo5gFpQAMYUgDEFYEwBGFMAxhSAMQVgTAEYUwDGFIAxBWBMARhTAMb0gEb+9IBGnSgAYwrAmAIwpgCMKQBjCsBYTAAzufciHcH3EcUE4Pu4TxMFj01MAA8j6jRF4bezg3u5Rgov18u7RL2+PtZECTtUt3Ip04gG6sP9bIf1TlelPMLgd2T6cE+jN/lwNIv7yy998NsNAuPAK9z7860HpegyvbCv4zTs/XYiIiIiIiIiIpLNX2FVAcNCxrOBAAAAAElFTkSuQmCC" />
-      </defs>
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      viewBox="0 0 504.4 504.4"
+    >
+      <g>
+        <g>
+          <path
+            d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
+			C504,57,447.2,0.2,377.6,0.2z M168,408.2H96v-208h72V408.2z M131.6,168.2c-20.4,0-36.8-16.4-36.8-36.8c0-20.4,16.4-36.8,36.8-36.8
+			c20.4,0,36.8,16.4,36.8,36.8C168,151.8,151.6,168.2,131.6,168.2z M408.4,408.2H408h-60V307.4c0-24.4-3.2-55.6-36.4-55.6
+			c-34,0-39.6,26.4-39.6,54v102.4h-60v-208h56v28h1.6c8.8-16,29.2-28.4,61.2-28.4c66,0,77.6,38,77.6,94.4V408.2z"
+          />
+        </g>
+      </g>
     </svg>
-
-    );
-}
+  );
+};
 
 export default Linkedin;
