@@ -19,6 +19,7 @@ const featuresCards = [
 ]
 const FeatureCards = () => {
   return (<div className={style.FeatureCards}>
+
     {featuresCards.map(({icon, ...props}) => (
       <FeatureCard {...props}>
         {icon}
