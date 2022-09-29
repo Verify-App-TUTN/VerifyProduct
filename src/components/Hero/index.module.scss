@@ -1,42 +1,65 @@
-.Hero{
+
+.Hero {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding-inline: 60px;
+  width: calc(100% - 120px);
+  justify-content: center;
+
+  .Hero__content {
     display: flex;
-    min-height: 100vh;
-    align-items: center;
-    padding-inline: 60px;
-    width: calc(100% - 120px);
-    justify-content: center;
-    .Hero__content{
-        display: flex;
-        flex-direction: column;
-        h1{
-            font-size: 72px;
-            font-weight: 900;
-        }
+    flex-direction: column;
+    h1 {
+      font-size: 72px;
+      font-weight: 900;
     }
-    .Hero__illustration_container{
-        position: relative;
-        width: 100%;
-        display: flex;
-    .Hero__illustration_blur{
-        position: absolute;
-        display: block;
-        right: 0;
-        bottom: 30%;
-        top: 10%;
-        left: 0;
-        background: #009F78;
-            opacity: 0.5;
-            /* Primary Black */
-        
-            border: 1px solid #001A13;
-            filter: blur(150px);
-            border-radius: 400px 0px 0px 400px;
-        }
-    .Hero__illustration{
-        position: relative;
-        width: calc(100% - 30px);
-        transform: scale(2);
-        right: 10px;
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 20px;
     }
-}
+  }
+  .Hero__illustration_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    .Hero__illustration_blur {
+      position: absolute;
+      display: block;
+      right: 0;
+      bottom: 30%;
+      top: 10%;
+      left: 0;
+      background: #009f78;
+      opacity: 0.5;
+      border: 1px solid #001a13;
+      filter: blur(150px);
+      border-radius: 400px 0px 0px 400px;
+      animation-name: blurry;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      -webkit-transition: 1s -webkit-filter linear;
+      -moz-transition: 1s -moz-filter linear;
+      -moz-transition: 1s filter linear;
+      -ms-transition: 1s -ms-filter linear;
+      -o-transition: 1s -o-filter linear;
+      transition: 1s filter linear, 1s -webkit-filter linear;
+      animation-direction: alternate;
+      @keyframes blurry {
+        0% {
+          filter: blur(150px);
+        }
+        100% {
+          filter: blur(300px);
+        }
+      }
+    }
+    .Hero__illustration {
+      position: relative;
+      width: calc(100% - 30px);
+      transform: scale(2);
+      right: 10px;
+    }
+  }
 }

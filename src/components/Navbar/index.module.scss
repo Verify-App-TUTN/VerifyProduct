@@ -1,23 +1,28 @@
-.Navbar{
-    padding: 30px 50px;
+.nav__scrolled {
+  --background: #fff;
+}
+.Navbar {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  transition-property: background-color;
+  transition-duration: 750ms;
+  transition-timing-function: ease-in;
+  background-color: var(--background);
+  .Navbar__logo {
+    width: 200px;
+  }
+  .Navbar__links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    .Navbar__logo{
-        width: 200px;
-    }
-    .Navbar__links{
-        display: flex;
-        justify-content: space-between;
-        width: 300px;
-        flex-basis: 40%;
-    }
-    .Navbar__button a{
-        padding: 15px 30px;
-        border-radius: 5px;
-        background-color: #009F78;
-        color: #fff;
-    }
+    justify-content: space-between;
+    width: 300px;
+    flex-basis: 40%;
+  }
+  .Navbar__button {
+    --background: #009f78;
+  }
 }
