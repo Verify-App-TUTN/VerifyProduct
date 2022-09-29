@@ -8,7 +8,7 @@ import CodeP from "../components/CodeP";
 import Product from "../assets/Pp.png";
 import Complete from "../assets/complete.png";
 import notComplete from "../assets/pp1.png";
-import "./../App.css";
+import "./../index.css";
 
 const VerifyForm = () => {
   const [activeState, setActiveState] = useState(0);
