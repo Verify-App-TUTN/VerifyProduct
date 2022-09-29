@@ -6,12 +6,27 @@
 }
 .Features .Features__heading {
   display: flex;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   align-items: center;
   gap: 0.5rem;
   width: fit-content;
   margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .Features .Features__heading {
+    font-size: 1.5rem;
+  }
+}
+.Features .Features__heading .Features__heading__logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .Features .Features__heading .Features__heading__logo {
+    height: 30px;
+  }
 }
 .Features .Features__heading .Features__heading h3 {
   color: #000;
