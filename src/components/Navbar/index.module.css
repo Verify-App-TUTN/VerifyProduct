@@ -24,8 +24,14 @@
   width: 300px;
   flex-basis: 40%;
 }
+@media screen and (max-width: 650px) {
+  .Navbar .Navbar__links {
+    display: none;
+  }
+}
 .Navbar .Navbar__button {
   --background: #009f78;
+  display: none;
 }
 
 /*# sourceMappingURL=index.module.css.map */

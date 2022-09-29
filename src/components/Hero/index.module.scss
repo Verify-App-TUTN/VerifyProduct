@@ -1,7 +1,7 @@
 
 .Hero {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
   padding-inline: 60px;
   width: calc(100% - 120px);
@@ -10,6 +10,7 @@
   .Hero__content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     h1 {
       font-size: 72px;
       font-weight: 900;
@@ -18,6 +19,10 @@
         font-size: 16px;
         font-weight: 400;
         margin-top: 20px;
+    }
+    .Navbar__button{
+        --background: #009f78;
+        margin-top: 30px;
     }
   }
   .Hero__illustration_container {

@@ -21,7 +21,6 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = (e) => {
       const nav = document.querySelector("nav");
-      console.log(e.currentTarget.scrollY)
       if (e.currentTarget.scrollY > 50) {
         nav.classList.add(style.nav__scrolled);
       } else {
@@ -49,7 +48,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <GetStarted className={style.Navbar__button} color="#009F78" />
+      <GetStarted className={style.Navbar__button}/>
     </nav>
   );
 }
