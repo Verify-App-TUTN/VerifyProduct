@@ -6,9 +6,20 @@
   flex-direction: column;
   min-height: 50vh;
 }
+@media screen and (max-width: 768px) {
+  .Footer {
+    padding: 40px;
+  }
+}
 .Footer .Footer__content {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .Footer .Footer__content {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .Footer .Footer__content .Footer__content__left {
   display: flex;
@@ -16,17 +27,36 @@
   flex-basis: 40%;
 }
 .Footer .Footer__content .Footer__content__right {
-  flex-basis: 50%;
+  flex-basis: 55%;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .Footer .Footer__content .Footer__content__right {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .Footer .Footer__content .Footer__content__right .Footer__content__right__links {
   display: flex;
   flex-basis: 50%;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .Footer .Footer__content .Footer__content__right .Footer__content__right__links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .Footer .Footer__content .Footer__content__right .Footer__content__right__social {
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Footer .Footer__content .Footer__content__right .Footer__content__right__social .Footer__content__right__social__heading {
+  font-weight: 500;
+  font-size: 1.15rem;
 }
 .Footer .Footer__content .Footer__content__right .Footer__content__right__social .Footer__content__right__social__links {
   background-color: #fff;
@@ -36,8 +66,8 @@
   padding: 10px 20px;
 }
 .Footer .Footer__content .Footer__content__right .Footer__content__right__social .Footer__content__right__social__links .Footer__content__right__social__links__icon {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 /*# sourceMappingURL=index.module.css.map */
