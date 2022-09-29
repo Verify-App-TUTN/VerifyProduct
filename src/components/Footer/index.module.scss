@@ -2,4 +2,19 @@
     background-color: #001A13;
     color: #fff;
     padding: 80px;
+    display: flex;
+    flex-direction: column;
+    .Footer__content{
+        display: flex;
+        justify-content: space-between;
+        .Footer__content__left{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 40%;
+        }
+        .Footer__content__right{
+            flex-basis: 50%;
+            display: flex;
+        }
+    }
 }
