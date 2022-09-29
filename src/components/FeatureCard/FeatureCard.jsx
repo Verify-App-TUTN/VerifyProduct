@@ -1,8 +1,14 @@
 import React from "react";
 import style from "./index.module.css";
 
-const FeatureCard = ({ icon, heading, description }) => {
-  return <div className={style.FeatureCard}>FeatureCard</div>;
-}
+const FeatureCard = ({ children, heading, description }) => {
+  return (
+    <div className={style.FeatureCard}>
+      <div className={style.FeatureCard__icon}>{children}</div>
+      <div className={style.FeatureCard__heading}>{heading}</div>
+      <div className={style.FeatureCard__description}>{description}</div>
+    </div>
+  );
+};
 
 export default FeatureCard;
