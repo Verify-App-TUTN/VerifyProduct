@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
-
-@font-face {
-    font-family: "Quincy CF";
-    src: url("./assets/fonts/Fontspring-DEMO-quincycf-regular.otf");
-}
-
+// @import url();
+@import url('./assets/fonts/fontsheet.css');
+@import "./sass/abstracts";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quincy CF", sans-serif;
+    font-family: 'FONTSPRING DEMO - Quincy CF';
     list-style: none;
     text-decoration: none;
 }
