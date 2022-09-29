@@ -2,18 +2,26 @@ import React from "react";
 const FaceBook = (props) => {
   return (
     <svg
+      version="1.1"
+      id="Capa_1"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      viewBox="0 0 29.94 29.94"
+      style={{ enableBackground: "new 0 0 29.94 29.94" }}
       {...props}
-      width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="32" height="32" fill="url(#pattern0)" />
-      <defs>
-        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlinkHref="#image0_1997_6040" transform="scale(0.0104167)" />
-        </pattern>
-        <image id="image0_1997_6040" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAADBklEQVR4nO3dPWtUQRTG8b8vGJUgSCwUMUQLmxhFP4MpFBs7sbCJpQiCjeBnMIoxovhS5QOIYKFGwUqwjQiiCOlE05htXFxiMQlisbv3nN3Zk537/GCKwMzdc+chs3fv3kxARERERERERESkuingDrAENIC1wltj/VxvA8f6MH9uI8A80CJ+UqJaC7gH7OhxLs1GgDc9FF5aW2TAIdzPcBLD3uZ6mlGDKeq97LRrf4BJ62RutQ4ALjvHlW4bMGMd5JnI044xdTFtHbDF8SKrwKhjXB2sAnssAzwBrDnG1IlpTrWWB9seXUCwVWCF9Aa6sayOALsHVUCdAvgOvCB9gHy3/vPvNn13AWPAPuAU8HgQBVYVfb1tbcvAFdKkekwaX8+k9N+AZ8Al4Fd0Ie2U/CZ8EzjPJp58r+glpUp72sfzzboEeURPbrf2gf7emcwaQIlL0A2gGV1EVaUF8B54HV2ERWkBPIwuwKq0AN5GFzAI0W+y7dpnx7kcJ10xfSFdrvajDpOSPoh9MvafBp6T7v2EKWkJWjH2nyN48qGsAH4a+h4EjuYqxKKkACy3HA5kq8KopAAsxqIL2FDXADxfxWZR1wA2DQUQTAEEUwDBFECwYXkw6yLwo0ufr8C3iscbA05W7DsDXKjYFwZwhRVxo+1Q7pPqYKFDXfpGbAAmch5cAXR3OOfBFUBnO4H9OV9AAXQ2QeY3VQXQWdblBxRANwogmAIIpgCCZQ9gWG5FLJP+DreTW6RtA6o4R9rfoptx7E+OmOZ0WB5LGa/QZ6/heKPAEWctfaUlKJgCCKYAgimAYAogmAIIpgCCKYBgCiCYAgimAIIpgGAKIJgCCKYAgimAYAogmAII5gmg0fcqymHencsTwLJjTF2Y58YTwCvHmLp4aR3gCeARaft6+V8LeGId5AlgCXjgGFe6eeCjdZD3KugaaQdaSRaB656B3gCawBnSk2h1Xo5awF3gLM6NAnv5HNAkbQl8Apjl37+xKt3Gv7GaJZ37VYZol0YREREREREREYnzF+sBkMTb3P1sAAAAAElFTkSuQmCC" />
-      </defs>
+    >
+      <g>
+        <path
+          d="M27.56,0.684H2.383C1.065,0.684,0,1.748,0,3.064v23.813c0,1.312,1.065,2.379,2.383,2.379H27.56
+		c1.312,0,2.38-1.066,2.38-2.379V3.064C29.939,1.748,28.871,0.684,27.56,0.684z M20.125,9.167c-0.619-0.362-1.11-0.648-1.727-0.648
+		c-0.604,0-1.12,0.151-1.384,0.405c-0.264,0.252-0.395,0.74-0.395,1.461v1.067h3.229l-0.699,2.968h-2.53v9.862h-4.056V14.42H10.67
+		v-2.968h1.895v-1.133c0-1.193,0.143-1.907,0.425-2.496c0.281-0.587,0.826-1.241,1.584-1.611c0.757-0.369,1.877-0.555,3.036-0.555
+		c1.188,0,2.116,0.396,3.254,0.715L20.125,9.167z"
+        />
+      </g>
     </svg>
-
   );
-}
+};
 
 export default FaceBook;
