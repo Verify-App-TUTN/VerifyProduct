@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaceBook, GreenLogo, Instagram, LinkedIn, Twitter } from "../../assets";
+import useInput from "../../utils/hooks/useInput";
 import FooterLink from "../FooterLink/FooterLink";
 import style from "./index.module.css";
 const footDetails = [
@@ -17,6 +18,22 @@ const footDetails = [
   }
   ]
 const Footer = () => {
+  const [email, setEmailChange] = useInput("")
+  const [invalidEmail, setInvalidEmail] = useState(false)
+
+  const handleSubmit = () => {
+    const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+    const isValid = regex.test(email);
+    if (!isValid) {
+      setInvalidEmail(true);
+      setTimeout(() => {
+        setInvalidEmail(false);
+      }, 3000);
+    } else {
+      setInvalidEmail(false);
+
+    }
+  }
   return (
     <footer className={style.Footer}>
       <div className={style.Footer__content}>
@@ -48,7 +65,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={style.Footer__bottom}></div>
+      <div className={style.Footer__bottom}>
+        <label htmlFor="emailInput" className={style.Footer__bottom__heading}>Get Updated. Join Our Newsletter</label>
+        <div className={style.Footer__bottom__input__container}>
+          <input value={email} onChange={setEmailChange} id="emailInput" type="email" placeholder="Enter your email address" className={style.Footer__bottom__input} />
+          <button className={style.Footer__bottom__input__button} onClick={() => handleSubmit()}>Subscribe</button>
+        </div>
+        <p className={`${style.Footer__bottom__error__hidden} ${invalidEmail && style.Footer__bottom__error} `}>Please enter a valid email address</p>
+      </div>
+      <div className={style.Footer__bottom__copy}> Verduct 2022 All rights reserved </div>
     </footer>
   );
 };
