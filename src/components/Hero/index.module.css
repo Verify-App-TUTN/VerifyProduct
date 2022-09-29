@@ -1,10 +1,16 @@
 .Hero {
   display: flex;
-  height: 100vh;
+  max-height: 100vh;
+  min-height: calc(100vh - 50px);
   align-items: center;
   padding-inline: 60px;
   width: calc(100% - 120px);
   justify-content: center;
+}
+@media screen and (max-width: 650px) {
+  .Hero {
+    padding-top: 50px;
+  }
 }
 .Hero .Hero__content {
   display: flex;
@@ -15,6 +21,11 @@
   font-size: 72px;
   font-weight: 900;
 }
+@media screen and (max-width: 650px) {
+  .Hero .Hero__content h1 {
+    font-size: 48px;
+  }
+}
 .Hero .Hero__content p {
   font-size: 16px;
   font-weight: 400;
@@ -22,12 +33,23 @@
 }
 .Hero .Hero__content .Navbar__button {
   --background: #009f78;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
   margin-top: 30px;
+}
+.Hero .Hero__content .Navbar__button:hover {
+  --background: #19765e;
 }
 .Hero .Hero__illustration_container {
   position: relative;
   width: 100%;
   display: flex;
+}
+@media screen and (max-width: 650px) {
+  .Hero .Hero__illustration_container {
+    display: none;
+  }
 }
 .Hero .Hero__illustration_container .Hero__illustration_blur {
   position: absolute;

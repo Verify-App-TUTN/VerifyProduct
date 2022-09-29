@@ -31,7 +31,11 @@
 }
 .Navbar .Navbar__button {
   --background: #009f78;
-  display: none;
+}
+@media screen and (max-width: 650px) {
+  .Navbar .Navbar__button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.module.css.map */
