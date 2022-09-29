@@ -36,9 +36,9 @@ const Footer = () => {
               {footDetails.map((props) => (<FooterLink {...props} key={props.heading} />))}
           </div>
           <div className={style.Footer__content__right__social}>
-            <div className={style.Footer__content__right__social__heading}>
-              <h3>Social Media</h3>
-            </div>
+            <h3 className={style.Footer__content__right__social__heading}>
+              Social Media
+            </h3>
             <div className={style.Footer__content__right__social__links}>
               <LinkedIn className={style.Footer__content__right__social__links__icon} />
               <Twitter className={style.Footer__content__right__social__links__icon} />
