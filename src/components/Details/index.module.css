@@ -1,0 +1,23 @@
+.Details {
+  display: flex;
+  padding: 80px;
+  justify-content: space-between;
+  gap: 80px;
+  color: #000D09;
+}
+.Details .Details__content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.Details .Details__content .Details__content__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.Details .Details__content .Details__content__description {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=index.module.css.map */
