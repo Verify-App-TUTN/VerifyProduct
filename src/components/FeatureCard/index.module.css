@@ -9,6 +9,8 @@
   align-items: center;
   text-align: center;
   width: 75%;
+  margin-inline: auto;
+  align-self: center;
 }
 
 /*# sourceMappingURL=index.module.css.map */

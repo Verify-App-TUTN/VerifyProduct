@@ -1,18 +1,22 @@
 .FeatureCards {
   display: grid;
-  justify-content: space-between;
   width: 100%;
   padding-left: 80px;
   grid-template-columns: repeat(3, 0.8fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 50px;
 }
-@media screen and (max-width: 840px) and (min-width: 650px) {
+@media screen and (max-width: 1024px) and (min-width: 720px) {
   .FeatureCards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.8fr);
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 720px) {
   .FeatureCards {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 0.8fr);
   }
 }
 

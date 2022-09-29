@@ -1,3 +1,8 @@
 .Home {
-  height: 100vh;
-}/*# sourceMappingURL=index.module.css.map */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*# sourceMappingURL=index.module.css.map */
