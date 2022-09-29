@@ -1,8 +1,9 @@
 import React from "react";
-import style from "./index.module.css";
+import Details from "../Details/Details";
+// import style from "./index.module.css";
 
 const CTA = () => {
-  return <div className={style.CTA}>CTA</div>;
+  return (<Details />);
 }
 
 export default CTA;
