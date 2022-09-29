@@ -16,10 +16,25 @@
         .Footer__content__right{
             flex-basis: 50%;
             display: flex;
+            justify-content: space-between;
             .Footer__content__right__links{
                 display: flex;
-                flex-basis: 60%;
+                flex-basis: 50%;
                 justify-content: space-between;
+            }
+            .Footer__content__right__social{
+                flex-basis: 40%;
+                .Footer__content__right__social__links{
+                    background-color: #fff;
+                    display: flex;
+                    border-radius: 50px;
+                    justify-content: space-around;
+                    padding: 10px 20px;
+                    .Footer__content__right__social__links__icon{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
             }
         }
     }
