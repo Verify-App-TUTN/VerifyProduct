@@ -1,4 +1,4 @@
-export { default as About } from './About/About';
+
 export { default as CTA } from './CTA/CTA';
 export { default as Features } from './Features/Features';
 export { default as Footer } from './Footer/Footer';
