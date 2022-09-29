@@ -5,6 +5,13 @@
   gap: 80px;
   color: #000D09;
 }
+@media screen and (max-width: 1024px) {
+  .Details {
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+  }
+}
 .Details .Details__content {
   flex-basis: 50%;
   display: flex;
@@ -18,6 +25,17 @@
 }
 .Details .Details__content .Details__content__description {
   font-size: 1rem;
+}
+
+.Details__reverse {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1024px) {
+  .Details__reverse {
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+  }
 }
 
 /*# sourceMappingURL=index.module.css.map */
