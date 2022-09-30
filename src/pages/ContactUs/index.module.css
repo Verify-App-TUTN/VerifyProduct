@@ -48,6 +48,11 @@
   padding: 24px;
   box-shadow: 0px 2px 2px rgba(0, 159, 120, 0.25);
   border-radius: 8px;
+  outline: none;
+}
+.ContactUs__content__forms__container__text__input:focus {
+  outline: none;
+  border: 1px solid #5AE0BF;
 }
 .ContactUs__content__image {
   width: 100%;

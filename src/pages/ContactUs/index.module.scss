@@ -42,7 +42,12 @@
             border: 1px solid #B5E6DD;
             padding: 24px;
             box-shadow: 0px 2px 2px rgba(0, 159, 120, 0.25);
-              border-radius: 8px;
+            border-radius: 8px;
+            outline: none;
+            &:focus {
+              outline: none;
+              border: 1px solid #5AE0BF;
+            }
           }
         }
       }
