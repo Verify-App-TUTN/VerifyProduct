@@ -15,11 +15,13 @@
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+        @media screen and (max-width: 768px) {
+        gap: 10px;
+        }
         .Details__content__title{
             font-size: 3.5rem;
             @media screen and (max-width: 768px) {
-                font-size: 1.5rem;
-            }
+                font-size: 2rem;
                 
             }
             font-weight: 700;
