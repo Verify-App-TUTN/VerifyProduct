@@ -1,5 +1,5 @@
 import React from "react";
-const arrow = (props) => {
+const Arrow = (props) => {
   return (
     <svg
       {...props}
@@ -10,4 +10,4 @@ const arrow = (props) => {
   )
 }
 
-export default arrow;
+export default Arrow;
