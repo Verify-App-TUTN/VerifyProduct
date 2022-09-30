@@ -7,8 +7,10 @@
   padding-inline: 80px;
   width: calc(100% - 120px);
   justify-content: center;
-@media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
     padding-top: 50px;
+    width: 100%;
+    padding-inline: 40px;    
 }
 
   .Hero__content {
@@ -16,9 +18,9 @@
     flex-direction: column;
     justify-content: space-between;
     h1 {
-      font-size: 72px;
-    @media screen and (max-width: 650px) {
-        font-size: 48px;
+      font-size: 4.5rem;
+    @media screen and (max-width: 768px) {
+        font-size: 3.5rem;
     }
       font-weight: 900;
     }
