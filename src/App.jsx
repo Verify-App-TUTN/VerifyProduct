@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./index.css";
-import {ComingSoon,  Home, ProductN, VerifyForm, Verifyproduct} from "./pages"
+import {ComingSoon,  ContactUs,  Home, ProductN, VerifyForm, Verifyproduct} from "./pages"
 import { Route, Routes, useLocation } from "react-router-dom";
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
     <Routes>
       <Route index path="/" element={<Home />} />
       <Route index path="/:page" element={<ComingSoon />} />
+      <Route index path="/contactus" element={<ContactUs />} />
        <Route path="/verifyform" element={<VerifyForm />} /> 
       <Route path="/verifyproduct" element={<Verifyproduct />} />
       <Route path="/product" element={<ProductN />} /> 
