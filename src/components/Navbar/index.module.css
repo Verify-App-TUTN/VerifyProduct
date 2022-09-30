@@ -1,42 +1,87 @@
 .nav__scrolled {
   --background: #fff;
+  --box-shadow: 0px 4px 4px rgba(236, 248, 241, 0.5);
 }
 
 .Navbar {
   padding: 30px 50px;
   display: flex;
+  flex-basis: 20%;
   justify-content: space-around;
   align-items: center;
+  box-shadow: var(--box-shadow);
   position: fixed;
   z-index: 50;
   width: 100%;
-  transition-property: background-color;
+  transition-property: background-color box-shadow;
   transition-duration: 750ms;
   transition-timing-function: ease-in;
   background-color: var(--background);
 }
+@media screen and (max-width: 768px) {
+  .Navbar {
+    padding: 30px 30px;
+    justify-content: space-between;
+  }
+}
 .Navbar .Navbar__logo {
   width: 200px;
+  height: auto;
 }
-.Navbar .Navbar__links {
+@media screen and (max-width: 768px) {
+  .Navbar .Navbar__logo {
+    width: 150px;
+  }
+}
+.Navbar .Navbar__links__container {
+  width: 100%;
+  display: flex;
+  flex-basis: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Navbar .Navbar__links__container .Navbar__links {
   display: flex;
   justify-content: space-between;
   width: 300px;
   flex-basis: 40%;
 }
 @media screen and (max-width: 650px) {
-  .Navbar .Navbar__links {
+  .Navbar .Navbar__links__container .Navbar__links {
     display: none;
   }
 }
-.Navbar .Navbar__button {
+.Navbar .Navbar__links__container .Navbar__button {
   --background: #009f78;
 }
 @media screen and (max-width: 650px) {
-  .Navbar .Navbar__button {
+  .Navbar .Navbar__links__container .Navbar__button {
     display: none;
   }
 }
-.Navbar .Navbar__button:hover {
+.Navbar .Navbar__links__container .Navbar__button:hover {
   --background: #19765e;
-}/*# sourceMappingURL=index.module.css.map */
+}
+.Navbar .Navbar__hamburgermenu {
+  position: relative;
+  width: 30px;
+  height: 3px;
+}
+.Navbar .Navbar__hamburgermenu::after, .Navbar .Navbar__hamburgermenu::before {
+  content: "";
+  background-color: #009f78;
+  width: 30px;
+  height: 3px;
+  border-radius: 99px;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+.Navbar .Navbar__hamburgermenu::after {
+  top: 7px;
+}
+.Navbar .Navbar__hamburgermenu::before {
+  top: -7px;
+}
+
+/*# sourceMappingURL=index.module.css.map */
