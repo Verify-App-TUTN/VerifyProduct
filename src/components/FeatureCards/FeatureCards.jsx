@@ -21,7 +21,7 @@ const FeatureCards = () => {
   return (<div className={style.FeatureCards}>
 
     {featuresCards.map(({icon, ...props}) => (
-      <FeatureCard {...props}>
+      <FeatureCard {...props} key={props.heading.trim()}>
         {icon}
       </FeatureCard>
       ))}
