@@ -1,4 +1,5 @@
 import React from "react";
+import { ContactUsImage } from "../../assets";
 import { Layout } from "../../components";
 import style from "./index.module.css";
 
@@ -8,9 +9,16 @@ const ContactUs = () => {
       <div className={style.ContactUs__content}>
         <div className={style.ContactUs__forms}>
           <h1 className={style.ContactUs__content__heading}>Integrate Your Products Into Our Database</h1>
+          <div className={style.ContactUs__content__paragraph}>
+            <div>
+              
+            </div>
+          </div>
         </div>
-        
-        <img src="image" alt="Contact Us" className={style.ContactUs__content__image} />
+        <div className={style.ContactUs__image}>
+          <div className={style.ContactUs__image__watermark}></div>
+        <img src={ContactUsImage} alt="Contact Us" className={style.ContactUs__content__image} />
+        </div>
       </div>
     </Layout>
   )
