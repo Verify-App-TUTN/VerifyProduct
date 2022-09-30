@@ -7,7 +7,6 @@ const  App = () => {
   return (
     <Routes>
       <Route index path="/" element={<Home />} />
-      <Route index path="/contactus" element={<ContactUs />} />
       <Route index path="/:page" element={<ComingSoon />} />
        <Route path="/verifyform" element={<VerifyForm />} /> 
       <Route path="/verifyproduct" element={<Verifyproduct />} />
