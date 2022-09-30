@@ -10,11 +10,11 @@
 
   align-items: center;
   padding-inline: 80px;
-  width: calc(100% - 200px);
-  width: -webkit-calc(100% - 200px);
-  width: -moz-calc(100% - 200px);
-  width: -o-calc(100% - 200px);
-  width: -ms-calc(100% - 200px);
+  width: calc(100% - 160px);
+  width: -webkit-calc(100% - 160px);
+  width: -moz-calc(100% - 160px);
+  width: -o-calc(100% - 160px);
+  width: -ms-calc(100% - 160px);
   justify-content: center;
   padding-top: 100px;
   @media screen and (max-width: 768px) {
@@ -69,6 +69,10 @@
       opacity: 0.5;
       border: 1px solid #001a13;
       filter: blur(150px);
+      filter: -moz-blur(150px);
+      filter: -webkit-blur(150px);
+      filter: -o-blur(150px);
+      filter: -ms-blur(150px);
       border-radius: 400px 0px 0px 400px;
       animation-name: blurry;
       animation-duration: 5s;

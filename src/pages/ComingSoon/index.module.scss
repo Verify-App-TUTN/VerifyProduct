@@ -4,6 +4,10 @@
   min-height: 100vh;
   .ComingSoon__content {
     height: calc(100vh - 100px);
+    height: -webkit-calc(100vh - 100px);
+    height: -moz-calc(100vh - 100px);
+    height: -o-calc(100vh - 100px);
+    height: -ms-calc(100vh - 100px);
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -26,6 +30,9 @@
     letter-spacing: 0.2rem;
     text-align: center;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    -moz-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    -o-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         @keyframes pulse {
     
             0%,

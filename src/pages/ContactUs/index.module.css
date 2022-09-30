@@ -5,6 +5,10 @@
 }
 .ContactUs .ContactUs__content {
   min-height: calc(100vh - 100px);
+  min-height: -webkit-calc(100vh - 100px);
+  min-height: -moz-calc(100vh - 100px);
+  min-height: -o-calc(100vh - 100px);
+  min-height: -ms-calc(100vh - 100px);
   margin-top: 100px;
   display: flex;
   flex-direction: column;
