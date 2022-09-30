@@ -1,5 +1,6 @@
 import SystemsImage from "./images/systems.png";
 import AccessibilityImage from "./images/accessibility.png";
+import ContactUsImage from "./images/contactUsImage.png";
 import ComingSoonIllustration from "./illustrations/ComingSoonIllustration.png";
 export { default as ArrowWatermark } from './illustrations/ArrowWatermark';
 export { default as Authenticity } from './illustrations/Authenticity';
@@ -12,4 +13,4 @@ export { default as Twitter } from './icons/Twitter';
 export { default as LinkedIn } from './icons/LinkedIn';
 export { default as FaceBook } from './icons/FaceBook';
 export { default as Reliability } from './illustrations/Reliability';
-export { SystemsImage, AccessibilityImage, ComingSoonIllustration };
+export { SystemsImage, AccessibilityImage, ComingSoonIllustration, ContactUsImage };
