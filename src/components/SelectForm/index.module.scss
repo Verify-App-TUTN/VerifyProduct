@@ -1,44 +1,48 @@
 .Form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+
+  &__label {
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1.5px solid rgba(36, 24, 24, 0.25);
+    transition-property: border;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in;
     display: flex;
-    flex-direction: column;
-    width: 75%;
-
-    &__label {
-        font-weight: 500;
-        font-size: 1.15rem;
-        margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    &:focus {
+      outline: none;
+      border: 1.5px solid rgba(36, 24, 24, 0.75);
     }
-
-    &__input {
-        width: 100%;
-        padding: 1rem 2rem;
-        border: 1.5px solid rgba(36, 24, 24, 0.25);
-        transition-property: border;
-        transition-duration: 750ms;
-        transition-timing-function: ease-in;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        border-radius: 5px;
-        outline: none;
-        font-size: 1rem;
-        font-weight: 400;
-        color: #000;
-        background-color: #fff;
-        &:focus {
-            outline: none;
-            border: 1.5px solid rgba(36, 24, 24, 0.75);
-        }
-        &__icon{
-            transform: rotate(180deg);
-        }
+    &__icon {
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-timing-function: ease-in;
+      &__rotate {
+        transform: rotate(180deg);
+      }
     }
-    &__details{
-        margin-top: 20px;
-        overflow: hidden;
-        transition-property: all;
-        transition-duration: 500ms;
-        transition-timing-function: ease-in;
-    }
+  }
+  &__details {
+    overflow: hidden;
+    transition-property: height, overflow;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+  }
 }

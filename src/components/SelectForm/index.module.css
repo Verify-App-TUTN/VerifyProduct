@@ -31,12 +31,16 @@
   border: 1.5px solid rgba(36, 24, 24, 0.75);
 }
 .Form__input__icon {
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+.Form__input__icon__rotate {
   transform: rotate(180deg);
 }
 .Form__details {
-  margin-top: 20px;
   overflow: hidden;
-  transition-property: all;
+  transition-property: height, overflow;
   transition-duration: 500ms;
   transition-timing-function: ease-in;
 }
