@@ -13,6 +13,7 @@
   margin-top: 100px;
   display: flex;
   flex-direction: flex;
+  justify-content: space-between;
   width: 100%;
   gap: 0;
 }
@@ -20,11 +21,32 @@
   font-weight: 700;
   font-size: 56px;
 }
-.ContactUs .ContactUs__content .ContactUs__content__image {
+.ContactUs .ContactUs__content .ContactUs__image {
+  width: 100%;
+  height: 100%;
+  flex-basis: 50%;
+  position: relative;
+  display: block;
+}
+.ContactUs .ContactUs__content .ContactUs__image .ContactUs__image__watermark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 159, 120, 0.2);
+  padding: 30px;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  z-index: 0;
+}
+.ContactUs .ContactUs__content .ContactUs__image .ContactUs__content__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  flex-basis: 50%;
+  z-index: 20;
+  position: relative;
 }
 
 /*# sourceMappingURL=index.module.css.map */
