@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   .ContactUs__content {
+    flex-basis: 50%;
     min-height: calc(100vh - 100px);
     min-height: -webkit-calc(100vh - 100px);
     min-height: -moz-calc(100vh - 100px);
@@ -14,12 +14,15 @@
     display: flex;
     flex-direction: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     gap: 0;
+    .ContactUs__forms{
     .ContactUs__content__heading{
         font-weight: 700;
         font-size: 56px;
     }
+  }
     .ContactUs__image{
         width: 100%;
         height: 100%;
@@ -34,8 +37,8 @@
             height: 100%;
             background-color: rgba(0, 159, 120, 0.2);
             padding: 30px;
-            top: 20px;
-            left: 20px;
+            top: 50px;
+            left: 50px;
             border-radius: 10px;
             z-index: 0;
         }
