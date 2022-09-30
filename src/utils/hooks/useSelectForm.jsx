@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from "react";
+import  React ,{ useState } from "react";
+import { SelectForm } from "../../components";
 
-const useSelectForm = () => {
-  const [state, setState] = useState();
+const useSelectForm = ({ details, placeholder, label, errorMessage }) => {
+  const [state, setState] = useState(placeholder);
 
-  useEffect(() => {}, [state]);
 
-  return [state];
+  return [state, () => {
+    return (
+      <SelectForm {...{ setState, state, details, label, errorMessage }} />
+    );
+  }];
 }
 
 export default useSelectForm;
