@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import {Home, ProductN, VerifyForm, Verifyproduct} from "./pages"
 import { Route, Routes } from "react-router-dom";
-function App() {
+const  App = () => {
   document.title = "Verify Product";
   return (
     <Routes>

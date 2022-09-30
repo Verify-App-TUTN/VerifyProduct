@@ -1,4 +1,4 @@
-function blockName() {
+const blockName = () => {
   return;
 }
 
