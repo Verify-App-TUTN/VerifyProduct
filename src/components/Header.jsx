@@ -85,7 +85,7 @@ const Nav = styled.nav`
     background-color: #009f78;
     border-color: #009f78;
   }
-  @media screen and (max-width: 1299px) {
+  @media screen and (max-width: 1099px) {
     position: relative;
     z-index: 999;
     button,

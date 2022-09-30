@@ -4,6 +4,9 @@
     transition-property: color;
     transition-duration: 500ms;
     transition-timing-function: ease-in;
+    &:hover{
+        color: #009f78;
+    }
 }
 .active{
     color: #009f78;

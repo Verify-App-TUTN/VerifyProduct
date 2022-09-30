@@ -11,5 +11,9 @@
   width: 100%;
   gap: 0;
 }
+.ContactUs .ContactUs__content .ContactUs__content__heading {
+  font-weight: 700;
+  font-size: 56px;
+}
 
 /*# sourceMappingURL=index.module.css.map */
