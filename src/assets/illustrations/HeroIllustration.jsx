@@ -18,7 +18,7 @@ const HeroIllustration = (props) => {
       <circle cx="713" cy="430" r="49.5" stroke="#009F78" />
       <circle cx="738" cy="429" r="24.5" stroke="#009F78" />
       <rect x="630" y="194" width="178" height="96" rx="10" fill="#FEFEFF" />
-      <rect x="630.5" y="194.5" width="177" height="95" rx="9.5" stroke="#009F78" stroke-opacity="0.5" />
+      <rect x="630.5" y="194.5" width="177" height="95" rx="9.5" stroke="#009F78" strokeOpacity="0.5" />
       <rect opacity="0.6" x="698" y="221" width="65" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
       <rect opacity="0.6" x="698" y="233" width="75" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
       <rect opacity="0.6" x="698" y="245" width="81" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
@@ -27,7 +27,7 @@ const HeroIllustration = (props) => {
       <path d="M678.684 249.063L674.001 238.513L669.318 249.063L667.018 248.046L672.851 234.93H675.151L680.984 248.046L678.684 249.063Z" fill="#FFDB54" />
       <path d="M676.917 245.43H671.084C670.401 245.43 669.834 244.863 669.834 244.18C669.834 243.496 670.401 242.93 671.084 242.93H676.917C677.601 242.93 678.167 243.496 678.167 244.18C678.167 244.863 677.601 245.43 676.917 245.43Z" fill="#FFDB54" />
       <rect x="762" y="376" width="178" height="96" rx="10" fill="#FEFEFF" />
-      <rect x="762.5" y="376.5" width="177" height="95" rx="9.5" stroke="#009F78" stroke-opacity="0.5" />
+      <rect x="762.5" y="376.5" width="177" height="95" rx="9.5" stroke="#009F78" strokeOpacity="0.5" />
       <rect opacity="0.6" x="830" y="403" width="65" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
       <rect opacity="0.6" x="830" y="415" width="75" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
       <rect opacity="0.6" x="830" y="427" width="81" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
@@ -39,7 +39,7 @@ const HeroIllustration = (props) => {
       <path d="M814.534 419.867C813.85 419.867 813.284 419.3 813.284 418.617V415H809.65C808.967 415 808.4 414.433 808.4 413.75C808.4 413.067 808.967 412.5 809.65 412.5H814.534C815.217 412.5 815.784 413.067 815.784 413.75V418.633C815.784 419.317 815.234 419.867 814.534 419.867Z" fill="#009F78" />
       <path d="M811.001 441.919H801.001C791.951 441.919 788.084 438.053 788.084 429.003V419.003C788.084 409.953 791.951 406.086 801.001 406.086H811.001C820.051 406.086 823.917 409.953 823.917 419.003V429.003C823.917 438.053 820.051 441.919 811.001 441.919ZM801.001 408.586C793.317 408.586 790.584 411.319 790.584 419.003V429.003C790.584 436.686 793.317 439.419 801.001 439.419H811.001C818.684 439.419 821.417 436.686 821.417 429.003V419.003C821.417 411.319 818.684 408.586 811.001 408.586H801.001Z" fill="#009F78" />
       <rect x="630" y="556" width="178" height="96" rx="10" fill="#FEFEFF" />
-      <rect x="630.5" y="556.5" width="177" height="95" rx="9.5" stroke="#009F78" stroke-opacity="0.5" />
+      <rect x="630.5" y="556.5" width="177" height="95" rx="9.5" stroke="#009F78" strokeOpacity="0.5" />
       <rect opacity="0.6" x="698" y="583" width="65" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
       <rect opacity="0.6" x="698" y="595" width="75" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
       <rect opacity="0.6" x="698" y="607" width="81" height="8" rx="2" fill="#5AE0BF" fillOpacity="0.2" />
