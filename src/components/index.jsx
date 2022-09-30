@@ -7,7 +7,6 @@ export { default as FeatureCards } from './FeatureCards/FeatureCards';
 export { default as Footer } from './Footer/Footer';
 export { default as TextForm } from "./TextForm/TextForm";
 export { default as SelectForm } from "./SelectForm/SelectForm";
-export { default as Form } from "./Form/Form";
 export { default as GetStarted } from './GetStarted/GetStarted';
 export { default as Hero } from './Hero/Hero';
 export { default as Layout } from './Layout/Layout';
