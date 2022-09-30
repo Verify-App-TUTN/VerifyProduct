@@ -39,6 +39,7 @@ const Navbar = () => {
           <Logo />
         </Link>
       </div>
+      <div className={style.Navbar__links__container}>
       <ul className={style.Navbar__links}>
         {navLinks.map(({ text, to }) => (
           <li key={text}>
@@ -49,6 +50,8 @@ const Navbar = () => {
         ))}
       </ul>
       <GetStarted className={style.Navbar__button}/>
+      </div>
+      <div className={style.Navbar__hamburgermenu}></div>
     </nav>
   );
 }
