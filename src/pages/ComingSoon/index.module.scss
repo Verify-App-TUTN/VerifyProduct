@@ -10,13 +10,18 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    gap: 0;
     .ComingSoon__illustration{
         height: 75%;
         width: auto;
     }
     .ComingSoon__content__heading{
     font-size: 4.5rem;
+    @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+    }
     font-weight: 900;
+    display: inline;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
