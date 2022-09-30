@@ -7,13 +7,12 @@
   @media screen and (max-width: 768px) {
     padding: 30px 30px;
     justify-content: space-between;
-
-    }
+  }
   display: flex;
   flex-basis: 20%;
   justify-content: space-around;
   align-items: center;
-  box-shadow: var(--box-shadow) ;
+  box-shadow: var(--box-shadow);
   position: fixed;
   z-index: 50;
   width: 100%;
@@ -25,11 +24,11 @@
     width: 200px;
     height: auto;
     z-index: 50;
-  @media screen and (max-width: 768px) {
-    width: 150px;
+    @media screen and (max-width: 768px) {
+      width: 150px;
+    }
   }
-  }
-  .Navbar__links__container{
+  .Navbar__links__container {
     width: 100%;
     display: flex;
     flex-basis: 80%;
@@ -51,67 +50,68 @@
       background-color: #fff;
       z-index: 0;
       font-size: 2rem;
-      &.Navbar__links__container__active{
+      &.Navbar__links__container__active {
         transform: translateX(0);
+      }
     }
+    .Navbar__links {
+      display: flex;
+      justify-content: space-around;
+      flex-basis: 60%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+      }
     }
-  .Navbar__links {
-    display: flex;
-    justify-content: space-around;
-    flex-basis: 60%;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-.Navbar__button {
-    --background: #009f78;
-  &:hover {
-      --background: #19765e;
-  }
-  width: fit-content;
-    @media screen and (max-width: 768px) {
-      display: block;
-      width: 100%;
-      text-align: center;
+    .Navbar__button {
+      --background: #009f78;
+      &:hover {
+        --background: #19765e;
+      }
+      width: fit-content;
+      @media screen and (max-width: 768px) {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
-}
-.Navbar__hamburgermenu{
-  position: relative;
-  width: 30px;
-  height: 3px;
+  .Navbar__hamburgermenu {
+    position: relative;
+    width: 30px;
+    height: 3px;
     z-index: 50;
-  cursor: pointer;
-  &::after, &::before{
-    content: "";
-  background-color: #009f78;
-  width: 30px;
-  height: 3px;
-  border-radius: 99px;
-  position: absolute;
-  left: 0;
-  cursor: pointer;
-  display: none;
-  @media screen and (max-width: 768px) {
-    display: block;
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: "";
+      background-color: #009f78;
+      width: 30px;
+      height: 3px;
+      border-radius: 99px;
+      position: absolute;
+      left: 0;
+      cursor: pointer;
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+      transition: transform 500ms ease-in;
+    }
+    transition: transform 500ms ease-in;
+    &::after {
+      transform: translateY(7px);
+    }
+    &::before {
+      transform: translateY(-7px);
+    }
+    &.Navbar__hamburgermenu__active::after {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &.Navbar__hamburgermenu__active::before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
   }
-  transition: transform 500ms ease-in;
-  }
-  transition: transform 500ms ease-in;
-  &::after{
-    transform: translateY(7px);
-  }
-  &::before{
-    transform: translateY(-7px);
-  }
-  &.Navbar__hamburgermenu__active::after{
-    top: 0;
-    transform: rotate(45deg);
-  }
-  &.Navbar__hamburgermenu__active::before{
-    top: 0;
-    transform: rotate(-45deg);
-  }
-}
 }
