@@ -3,30 +3,30 @@ import { Arrow } from "../../assets";
 import { FormDetail } from "../";
 import style from "./index.module.css";
 
-const SelectForm = () => {
-  const details = ["United States", "Nigeria", "Croatia", "Germany"];
+const SelectForm = ({ setState, state, details, label, errorMessage }) => {
   const [toggleDetails, setToggleDetails] = useState(false);
+  console.log(toggleDetails)
   const [detailsHeight, setDetailsHeight] = useState(0);
   const detailsContainerRef  = useRef(null);
   useEffect(() => {
-    // get the height of the details container
     setDetailsHeight(detailsContainerRef.current.scrollHeight);
-
-  }, []);
-  console.log(detailsHeight, detailsContainerRef);
+  }, [detailsContainerRef]);
+  console.log(detailsHeight);
   return (
     <div className={style.Form}>
-      <label className={style.Form__label}>Company/Group Name</label>
-      <div className={style.Form__input} onClick={()=> setToggleDetails(prev => !prev)}>
-        Select Industry
-        <Arrow className={toggleDetails && style.Form__input__icon} />
+      <label className={style.Form__label}>{label}</label>
+      <div className={style.Form__input} onClick={() => setToggleDetails(prev => !prev)}>
+        {state}
+        <Arrow className={`${style.Form__input__icon} ${toggleDetails && style.Form__input__icon__rotate}`} />
       </div>
       <div
         ref={detailsContainerRef}
         style={{ height: toggleDetails ? `${detailsHeight}px` : 0 }}
-        className={style.Form__details}>
-        {details.map((details) => (
-          <FormDetail {...{details}} />
+        className={style.Form__details}
+
+      >
+        {details?.map((details) => (
+          <FormDetail {...{ details, setState, state }} />
         ))}
       </div>
     </div>
