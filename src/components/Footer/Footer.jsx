@@ -7,7 +7,7 @@ import {
   Twitter,
 } from "../../assets";
 import { isEmail } from "../../utils/functions";
-import useInput from "../../utils/hooks/useInput";
+import { useInput } from "../../utils/hooks";
 import FooterLink from "../FooterLink/FooterLink";
 import style from "./index.module.css";
 const footDetails = [
