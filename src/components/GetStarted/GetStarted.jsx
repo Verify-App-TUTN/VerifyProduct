@@ -4,10 +4,8 @@ import style from "./index.module.css";
 
 const GetStarted = ({className, ...props}) => {
   return(
-    <Link to="getStarted">
-    <span {...props} className={`${style.GetStarted} ${className}`}>
+    <Link to="getStarted"  {...props} className={`${style.GetStarted} ${className}`}>
         Get Started
-      </span>
     </Link>
   );
 }
