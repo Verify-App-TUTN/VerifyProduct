@@ -69,7 +69,7 @@
 .Footer .Footer__content .Footer__content__right .Footer__content__right__social .Footer__content__right__social__links {
   background-color: #fff;
   display: flex;
-  border-radius: 50px;
+  border-radius: 15px;
   justify-content: space-around;
   padding: 10px 20px;
 }
