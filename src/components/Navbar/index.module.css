@@ -27,6 +27,7 @@
 .Navbar .Navbar__logo {
   width: 200px;
   height: auto;
+  z-index: 50;
 }
 @media screen and (max-width: 768px) {
   .Navbar .Navbar__logo {
@@ -40,32 +41,60 @@
   justify-content: space-evenly;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .Navbar .Navbar__links__container {
+    transform: translateX(-100%);
+    transition: transform 500ms ease-in-out;
+    padding-top: 100px;
+    padding: 0px 30px;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 0;
+    font-size: 2rem;
+  }
+  .Navbar .Navbar__links__container.Navbar__links__container__active {
+    transform: translateX(0);
+  }
+}
 .Navbar .Navbar__links__container .Navbar__links {
   display: flex;
-  justify-content: space-between;
-  width: 300px;
-  flex-basis: 40%;
+  justify-content: space-around;
+  flex-basis: 60%;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   .Navbar .Navbar__links__container .Navbar__links {
-    display: none;
+    width: 100%;
+    flex-direction: column;
   }
 }
 .Navbar .Navbar__links__container .Navbar__button {
   --background: #009f78;
-}
-@media screen and (max-width: 650px) {
-  .Navbar .Navbar__links__container .Navbar__button {
-    display: none;
-  }
+  width: fit-content;
 }
 .Navbar .Navbar__links__container .Navbar__button:hover {
   --background: #19765e;
+}
+@media screen and (max-width: 768px) {
+  .Navbar .Navbar__links__container .Navbar__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 .Navbar .Navbar__hamburgermenu {
   position: relative;
   width: 30px;
   height: 3px;
+  z-index: 50;
+  cursor: pointer;
+  transition: transform 500ms ease-in;
 }
 .Navbar .Navbar__hamburgermenu::after, .Navbar .Navbar__hamburgermenu::before {
   content: "";
@@ -76,12 +105,27 @@
   position: absolute;
   left: 0;
   cursor: pointer;
+  display: none;
+  transition: transform 500ms ease-in;
+}
+@media screen and (max-width: 768px) {
+  .Navbar .Navbar__hamburgermenu::after, .Navbar .Navbar__hamburgermenu::before {
+    display: block;
+  }
 }
 .Navbar .Navbar__hamburgermenu::after {
-  top: 7px;
+  transform: translateY(7px);
 }
 .Navbar .Navbar__hamburgermenu::before {
-  top: -7px;
+  transform: translateY(-7px);
+}
+.Navbar .Navbar__hamburgermenu.Navbar__hamburgermenu__active::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+.Navbar .Navbar__hamburgermenu.Navbar__hamburgermenu__active::before {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 /*# sourceMappingURL=index.module.css.map */

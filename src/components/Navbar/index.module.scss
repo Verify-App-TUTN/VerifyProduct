@@ -24,6 +24,7 @@
   .Navbar__logo {
     width: 200px;
     height: auto;
+    z-index: 50;
   @media screen and (max-width: 768px) {
     width: 150px;
   }
@@ -34,29 +35,54 @@
     flex-basis: 80%;
     justify-content: space-evenly;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      transform: translateX(-100%);
+      transition: transform 500ms ease-in-out;
+      padding-top: 100px;
+      padding: 0px 30px;
+      position: fixed;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 0;
+      font-size: 2rem;
+      &.Navbar__links__container__active{
+        transform: translateX(0);
+    }
+    }
   .Navbar__links {
     display: flex;
-    justify-content: space-between;
-    width: 300px;
-    flex-basis: 40%;
-    @media screen and (max-width: 650px) {
-        display: none;
-    }
+    justify-content: space-around;
+    flex-basis: 60%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .Navbar__button {
     --background: #009f78;
-    @media screen and (max-width: 650px) {
-    display: none;
-  }
   &:hover {
       --background: #19765e;
   }
+  width: fit-content;
+    @media screen and (max-width: 768px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 .Navbar__hamburgermenu{
   position: relative;
   width: 30px;
   height: 3px;
+    z-index: 50;
+  cursor: pointer;
   &::after, &::before{
     content: "";
   background-color: #009f78;
@@ -66,12 +92,26 @@
   position: absolute;
   left: 0;
   cursor: pointer;
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
   }
+  transition: transform 500ms ease-in;
+  }
+  transition: transform 500ms ease-in;
   &::after{
-    top: 7px;
+    transform: translateY(7px);
   }
   &::before{
-    top: -7px;
+    transform: translateY(-7px);
+  }
+  &.Navbar__hamburgermenu__active::after{
+    top: 0;
+    transform: rotate(45deg);
+  }
+  &.Navbar__hamburgermenu__active::before{
+    top: 0;
+    transform: rotate(-45deg);
   }
 }
 }
