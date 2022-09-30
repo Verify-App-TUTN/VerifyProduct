@@ -37,9 +37,10 @@ const Footer = () => {
     <footer className={style.Footer}>
       <div className={style.Footer__content}>
         <div className={style.Footer__content__left}>
-          <div className={style.Footer__content__left__logo}></div>
-          <div className={style.Footer__content__left__description}>
+          <div className={style.Footer__content__left__logo}>
             <GreenLogo />
+          </div>
+          <div className={style.Footer__content__left__description}>
             <p>
               Get access to select your choice product from our list of Product
               Categories Get access to select your choice product from our list
