@@ -58,6 +58,31 @@
             }
           }
         }
+        &__button{
+        display: block;
+        
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+        
+          color: #fff;
+          padding: 1rem 3rem;
+          border-radius: 5px;
+          font-size: 1.2rem;
+          font-weight: 600;
+          cursor: pointer;
+          display: block;
+          width: fit-content;
+          transition-property: background-color;
+          transition-duration: 500ms;
+          transition-timing-function: ease-in;
+          --background: #009f78;
+          background-color: var(--background);
+        
+          &:hover {
+            --background: #19765e;
+          }
+        }
       }
     }
     &__image {
