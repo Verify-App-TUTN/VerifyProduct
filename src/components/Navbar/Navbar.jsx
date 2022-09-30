@@ -3,6 +3,7 @@ import style from "./index.module.css";
 import { NavLink as Link } from "react-router-dom";
 import { GetStarted, NavLink } from "../";
 import { Logo } from "../../assets";
+import { useState } from "react";
 const navLinks = [
   {
     text: "Integrate Product",
@@ -16,8 +17,9 @@ const navLinks = [
     text: "Contact Us",
     to: "/contactus",
   },
-]
+];
 const Navbar = () => {
+  const [toggleDropDown, setToggleDropDown] = useState(false);
   useEffect(() => {
     const handleScroll = (e) => {
       const nav = document.querySelector("nav");
@@ -26,11 +28,11 @@ const Navbar = () => {
       } else {
         nav.classList.remove(style.nav__scrolled);
       }
-    }
-    window.addEventListener("scroll",handleScroll);
+    };
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-    }
+    };
   }, []);
   return (
     <nav className={style.Navbar}>
@@ -39,21 +41,24 @@ const Navbar = () => {
           <Logo />
         </Link>
       </div>
-      <div className={style.Navbar__links__container}>
-      <ul className={style.Navbar__links}>
-        {navLinks.map(({ text, to }) => (
-          <li key={text}>
-          <NavLink to={to}>     
-            {text}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
-      <GetStarted className={style.Navbar__button}/>
+      <div className={`${style.Navbar__links__container} ${toggleDropDown && style.Navbar__links__container__active}`}>
+        <ul className={style.Navbar__links}>
+          {navLinks.map(({ text, to }) => (
+            <li key={text}>
+              <NavLink to={to}>{text}</NavLink>
+            </li>
+          ))}
+        </ul>
+        <GetStarted className={style.Navbar__button} />
       </div>
-      <div className={style.Navbar__hamburgermenu}></div>
+      <div
+        className={`${style.Navbar__hamburgermenu} ${
+          toggleDropDown && style.Navbar__hamburgermenu__active
+          }`}
+        onClick={() => setToggleDropDown(toggle => !toggle)}
+      ></div>
     </nav>
   );
-}
+};
 
 export default Navbar;
