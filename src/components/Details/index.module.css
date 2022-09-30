@@ -1,41 +1,17 @@
-.Details {
-  display: flex;
-  padding: 80px;
-  justify-content: space-between;
-  gap: 80px;
-  color: #000D09;
-}
-@media screen and (max-width: 1024px) {
-  .Details {
-    flex-direction: column;
-    padding: 40px;
-    gap: 40px;
-  }
-}
-.Details .Details__content {
-  flex-basis: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-.Details .Details__content .Details__content__title {
-  font-size: 3.5rem;
-  font-weight: 700;
-}
-.Details .Details__content .Details__content__description {
-  font-size: 1rem;
-}
+/* Error: unmatched "}".
+ *    ,
+ * 31 | }
+ *    | ^
+ *    '
+ *   src/components/Details/index.module.scss 31:1  root stylesheet */
 
-.Details__reverse {
-  flex-direction: row-reverse;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: unmatched "}".\a    \2577 \a 31 \2502  }\a    \2502  ^\a    \2575 \a   src/components/Details/index.module.scss 31:1  root stylesheet';
 }
-@media screen and (max-width: 1024px) {
-  .Details__reverse {
-    flex-direction: column;
-    padding: 40px;
-    gap: 40px;
-  }
-}
-
-/*# sourceMappingURL=index.module.css.map */

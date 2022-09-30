@@ -83,6 +83,11 @@
   align-items: flex-start;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .Footer .Footer__bottom {
+    margin-top: 20px;
+  }
+}
 .Footer .Footer__bottom .Footer__bottom__heading {
   font-weight: 500;
   font-size: 1.15rem;
@@ -124,6 +129,8 @@
   font-weight: 600;
   cursor: pointer;
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   transition-property: background-color;
   transition-duration: 500ms;
@@ -153,6 +160,4 @@
   font-weight: 400;
   color: #fff;
   text-align: center;
-}
-
-/*# sourceMappingURL=index.module.css.map */
+}/*# sourceMappingURL=index.module.css.map */

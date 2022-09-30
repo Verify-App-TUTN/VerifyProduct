@@ -8,6 +8,8 @@
   font-weight: 600;
   cursor: pointer;
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   transition-property: background-color;
   transition-duration: 500ms;
@@ -15,6 +17,4 @@
 }
 .GetStarted:hover {
   --background: #575454;
-}
-
-/*# sourceMappingURL=index.module.css.map */
+}/*# sourceMappingURL=index.module.css.map */

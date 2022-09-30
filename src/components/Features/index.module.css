@@ -10,6 +10,8 @@
   font-weight: 700;
   align-items: center;
   gap: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
 }
@@ -32,6 +34,4 @@
   color: #000;
   text-align: center;
   margin-bottom: 2rem;
-}
-
-/*# sourceMappingURL=index.module.css.map */
+}/*# sourceMappingURL=index.module.css.map */

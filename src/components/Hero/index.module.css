@@ -60,16 +60,23 @@
   border: 1px solid #001a13;
   filter: blur(150px);
   border-radius: 400px 0px 0px 400px;
-  animation-name: blurry;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  -webkit-transition: 1s -webkit-filter linear;
-  -moz-transition: 1s -moz-filter linear;
-  -moz-transition: 1s filter linear;
-  -ms-transition: 1s -ms-filter linear;
-  -o-transition: 1s -o-filter linear;
-  transition: 1s filter linear, 1s -webkit-filter linear;
-  animation-direction: alternate;
+  -webkit-animation-name: blurry;
+          animation-name: blurry;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  transition: 1s filter linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes blurry {
+  0% {
+    filter: blur(150px);
+  }
+  100% {
+    filter: blur(300px);
+  }
 }
 @keyframes blurry {
   0% {
@@ -84,6 +91,4 @@
   width: calc(100% - 30px);
   transform: scale(2);
   right: 10px;
-}
-
-/*# sourceMappingURL=index.module.css.map */
+}/*# sourceMappingURL=index.module.css.map */
