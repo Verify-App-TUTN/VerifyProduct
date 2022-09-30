@@ -14,15 +14,16 @@
     transition-property: border;
     transition-duration: 750ms;
     transition-timing-function: ease-in;
-    &:focus {
-      outline: none;
-      border: 1.5px solid rgba(36, 24, 24, 0.75);
-    }
+    cursor: pointer;
     border-radius: 5px;
     outline: none;
     font-size: 1rem;
     font-weight: 400;
     color: #000;
     background-color: #fff;
+    &:focus {
+      outline: none;
+      border: 1.5px solid rgba(36, 24, 24, 0.75);
+    }
   }
 }

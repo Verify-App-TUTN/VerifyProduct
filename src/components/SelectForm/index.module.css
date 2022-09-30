@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   border-radius: 5px;
   outline: none;
   font-size: 1rem;
@@ -28,6 +29,9 @@
 .Form .Form__input:focus {
   outline: none;
   border: 1.5px solid rgba(36, 24, 24, 0.75);
+}
+.Form .Form__details {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=index.module.css.map */
