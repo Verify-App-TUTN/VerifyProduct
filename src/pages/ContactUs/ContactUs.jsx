@@ -8,16 +8,16 @@ const ContactUs = () => {
     <Layout className={style.ContactUs}>
       <div className={style.ContactUs__content}>
         
-        <div className={style.ContactUs__forms}>
-          <h1 className={style.ContactUs__content__heading}>Integrate Your Products Into Our Database</h1>
-          <div className={style.ContactUs__content__form}>
+        <div className={style.ContactUs__content__forms}>
+          <h1 className={style.ContactUs__content__forms__heading}>Integrate Your Products Into Our Database</h1>
+          <div className={style.ContactUs__content__forms__container}>
             <TextForm />
             <SelectForm />
           </div>
         </div>
         <div className={style.ContactUs__image}>
           <div className={style.ContactUs__image__watermark}></div>
-        <img src={ContactUsImage} alt="Contact Us" className={style.ContactUs__content__image} />
+          <img src={ContactUsImage} alt="Contact Us" className={style.ContactUs__image__content} />
         </div>
       </div>
     </Layout>
