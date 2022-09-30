@@ -19,7 +19,7 @@ const CTA = () => {
   return (
     <div className={style.CTA}>
       {ctaDetails.map((props, index) => (
-        <Details {...props} />
+        <Details {...props} key={props.title.trim()} />
       ))
       }
     </div>
