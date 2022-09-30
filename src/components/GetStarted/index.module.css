@@ -1,0 +1,20 @@
+.GetStarted {
+  --background: #241818;
+  background: var(--background);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+.GetStarted:hover {
+  --background: #575454;
+}
+
+/*# sourceMappingURL=index.module.css.map */

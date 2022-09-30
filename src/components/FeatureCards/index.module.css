@@ -1,0 +1,24 @@
+.FeatureCards {
+  display: grid;
+  width: 100%;
+  padding-inline: 80px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  z-index: 10;
+}
+@media screen and (max-width: 1024px) and (min-width: 720px) {
+  .FeatureCards {
+    padding-inline: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 720px) {
+  .FeatureCards {
+    padding-inline: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=index.module.css.map */

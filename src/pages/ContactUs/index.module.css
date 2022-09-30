@@ -1,0 +1,19 @@
+.ContactUs {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.ContactUs .ContactUs__content {
+  min-height: calc(100vh - 100px);
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0;
+}
+.ContactUs .ContactUs__content .ContactUs__content__heading {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+/*# sourceMappingURL=index.module.css.map */

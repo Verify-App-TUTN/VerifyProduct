@@ -1,0 +1,113 @@
+.Hero {
+  display: flex;
+  max-height: 100vh;
+  min-height: calc(100vh - 50px);
+  align-items: center;
+  padding-inline: 80px;
+  width: calc(100% - 120px);
+  justify-content: center;
+  padding-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .Hero {
+    width: 100%;
+    padding-inline: 40px;
+  }
+}
+.Hero .Hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Hero .Hero__content h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .Hero .Hero__content h1 {
+    font-size: 2.5rem;
+  }
+}
+.Hero .Hero__content p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.Hero .Hero__content .Navbar__button {
+  --background: #009f78;
+  margin-top: 30px;
+}
+.Hero .Hero__content .Navbar__button:hover {
+  --background: #19765e;
+}
+.Hero .Hero__illustration_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .Hero .Hero__illustration_container {
+    position: absolute;
+  }
+}
+.Hero .Hero__illustration_container .Hero__illustration_blur {
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 30%;
+  top: 10%;
+  left: 0;
+  background: #009f78;
+  opacity: 0.5;
+  border: 1px solid #001a13;
+  filter: blur(150px);
+  border-radius: 400px 0px 0px 400px;
+  animation-name: blurry;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-transition: 1s -webkit-filter linear;
+  -moz-transition: 1s -moz-filter linear;
+  -moz-transition: 1s filter linear;
+  -ms-transition: 1s -ms-filter linear;
+  -o-transition: 1s -o-filter linear;
+  transition: 1s filter linear, 1s -webkit-filter linear;
+  animation-direction: alternate;
+}
+@media screen and (max-width: 768px) {
+  .Hero .Hero__illustration_container .Hero__illustration_blur {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+}
+@keyframes blurry {
+  0% {
+    filter: blur(150px);
+  }
+  100% {
+    filter: blur(300px);
+  }
+}
+@media screen and (max-width: 768px) {
+  @keyframes blurry {
+    0% {
+      filter: blur(150px);
+    }
+    100% {
+      filter: blur(200px);
+    }
+  }
+}
+.Hero .Hero__illustration_container .Hero__illustration {
+  position: relative;
+  width: calc(100% - 30px);
+  transform: scale(2);
+  right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .Hero .Hero__illustration_container .Hero__illustration {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.module.css.map */
