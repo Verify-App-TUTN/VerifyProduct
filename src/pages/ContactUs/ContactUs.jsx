@@ -1,12 +1,14 @@
 import React from "react";
 import { ContactUsImage } from "../../assets";
 import {  Layout, SelectForm, TextForm } from "../../components";
-import { useTextForm } from "../../utils/hooks";
+import { useSelectForm, useTextForm } from "../../utils/hooks";
 import style from "./index.module.css";
 
 const ContactUs = () => {
   const [companyName, CompanyNameInput] = useTextForm({ placeholder: "Input Country/Group Name", label: "Company/Group Name", errorMessage: "Input Required", type: "text" });
-  const [Email, EmailInput] = useTextForm({ placeholder: "Input Email", label: "Email", errorMessage: "Input Required", type: "email" });
+  const [email, EmailInput] = useTextForm({ placeholder: "Input Email", label: "Email", errorMessage: "Input Required", type: "email" });
+  const [industry, IndustryInput] = useSelectForm({ details: ["Fintech", "EduTech", "Stuff", "Other Stuff"], placeholder: "Select Industry", label: "Industry Type", errorMessage: "Select An Option" })
+  const [country, CountryInput] = useSelectForm({ details: ["United States", "Nigeria", "Croatia", "Germany"], placeholder: "Select Country", label: "Country", errorMessage: "Select An Option" })
   return (
     <Layout className={style.ContactUs}>
       <div className={style.ContactUs__content}>
@@ -16,7 +18,12 @@ const ContactUs = () => {
           <div className={style.ContactUs__content__forms__container}>
             <CompanyNameInput />
             <EmailInput />
-            <SelectForm />
+            <IndustryInput />
+            <CountryInput />
+            <div className={style.ContactUs__content__forms__container__text}>
+              <label className={style.ContactUs__content__forms__container__text__label}>Send Us a Message</label>
+              <textarea placeholder="Input your reviews here............" className={style.ContactUs__content__forms__container__text__input} />
+            </div>
           </div>
         </div>
         <div className={style.ContactUs__image}>
