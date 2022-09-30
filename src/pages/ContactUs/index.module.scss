@@ -16,45 +16,63 @@
     align-items: center;
     width: 100%;
     gap: 0;
-    &__forms{
+    &__forms {
       flex-basis: 60%;
-    &__heading{
+      &__heading {
         font-weight: 700;
         font-size: 56px;
+      }
+      &__container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &__text {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          &__label {
+            font-weight: 500;
+            font-size: 1.15rem;
+          }
+          &__input {
+            width: 75%;
+            min-height: 200px;
+            background-color: rgba(90, 224, 191, 0.2);
+            border: 1px solid #B5E6DD;
+            padding: 24px;
+            box-shadow: 0px 2px 2px rgba(0, 159, 120, 0.25);
+              border-radius: 8px;
+          }
+        }
+      }
     }
-    &__container{
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-  }
-    &__image{
+    &__image {
+      width: 100%;
+      height: 100%;
+      flex-basis: 30%;
+      position: relative;
+      display: block;
+      &__watermark {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        flex-basis: 30%;
+        background-color: rgba(0, 159, 120, 0.2);
+        padding: 30px;
+        top: 50px;
+        left: 50px;
+        border-radius: 10px;
+        z-index: 0;
+      }
+      &__content {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 20;
         position: relative;
-        display: block;
-        &__watermark{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 159, 120, 0.2);
-            padding: 30px;
-            top: 50px;
-            left: 50px;
-            border-radius: 10px;
-            z-index: 0;
-        }
-        &__content{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 20;
-            position: relative;
-        }
+      }
     }
   }
 }
