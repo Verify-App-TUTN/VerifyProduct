@@ -2,10 +2,19 @@
 .Hero {
   display: flex;
   max-height: 100vh;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100% - 50px);
+  min-height: -webkit-calc(100% - 88px);
+  min-height: -moz-calc(100% - 88px);
+  min-height: -o-calc(100% - 88px);
+  min-height: -ms-calc(100% - 88px);
+
   align-items: center;
   padding-inline: 80px;
   width: calc(100% - 200px);
+  width: -webkit-calc(100% - 200px);
+  width: -moz-calc(100% - 200px);
+  width: -o-calc(100% - 200px);
+  width: -ms-calc(100% - 200px);
   justify-content: center;
   padding-top: 100px;
   @media screen and (max-width: 768px) {
@@ -74,19 +83,37 @@
       @keyframes blurry {
         0% {
           filter: blur(150px);
+          filter: -moz-blur(150px);
+          filter: -webkit-blur(150px);
+          filter: -o-blur(150px);
+          filter: -ms-blur(150px);
         }
         100% {
           filter: blur(300px);
+          filter: -moz-blur(300px);
+          filter: -webkit-blur(300px);
+          filter: -o-blur(300px);
+          filter: -ms-blur(300px);
         }
       }
     @media screen and (max-width: 768px) {
       @keyframes blurry {
           0% {
             filter: blur(150px);
+            filter: -moz-blur(150px);
+            filter: -webkit-blur(150px);
+            filter: -o-blur(150px);
+            filter: -ms-blur(150px);
+            
           }
       
           100% {
             filter: blur(200px);
+            filter: -moz-blur(200px);
+            filter: -webkit-blur(200px);
+            filter: -o-blur(200px);
+            filter: -ms-blur(200px);
+
           }
         }
     }
@@ -94,7 +121,16 @@
     .Hero__illustration {
       position: relative;
       width: calc(100% - 30px);
+      width: -webkit-calc(100% - 30px);
+      width: -moz-calc(100% - 30px);
+      width: -o-calc(100% - 30px);
+      width: -ms-calc(100% - 30px);
       transform: scale(2);
+      transform: -webkit-scale(2);
+      transform: -moz-scale(2);
+      transform: -o-scale(2);
+      transform: -ms-scale(2);
+
       right: 10px;
     @media screen and (max-width: 768px) {
       display: none;
