@@ -1,6 +1,6 @@
 import React from "react";
 import { ContactUsImage } from "../../assets";
-import { Form, Layout } from "../../components";
+import { Form, Layout, SelectForm, TextForm } from "../../components";
 import style from "./index.module.css";
 
 const ContactUs = () => {
@@ -11,7 +11,8 @@ const ContactUs = () => {
         <div className={style.ContactUs__forms}>
           <h1 className={style.ContactUs__content__heading}>Integrate Your Products Into Our Database</h1>
           <div className={style.ContactUs__content__form}>
-                <Form />
+            <TextForm />
+            <SelectForm />
           </div>
         </div>
         <div className={style.ContactUs__image}>
