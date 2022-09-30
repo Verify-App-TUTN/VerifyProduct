@@ -1,9 +1,13 @@
 
 .Hero {
   display: flex;
-  min-height: 100vh;
-  // height: calc(100% - 50px);
-  
+  max-height: 100vh;
+  height: calc(100% - 50px);
+  height: -webkit-calc(100% - 88px);
+  height: -moz-calc(100% - 88px);
+  height: -o-calc(100% - 88px);
+  height: -ms-calc(100% - 88px);
+
   align-items: center;
   padding-inline: 80px;
   width: calc(100% - 160px);
@@ -16,7 +20,8 @@
   @media screen and (max-width: 768px) {
     width: 100%;
     padding-inline: 40px;    
-    padding-top: 0;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
 }
 
   .Hero__content {

@@ -41,7 +41,7 @@ const Navbar = () => {
           <Logo />
         </Link>
       </div>
-      <div className={`${style.Navbar__links__container} ${toggleDropDown && style.Navbar__links__container__active}`}>
+      <div className={`${style.Navbar__links__container} ${toggleDropDown && style.Navbar__links__container__active}`} tabIndex={7}>
         <ul className={style.Navbar__links}>
           {navLinks.map(({ text, to }) => (
             <li key={text}>
@@ -56,6 +56,8 @@ const Navbar = () => {
           toggleDropDown && style.Navbar__hamburgermenu__active
           }`}
         onClick={() => setToggleDropDown(toggle => !toggle)}
+        tabIndex={5}
+        onBlur={() => setToggleDropDown(false)}
       ></div>
     </nav>
   );

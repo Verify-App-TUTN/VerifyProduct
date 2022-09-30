@@ -67,6 +67,7 @@
   display: flex;
   justify-content: space-around;
   flex-basis: 60%;
+  color: #001a13;
 }
 @media screen and (max-width: 768px) {
   .Navbar .Navbar__links__container .Navbar__links {

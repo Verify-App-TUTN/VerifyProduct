@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import {ComingSoon,  Home, ProductN, VerifyForm, Verifyproduct} from "./pages"
-import { Route, Routes } from "react-router-dom";
-const  App = () => {
+import { Route, Routes, useLocation } from "react-router-dom";
+
+const App = () => {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (!!hash) return;
+    window.scrollTo(0, 0);
+  },[pathname, hash])
   document.title = "Verify Product";
   return (
     <Routes>
