@@ -3,7 +3,6 @@
   flex-direction: column;
   min-height: 100vh;
   .ContactUs__content {
-    flex-basis: 50%;
     min-height: calc(100vh - 100px);
     min-height: -webkit-calc(100vh - 100px);
     min-height: -moz-calc(100vh - 100px);
@@ -18,6 +17,7 @@
     width: 100%;
     gap: 0;
     .ContactUs__forms{
+      flex-basis: 60%;
     .ContactUs__content__heading{
         font-weight: 700;
         font-size: 56px;
@@ -26,7 +26,7 @@
     .ContactUs__image{
         width: 100%;
         height: 100%;
-        flex-basis: 50%;
+        flex-basis: 30%;
         position: relative;
         display: block;
         .ContactUs__image__watermark{
