@@ -3,12 +3,12 @@
   flex-direction: column;
   width: 75%;
 }
-.Form .Form__label {
+.Form__label {
   font-weight: 500;
   font-size: 1.15rem;
   margin-bottom: 10px;
 }
-.Form .Form__input {
+.Form__input {
   width: 100%;
   padding: 1rem 2rem;
   border: 1.5px solid rgba(36, 24, 24, 0.25);
@@ -26,12 +26,19 @@
   color: #000;
   background-color: #fff;
 }
-.Form .Form__input:focus {
+.Form__input:focus {
   outline: none;
   border: 1.5px solid rgba(36, 24, 24, 0.75);
 }
-.Form .Form__details {
+.Form__input__icon {
+  transform: rotate(180deg);
+}
+.Form__details {
   margin-top: 20px;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
 }
 
 /*# sourceMappingURL=index.module.css.map */

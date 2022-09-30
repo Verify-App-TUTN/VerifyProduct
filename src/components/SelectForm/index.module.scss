@@ -3,13 +3,13 @@
     flex-direction: column;
     width: 75%;
 
-    .Form__label {
+    &__label {
         font-weight: 500;
         font-size: 1.15rem;
         margin-bottom: 10px;
     }
 
-    .Form__input {
+    &__input {
         width: 100%;
         padding: 1rem 2rem;
         border: 1.5px solid rgba(36, 24, 24, 0.25);
@@ -30,9 +30,15 @@
             outline: none;
             border: 1.5px solid rgba(36, 24, 24, 0.75);
         }
-
+        &__icon{
+            transform: rotate(180deg);
+        }
     }
-    .Form__details{
+    &__details{
         margin-top: 20px;
+        overflow: hidden;
+        transition-property: all;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in;
     }
 }
