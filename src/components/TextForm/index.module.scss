@@ -26,4 +26,10 @@
       border: 1.5px solid rgba(36, 24, 24, 0.75);
     }
   }
+  &__error{
+    color: transparent;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+  }
 }
