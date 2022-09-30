@@ -24,6 +24,7 @@ const ContactUs = () => {
               <label className={style.ContactUs__content__forms__container__text__label}>Send Us a Message</label>
               <textarea placeholder="Input your reviews here............" className={style.ContactUs__content__forms__container__text__input} />
             </div>
+            <button className={style.ContactUs__content__forms__container__button}>Submit</button>
           </div>
         </div>
         <div className={style.ContactUs__image}>
