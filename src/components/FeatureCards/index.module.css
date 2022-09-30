@@ -1,11 +1,14 @@
 .FeatureCards {
-  display: grid;
+  display: flex;
   width: 100%;
   padding-inline: 80px;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   row-gap: 50px;
+  margin: auto;
   z-index: 10;
 }
 @media screen and (max-width: 1024px) and (min-width: 720px) {

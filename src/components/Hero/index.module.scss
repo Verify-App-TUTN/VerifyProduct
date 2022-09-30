@@ -30,7 +30,10 @@
     justify-content: space-between;
     z-index: 20;
     h1 {
-      font-size: 4.5rem;
+      font-size: 3.5rem;
+    @media screen and (max-width: 1024px) and (min-width: 720px) {
+        font-size: 3rem;
+    }
     @media screen and (max-width: 768px) {
         font-size: 2.5rem;
     }
@@ -50,7 +53,7 @@
     }
   }
   .Hero__illustration_container {   
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         position: absolute;
     }
     position: relative;
@@ -103,7 +106,7 @@
           filter: -ms-blur(300px);
         }
       }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       @keyframes blurry {
           0% {
             filter: blur(150px);
@@ -139,7 +142,7 @@
       transform: -ms-scale(2);
 
       right: 10px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       display: none;
     }
     }

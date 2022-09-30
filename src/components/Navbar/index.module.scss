@@ -4,7 +4,7 @@
 }
 .Navbar {
   padding: 30px 50px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 920px) {
     padding: 30px 30px;
     justify-content: space-between;
   }
@@ -24,7 +24,7 @@
     width: 200px;
     height: auto;
     z-index: 50;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       width: 150px;
     }
   }
@@ -34,7 +34,7 @@
     flex-basis: 80%;
     justify-content: space-evenly;
     align-items: center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       transform: translateX(-100%);
       transition: transform 500ms ease-in-out;
       padding-top: 100px;
@@ -59,7 +59,7 @@
       justify-content: space-around;
       flex-basis: 60%;
       color: #001a13;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 920px) {
         width: 100%;
         flex-direction: column;
       }
@@ -70,7 +70,7 @@
         --background: #19765e;
       }
       width: fit-content;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 920px) {
         display: block;
         width: 100%;
         text-align: center;
@@ -94,7 +94,7 @@
       left: 0;
       cursor: pointer;
       display: none;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 920px) {
         display: block;
       }
       transition: transform 500ms ease-in;
