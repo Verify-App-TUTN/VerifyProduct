@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaceBook, GreenLogo, Instagram, LinkedIn, Twitter } from "../../assets";
+import { isEmail } from "../../utils/functions";
 import useInput from "../../utils/hooks/useInput";
 import FooterLink from "../FooterLink/FooterLink";
 import style from "./index.module.css";
@@ -22,9 +23,7 @@ const Footer = () => {
   const [invalidEmail, setInvalidEmail] = useState(false)
 
   const handleSubmit = () => {
-    const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
-    const isValid = regex.test(email);
-    if (!isValid) {
+    if (!isEmail(email)) {
       setInvalidEmail(true);
       setTimeout(() => {
         setInvalidEmail(false);
