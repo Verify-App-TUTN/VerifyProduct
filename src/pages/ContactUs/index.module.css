@@ -32,6 +32,11 @@
   font-weight: 700;
   font-size: 56px;
 }
+@media screen and (max-width: 920px) {
+  .ContactUs__content__forms__heading {
+    font-size: 36px;
+  }
+}
 .ContactUs__content__forms__container {
   margin-top: 40px;
   display: flex;
@@ -90,17 +95,15 @@
 .ContactUs__content__forms__container__button:hover {
   --background: #19765e;
 }
-.ContactUs__content__image {
+.ContactUs__image {
   width: 100%;
   height: 100%;
   flex-basis: 30%;
   position: relative;
-  display: block;
+  display: flex;
 }
-.ContactUs__content__image__watermark {
+.ContactUs__image__watermark {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 159, 120, 0.2);
@@ -110,7 +113,13 @@
   border-radius: 10px;
   z-index: 0;
 }
-.ContactUs__content__image__content {
+@media screen and (max-width: 920px) {
+  .ContactUs__image__watermark {
+    top: 20px;
+    left: 20px;
+  }
+}
+.ContactUs__image__content {
   width: 100%;
   height: 100%;
   object-fit: cover;
