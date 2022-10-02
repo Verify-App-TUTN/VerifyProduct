@@ -1,6 +1,6 @@
 import React from "react";
 import { ContactUsImage } from "../../assets";
-import {  Layout, SelectForm, TextForm } from "../../components";
+import {  Layout } from "../../components";
 import { useSelectForm, useTextForm } from "../../utils/hooks";
 import style from "./index.module.css";
 
