@@ -65,7 +65,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className={style.ContactUs__image}>
-          <div className={style.ContactUs__image__watermark}>jjj</div>
+          <div className={style.ContactUs__image__watermark}></div>
           <img
             src={ContactUsImage}
             alt="Contact Us"
