@@ -1,34 +1,15 @@
 import React from "react";
 import { ContactUsImage } from "../../assets";
-import { Layout } from "../../components";
+import { Layout, SelectForm } from "../../components";
 import { useSelectForm, useTextForm } from "../../utils/hooks";
+import useInput from "../../utils/hooks/useInput";
 import style from "./index.module.css";
 
 const ContactUs = () => {
-  const [companyName, CompanyNameInput] = useTextForm({
-    placeholder: "Input Country/Group Name",
-    label: "Company/Group Name",
-    errorMessage: "Input Required",
-    type: "text",
-  });
-  const [email, EmailInput] = useTextForm({
-    placeholder: "Input Email",
-    label: "Email",
-    errorMessage: "Input Required",
-    type: "email",
-  });
-  const [industry, IndustryInput] = useSelectForm({
-    details: ["Fintech", "EduTech", "Stuff", "Other Stuff"],
-    placeholder: "Select Industry",
-    label: "Industry Type",
-    errorMessage: "Select An Option",
-  });
-  const [country, CountryInput] = useSelectForm({
-    details: ["United States", "Nigeria", "Croatia", "Germany"],
-    placeholder: "Select Country",
-    label: "Country",
-    errorMessage: "Select An Option",
-  });
+  const [companyName, changeCompanyName] = useInput("");
+  const [email, setEmail] = useInput("");
+  const [industry, setIndustry] = useInput("");
+  const [country, setCountry] = useInput("");
   console.log(companyName, email, industry, country);
   return (
     <Layout className={style.ContactUs}>
@@ -38,10 +19,46 @@ const ContactUs = () => {
             Integrate Your Products Into Our Database
           </h1>
           <div className={style.ContactUs__content__forms__container}>
-            <CompanyNameInput />
-            <EmailInput />
-            <IndustryInput />
-            <CountryInput />
+            <TextForm
+              {...{
+                placeholder: "Input Country/Group Name",
+                label: "Company/Group Name",
+                errorMessage: "Input Required",
+                type: "text",
+                value: companyName,
+                setState: changeCompanyName
+              }}
+            />
+            <TextForm
+              {...{
+                placeholder: "Input Email",
+                label: "Email",
+                errorMessage: "Input Required",
+                type: "email",
+                value: email,
+                setState: setEmail
+              }}
+            />
+            <SelectForm
+              {...{
+                details: ["Fintech", "EduTech", "Stuff", "Other Stuff"],
+                placeholder: "Select Industry",
+                label: "Industry Type",
+                errorMessage: "Select An Option",
+                value: industry,
+                setState: setIndustry
+              }}
+            />
+            <SelectForm
+              {...{
+                details: ["United States", "Nigeria", "Croatia", "Germany"],
+                placeholder: "Select Country",
+                label: "Country",
+                errorMessage: "Select An Option",
+                value: country,
+                setState: setCountry
+              }}
+            />
             <div className={style.ContactUs__content__forms__container__text}>
               <label
                 className={
