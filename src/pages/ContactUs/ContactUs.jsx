@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ContactUsImage } from "../../assets";
 import { Layout, SelectForm, TextForm } from "../../components";
-import { useSelectForm, useTextForm } from "../../utils/hooks";
 import useInput from "../../utils/hooks/useInput";
 import style from "./index.module.css";
 
