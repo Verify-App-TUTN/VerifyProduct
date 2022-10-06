@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
 import "./index.css";
-import {ComingSoon,  ContactUs,  Home, ProductN, VerifyForm, Verifyproduct} from "./pages"
+import {
+  ComingSoon,
+  Home,
+  IntegrateProduct,
+  ProductN,
+  VerifyForm,
+  Verifyproduct,
+} from "./pages";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 const App = () => {
@@ -8,18 +15,18 @@ const App = () => {
   useEffect(() => {
     if (!!hash) return;
     window.scrollTo(0, 0);
-  },[pathname, hash])
+  }, [pathname, hash]);
   document.title = "Verify Product";
   return (
     <Routes>
       <Route index path="/" element={<Home />} />
       <Route index path="/:page" element={<ComingSoon />} />
-      <Route index path="/contactus" element={<ContactUs />} />
-       <Route path="/verifyform" element={<VerifyForm />} /> 
+      <Route index path="/integrateproduct" element={<IntegrateProduct />} />
+      <Route path="/verifyform" element={<VerifyForm />} />
       <Route path="/verifyproduct" element={<Verifyproduct />} />
-      <Route path="/product" element={<ProductN />} /> 
+      <Route path="/product" element={<ProductN />} />
     </Routes>
   );
-}
+};
 
 export default App;
