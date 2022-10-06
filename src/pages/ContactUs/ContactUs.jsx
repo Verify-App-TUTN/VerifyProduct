@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ContactUsImage } from "../../assets";
 import { Layout, SelectForm, TextForm } from "../../components";
-import useInput from "../../utils/hooks/useInput";
+import { useInput } from "../../utils/hooks";
 import style from "./index.module.css";
 
 const ContactUs = () => {
