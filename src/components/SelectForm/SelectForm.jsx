@@ -15,7 +15,7 @@ const SelectForm = ({ setState, state, details, label, errorMessage }) => {
   return (
     <div className={style.Form}>
       <label className={style.Form__label}>{label}</label>
-      <div className={style.Form__input} onClick={() => setToggleDetails(prev => !prev)}>
+      <div className={style.Form__input} onClick={() => setToggleDetails(prev => !prev)} >
         {state}
         <Arrow className={`${style.Form__input__icon} ${toggleDetails && style.Form__input__icon__rotate}`} />
       </div>
@@ -26,7 +26,7 @@ const SelectForm = ({ setState, state, details, label, errorMessage }) => {
 
       >
         {details?.map((details) => (
-          <FormDetail {...{ details, setState, state }} />
+          <FormDetail {...{ details, setState, state, close: ()=> setToggleDetails(false) }} />
         ))}
       </div>
     </div>
