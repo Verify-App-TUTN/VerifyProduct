@@ -3,15 +3,9 @@ import style from "./index.module.css";
 
 const FormDetail = ({ details, setState, state, close }) => {
   const [isSelected, setIsSelected] = useState(false);
-  useEffect(() => {
-    setIsSelected(state === details);
-  }, [state, details]);
-  return <div
-    onClick={() => {
-      setState(details);
-      close();
-    }}
-    className={`${style.FormDetail} ${isSelected && style.FormDetail__active}`}>{details}</div>;
+
+  return <detail
+    className={`${style.FormDetail} ${isSelected && style.FormDetail__active}`}>{details}</detail>;
 }
 
 export default FormDetail;

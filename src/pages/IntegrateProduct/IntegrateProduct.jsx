@@ -25,7 +25,7 @@ const IntegrateProduct = () => {
                 errorMessage: "Input Required",
                 type: "text",
                 value: companyName,
-                setState: changeCompanyName
+                setState: changeCompanyName,
               }}
             />
             <TextForm
@@ -40,20 +40,22 @@ const IntegrateProduct = () => {
             />
             <SelectForm
               {...{
-                details: ["Fintech", "EduTech", "Stuff", "Other Stuff"],
+                details: ["", "Fintech", "EduTech", "Stuff", "Other Stuff"],
                 label: "Industry Type",
                 errorMessage: "Select An Option",
                 state: industry,
-                setState: setIndustry
+                setState: setIndustry,
+                placeholder: "Select Country"
               }}
             />
             <SelectForm
               {...{
-                details: ["United States", "Nigeria", "Croatia", "Germany"],
+                details: ["","United States", "Nigeria", "Croatia", "Germany"],
                 label: "Country",
                 errorMessage: "Select An Option",
                 state: country,
-                setState: setCountry
+                setState: setCountry,
+                placeholder: "Select Industry"
               }}
             />
             <div className={style.ContactUs__content__forms__container__text}>
