@@ -77,6 +77,8 @@
 }
 .Navbar .Navbar__links__container .Navbar__button {
   --background: #009f78;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .Navbar .Navbar__links__container .Navbar__button:hover {
@@ -127,6 +129,4 @@
 .Navbar .Navbar__hamburgermenu.Navbar__hamburgermenu__active::before {
   top: 0;
   transform: rotate(-45deg);
-}
-
-/*# sourceMappingURL=index.module.css.map */
+}/*# sourceMappingURL=index.module.css.map */
