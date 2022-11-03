@@ -46,7 +46,7 @@ const IntegrateProduct = () => {
       }
         , 3000);
       }
-      return
+      return;
   }
     else {
       setActive(true);
@@ -55,6 +55,7 @@ const IntegrateProduct = () => {
       }
       , 3000);
     }
+    return;
   }
   return (
     <Layout className={style.ContactUs}>
