@@ -12,12 +12,10 @@ const IntegrateProduct = () => {
   const [emailError, setEmailError] = useState(false);
   const [industry, setIndustry] = useState("");
   const [industryError, setIndustryError] = useState(false);
-  const [country, setCountry] = useState("");
-  const [countryError, setCountryError] = useState(false);
   const [active, setActive] = useState(false);
   const handleSubmission = (e) => {
     e.preventDefault();
-    if(companyName === "" || !isEmail(email) || industry === "" || country === "") {
+    if(companyName === "" || !isEmail(email) || industry === "") {
     if (companyName === "") {
       setCompanyError(true);
       setTimeout(() => {
@@ -39,13 +37,6 @@ const IntegrateProduct = () => {
       }
         , 3000);
     }
-    if (country === "") {
-      setCountryError(true);
-      setTimeout(() => {
-        setCountryError(false);
-      }
-        , 3000);
-      }
       return;
   }
     else {
@@ -105,17 +96,6 @@ const IntegrateProduct = () => {
                 setState: setIndustry,
                 placeholder: "Select Industry",
                 error: industryError,
-              }}
-            />
-            <SelectForm
-              {...{
-                details: ["","United States", "Nigeria", "Croatia", "Germany"],
-                label: "Country",
-                errorMessage: "Select An Option",
-                state: country,
-                setState: setCountry,
-                placeholder: "Select Country",
-                error: countryError,
               }}
             />
             <div className={style.ContactUs__content__forms__container__text}>
