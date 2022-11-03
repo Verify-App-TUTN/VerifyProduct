@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ContactUsImage } from "../../assets";
 import { PopUp, Layout, SelectForm, TextForm } from "../../components";
 import { useInput } from "../../utils/hooks";
+import { isEmail } from "../../utils/functions";
 import style from "./index.module.css";
 
 const IntegrateProduct = () => {
@@ -9,12 +10,52 @@ const IntegrateProduct = () => {
   const [comapanyError, setCompanyError] = useState(false);
   const [email, setEmail] = useInput("");
   const [emailError, setEmailError] = useState(false);
-  const [industry, setIndustry] = useState("Select Country");
+  const [industry, setIndustry] = useState("");
   const [industryError, setIndustryError] = useState(false);
-  const [country, setCountry] = useState("Select Industry");
+  const [country, setCountry] = useState("");
   const [countryError, setCountryError] = useState(false);
   const [active, setActive] = useState(false);
-  
+  const handleSubmission = (e) => {
+    e.preventDefault();
+    if(companyName === "" || !isEmail(email) || industry === "" || country === "") {
+    if (companyName === "") {
+      setCompanyError(true);
+      setTimeout(() => {
+        setCompanyError(false);
+      }
+        , 3000);
+    }
+    if (!isEmail(email)) {
+      setEmailError(true);
+      setTimeout(() => {
+        setEmailError(false);
+      }
+        , 3000);
+    }
+    if (industry === "") {
+      setIndustryError(true);
+      setTimeout(() => {
+        setIndustryError(false);
+      }
+        , 3000);
+    }
+    if (country === "") {
+      setCountryError(true);
+      setTimeout(() => {
+        setCountryError(false);
+      }
+        , 3000);
+      }
+      return
+  }
+    else {
+      setActive(true);
+      setTimeout(() => {
+        setActive(false);
+      }
+      , 3000);
+    }
+  }
   return (
     <Layout className={style.ContactUs}>
       <PopUp active={active} />
@@ -23,7 +64,9 @@ const IntegrateProduct = () => {
           <h1 className={style.ContactUs__content__forms__heading}>
             Integrate Your Products Into Our Database
           </h1>
-          <div className={style.ContactUs__content__forms__container}>
+          <form className={style.ContactUs__content__forms__container}
+            onSubmit={handleSubmission}
+          >
             <TextForm
               {...{
                 placeholder: "Input Country/Group Name",
@@ -85,10 +128,11 @@ const IntegrateProduct = () => {
             </div>
             <button
               className={style.ContactUs__content__forms__container__button}
+              type="submit"
             >
               Submit
             </button>
-          </div>
+          </form>
         </div>
         <div className={style.ContactUs__image}>
           <div className={style.ContactUs__image__watermark}></div>
