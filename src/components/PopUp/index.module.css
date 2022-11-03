@@ -1,7 +1,7 @@
 .PopUp {
   position: fixed;
   transition: transform;
-  transition-duration: 0.3s;
+  transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
   transform-origin: center;
   z-index: 100;

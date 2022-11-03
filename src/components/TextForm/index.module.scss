@@ -30,7 +30,8 @@
     }
   }
   &__error{
-    color: transparent;
+    color: red;
+    margin-top: 20px;
     transition-property: color;
     transition-duration: 500ms;
     transition-timing-function: ease-in;

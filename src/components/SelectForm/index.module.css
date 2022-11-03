@@ -48,4 +48,11 @@
   transition-property: height, overflow;
   transition-duration: 500ms;
   transition-timing-function: ease-in;
+}
+.Form__error {
+  color: red;
+  margin-top: 20px;
+  transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
 }/*# sourceMappingURL=index.module.css.map */
