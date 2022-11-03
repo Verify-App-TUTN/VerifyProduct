@@ -97,7 +97,7 @@ const IntegrateProduct = () => {
                 errorMessage: "Select An Option",
                 state: industry,
                 setState: setIndustry,
-                placeholder: "Select Country",
+                placeholder: "Select Industry",
                 error: industryError,
               }}
             />
@@ -108,7 +108,7 @@ const IntegrateProduct = () => {
                 errorMessage: "Select An Option",
                 state: country,
                 setState: setCountry,
-                placeholder: "Select Industry",
+                placeholder: "Select Country",
                 error: countryError,
               }}
             />
