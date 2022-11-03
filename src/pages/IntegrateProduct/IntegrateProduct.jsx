@@ -92,7 +92,13 @@ const IntegrateProduct = () => {
             />
             <SelectForm
               {...{
-                details: ["", "Fintech", "EduTech", "Stuff", "Other Stuff"],
+                details: ["","Food and Beverage",
+                  "Pharmaceutical and Medical Supply",
+                  "Fashion",
+                  "Electrical and Electronic",
+                  "Automotive Parts",
+                  "Optical Media(CDs & DVDs)",
+                  "Cosmetics"],
                 label: "Industry Type",
                 errorMessage: "Select An Option",
                 state: industry,
