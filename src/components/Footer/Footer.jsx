@@ -64,7 +64,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className={style.Footer__content__right}>
+        {/* <div className={style.Footer__content__right}>
           <div className={style.Footer__content__right__links}>
             {footDetails.map((props) => (
               <FooterLink {...props} key={props.heading} />
@@ -89,7 +89,7 @@ const Footer = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className={style.Footer__bottom}>
         <label htmlFor="emailInput" className={style.Footer__bottom__heading}>
