@@ -13,7 +13,6 @@ const IntegrateProduct = () => {
   const [industry, setIndustry] = useState("");
   const [industryError, setIndustryError] = useState(false);
   const handleSubmission = (e) => {
-    e.preventDefault();
     if(companyName === "" || !isEmail(email) || industry === "") {
     if (companyName === "") {
       setCompanyError(true);
