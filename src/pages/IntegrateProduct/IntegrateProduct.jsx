@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ContactUsImage } from "../../assets";
-import { PopUp, Layout, SelectForm, TextForm } from "../../components";
+import { Layout, SelectForm, TextForm } from "../../components";
 import { useInput } from "../../utils/hooks";
 import { isEmail } from "../../utils/functions";
 import style from "./index.module.css";
@@ -12,7 +12,6 @@ const IntegrateProduct = () => {
   const [emailError, setEmailError] = useState(false);
   const [industry, setIndustry] = useState("");
   const [industryError, setIndustryError] = useState(false);
-  const [active, setActive] = useState(false);
   const handleSubmission = (e) => {
     e.preventDefault();
     if(companyName === "" || !isEmail(email) || industry === "") {
@@ -39,18 +38,12 @@ const IntegrateProduct = () => {
     }
       return;
   }
-    else {
-      setActive(true);
-      setTimeout(() => {
-        setActive(false);
-      }
-      , 3000);
-    }
-    return;
+  else{
+    window.location.reload();
+  }
   }
   return (
     <Layout className={style.ContactUs}>
-      <PopUp active={active} />
       <div className={style.ContactUs__content}>
         <div className={style.ContactUs__content__forms}>
           <h1 className={style.ContactUs__content__forms__heading}>
