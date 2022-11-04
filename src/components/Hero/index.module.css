@@ -16,6 +16,7 @@
     width: 100%;
     padding-inline: 40px;
     height: calc(100vh - 100px);
+    padding-top: 100px;
   }
 }
 .Hero .Hero__content {
