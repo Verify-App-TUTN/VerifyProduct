@@ -7,7 +7,7 @@ const Hero = () => {
   return <div className={style.Hero}>
     <div className={style.Hero__content}>
       <h1 className={style.Hero__title}>Integrate Your Products Into Our Database</h1>
-      <p className={style.Hero__subtitle}>Get accesss to select your choice product from our list of Product Categories Get accesss to select your choice product from our list of Product Categories Get accesss to</p>
+      <p className={style.Hero__subtitle}>Let us join hands to eradicate counterfeit products from circulation.</p>
       <GetStarted className={style.Navbar__button} />
     </div>
     <div className={style.Hero__illustration_container}>
