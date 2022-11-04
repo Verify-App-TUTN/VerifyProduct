@@ -39,14 +39,15 @@ const Footer = () => {
   const [email, setEmailChange] = useInput("");
   const [invalidEmail, setInvalidEmail] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (!isEmail(email)) {
       setInvalidEmail(true);
       setTimeout(() => {
         setInvalidEmail(false);
       }, 3000);
     } else {
-      setInvalidEmail(false);
+      window.location.reload();
     }
   };
   return (
@@ -95,7 +96,9 @@ const Footer = () => {
         <label htmlFor="emailInput" className={style.Footer__bottom__heading}>
           Get Updated. Join Our Newsletter
         </label>
-        <div className={style.Footer__bottom__input__container}>
+        <form className={style.Footer__bottom__input__container}
+          onSubmit={handleSubmit}
+        >
           <input
             value={email}
             onChange={setEmailChange}
@@ -106,11 +109,11 @@ const Footer = () => {
           />
           <button
             className={style.Footer__bottom__input__button}
-            onClick={() => handleSubmit()}
+            type="submit"
           >
             Subscribe
           </button>
-        </div>
+        </form>
         <p
           className={`${style.Footer__bottom__error__hidden} ${
             invalidEmail && style.Footer__bottom__error
