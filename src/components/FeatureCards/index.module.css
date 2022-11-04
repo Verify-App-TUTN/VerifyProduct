@@ -3,7 +3,10 @@
   width: 100%;
   padding-inline: 80px;
   flex-direction: row;
-  min-height: 100vh;
+  max-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;

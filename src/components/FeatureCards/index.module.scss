@@ -1,23 +1,23 @@
 .FeatureCards {
-    display: flex;
-    width: 100%;
-    padding-inline: 80px;
+  display: flex;
+  width: 100%;
+  padding-inline: 80px;
   flex-direction: row;
-  min-height: 100vh;
-    justify-content: space-between;
+  max-height: 100vh;
+  height: max-content;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   row-gap: 50px;
   margin: auto;
-    @media screen and (max-width: 1024px) and (min-width: 720px) {
-        padding-inline: 40px;
-        
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @media screen and (max-width: 720px) {
-      padding-inline: 40px;
+  @media screen and (max-width: 1024px) and (min-width: 720px) {
+    padding-inline: 40px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 720px) {
+    padding-inline: 40px;
     grid-template-columns: repeat(1, 1fr);
   }
   z-index: 10;
-
 }
