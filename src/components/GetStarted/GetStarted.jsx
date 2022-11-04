@@ -4,9 +4,9 @@ import style from "./index.module.css";
 
 const GetStarted = ({className, ...props}) => {
   return(
-    <Link to="getStarted"  {...props} className={`${style.GetStarted} ${className}`}>
+    <a href="#footer"  {...props} className={`${style.GetStarted} ${className}`}>
         Get Started
-    </Link>
+    </a>
   );
 }
 
