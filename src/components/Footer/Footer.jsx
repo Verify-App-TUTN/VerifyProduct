@@ -51,7 +51,7 @@ const Footer = () => {
     }
   };
   return (
-    <footer className={style.Footer}>
+    <footer className={style.Footer} id="footer">
       <div className={style.Footer__content}>
         <div className={style.Footer__content__left}>
           <div className={style.Footer__content__left__logo}>
