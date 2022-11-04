@@ -59,9 +59,7 @@ const Footer = () => {
           </div>
           <div className={style.Footer__content__left__description}>
             <p>
-              Get access to select your choice product from our list of Product
-              Categories Get access to select your choice product from our list
-              of Product Categories Get access
+              Let us join hands to eradicate counterfeit products from circulation.
             </p>
           </div>
         </div>
