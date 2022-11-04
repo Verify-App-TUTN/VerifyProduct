@@ -6,12 +6,12 @@ const ctaDetails = [
   {
     image: SystemsImage,
     title: "We offer a close range monitoring system.",
-    description: "Report Fake Products You’ve Come Across With Report Fake Products You’ve Come Across With Report Fake Products You’ve Come Across With"
+    description: "Our product provides a global audience with a seamless way to verify product authenticity."
   },
   {
     image: AccessibilityImage,
     title: "We Categorize your products for slaying Accessibility",
-    description: "Get access to select your choice product from our list of Product Categories Get access to select your choice product ",
+    description: "Easy search of products by customers with the systematic arrangement of all items by category.",
     reversed: true
   },
 ]

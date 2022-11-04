@@ -6,15 +6,15 @@ const featuresCards = [
   {
     icon: Authenticity,
     heading: "Authenticity",
-    description: "Get access to select your choice product from our list of Product Categories Get accesss to select your ",
+    description: "We want users to believe in all products they use.",
   },{
     icon: Growth,
     heading: "Product Growth",
-    description: "Get access to select your choice product from our list of Product Categories Get accesss to select your ",
+    description: "Increase your revenue with sales of the original product.",
   },{
     icon: Reliability,
     heading: "Reliability",
-    description: "Get access to select your choice product from our list of Product Categories Get accesss to select your ",
+    description: "Validating your product by your customers will increase their trust.",
   },
 ]
 const FeatureCards = () => {
